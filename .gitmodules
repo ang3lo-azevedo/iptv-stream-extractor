@@ -1,0 +1,3 @@
+[submodule "IPTVChecker-BitRate"]
+	path = IPTVChecker-BitRate
+	url = https://github.com/sudo-ronmexico/IPTVChecker-BitRate
