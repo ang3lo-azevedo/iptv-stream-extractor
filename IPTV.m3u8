@@ -1,0 +1,30 @@
+#EXTM3U
+# Generated: 2025-11-09 22:49:52
+# Organized by country, alphabetically, and by bitrate
+
+
+# ===== AR (2 streams) =====
+#EXTINF:-1 tvg-id="360northanchorage.us" tvg-name="USA Hallmark Drama" tvg-logo="http://149.18.16.10:80/images/fc3c0fe6b9d10e6b0c4ef340b4da3f6f.png" group-title="AR",USA Hallmark Drama [1080p 4784 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175866.ts
+#EXTINF:-1 tvg-id="paramountnetwork.us" tvg-name="USA Paramount East UHD" tvg-logo="http://23.227.147.172:80/images/8f91fff5f5426d4fe0589438724fc81f.png" group-title="AR",USA Paramount East [1080p 5088 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175914.ts
+
+# ===== FR (2 streams) =====
+#EXTINF:-1 tvg-id="freeform.us" tvg-name="USA Freeform" tvg-logo="http://149.18.16.10:80/images/a63e06208ab5cb65131353aa7fde20ed.png" group-title="FR",USA Freeform [720p 6398 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175852.ts
+#EXTINF:-1 tvg-id="oprahwinfreynetwork.us" tvg-name="USA Oprah Winfrey Network LHD" tvg-logo="http://23.227.147.172:80/images/4154cf9f3a6d98779121fccfb36d14f7.png" group-title="FR",USA Oprah Winfrey Network L [720p 6120 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175904.ts
+
+# ===== US (6 streams) =====
+#EXTINF:-1 tvg-id="fx.us" tvg-name="USA FX" tvg-logo="http://23.227.147.172:80/images/30318a2847b7702901fdd0cc6259f5ed.png" group-title="US",USA FX [720p 4702 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/176031.ts
+#EXTINF:-1 tvg-id="metv.us" tvg-name="USA MeTV" tvg-logo="http://23.227.147.172:80/images/a9ee80e62b40c3393457a06e0b39b42b.png" group-title="US",USA MeTV [720p 3953 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175895.ts
+#EXTINF:-1 tvg-id="natgeo.us" tvg-name="USA Nat Geo East" tvg-logo="http://23.227.147.172:80/images/c7b80593b3725b0fcca4f645f6430b7a.png" group-title="US",USA Nat Geo East [Unknown Unknown]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175899.ts
+#EXTINF:-1 tvg-id="tvone.us" tvg-name="USA TV One" tvg-logo="http://23.227.147.172:80/images/9e96d3b4a3e15f8d58b9327d0c24df33.png" group-title="US",USA TV One [720p 4412 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175963.ts
+#EXTINF:-1 tvg-id="tvlandeast.us" tvg-name="USA TVLand UHD" tvg-logo="http://149.18.16.10:80/images/5895aaff0a24691e76161e1450318a3b.png" group-title="US",USA TVLand [1080p 4520 kbps]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175964.ts
+#EXTINF:-1 tvg-id="weatherchannel.us" tvg-name="USA The Weather Channel" tvg-logo="http://23.227.147.172:80/images/5ec5bdfa1fcd0ecb8a860c2a865985ac.png" group-title="US",USA The Weather Channel [Unknown Unknown]
+http://link4tv.me:80/CT3MED9902/EXZgCQzmJh/175945.ts
