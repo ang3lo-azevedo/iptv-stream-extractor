@@ -253,12 +253,53 @@ def format_time(seconds):
     return f"{hours}:{minutes:02d}:{secs:02d}"
 
 def extract_country_code(group_title, channel_name):
-    """Fast country extraction with early exit"""
+    """Fast country extraction with priority for specific matches"""
     text = f"{group_title} {channel_name}".upper()
-    for code, keywords in COUNTRY_CODES.items():
+    
+    # Priority order: check for full country names and common patterns first
+    # This prevents false matches like "AR" in "PARAMOUNT" or "FR" in "FREEFORM"
+    priority_checks = [
+        ('US', ['USA', 'UNITED STATES', 'AMERICA']),
+        ('UK', ['UNITED KINGDOM', 'UK', 'GB', 'ENGLAND', 'BRITISH']),
+        ('INT', ['INTERNATIONAL', 'INT']),
+    ]
+    
+    # Check priority patterns first (USA, UK, etc.)
+    for code, keywords in priority_checks:
         for keyword in keywords:
-            if keyword in text:
-                return code
+            # Use word boundary check for short codes
+            if len(keyword) <= 3:
+                # Check if it's a standalone word (not part of another word)
+                if f' {keyword} ' in f' {text} ' or text.startswith(keyword + ' ') or text.endswith(' ' + keyword):
+                    return code
+            else:
+                # For longer keywords, simple substring match is fine
+                if keyword in text:
+                    return code
+    
+    # Then check other countries
+    other_countries = {
+        'AR': ['ARGENTINA', 'AR'],
+        'BR': ['BRAZIL', 'BRASIL', 'BR'],
+        'CA': ['CANADA', 'CA'],
+        'DE': ['GERMANY', 'DEUTSCHLAND', 'DE'],
+        'ES': ['SPAIN', 'ESPAÑA', 'ES'],
+        'FR': ['FRANCE', 'FR'],
+        'IT': ['ITALY', 'ITALIA', 'IT'],
+        'MX': ['MEXICO', 'MX'],
+        'PT': ['PORTUGAL', 'PT'],
+    }
+    
+    for code, keywords in other_countries.items():
+        for keyword in keywords:
+            # Use word boundary check for short codes (2-3 chars)
+            if len(keyword) <= 3:
+                if f' {keyword} ' in f' {text} ' or text.startswith(keyword + ' ') or text.endswith(' ' + keyword):
+                    return code
+            else:
+                if keyword in text:
+                    return code
+    
     return 'Unknown'
 
 def parse_channel_info(extinf_line):
@@ -870,6 +911,8 @@ if __name__ == '__main__':
                         
                         # Wait for all streams from this playlist to be checked
                         stream_count = 0
+                        last_save_time = time.time()  # Track when we last saved
+                        
                         for sf in as_completed(stream_futures.keys()):
                             try:
                                 result = sf.result()
@@ -887,6 +930,18 @@ if __name__ == '__main__':
                                 checking_msg = f"{Colors.CYAN}⚙ Checking streams... {stream_count}/{len(stream_futures)} from playlist {idx}{Colors.RESET}"
                                 update_dual_progress(processed_count, len(playlist_urls), parse_start_time, checking_msg)
                                 last_update_time = current_time
+                            
+                            # Auto-save progress every 30 seconds during stream checking
+                            if current_time - last_save_time >= 30.0:
+                                save_stream_progress(stream_progress)
+                                # Also write incremental M3U if we have working streams
+                                if working_streams:
+                                    try:
+                                        organized_temp = organize_streams_by_country_and_bitrate(working_streams)
+                                        write_m3u_output(organized_temp, final_output_file, None, incremental=True)
+                                    except Exception:
+                                        pass
+                                last_save_time = current_time
                     
                     # Increment processed count after all streams are done
                     processed_count += 1
