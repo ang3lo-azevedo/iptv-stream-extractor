@@ -1,3 +1,4 @@
 middleware.sql
-LOG.txt
 stream_check_progress.json
+__pycache__/
+*.log
