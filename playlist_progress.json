@@ -1,11 +1,11 @@
 {
   "version": "2.0",
-  "last_updated": "2025-11-10 01:56:13",
-  "total_processed": 18,
+  "last_updated": "2025-11-10 02:00:27",
+  "total_processed": 35,
   "playlists": {
     "http://toystory10.com/get.php?username=611918566&password=q69blg51&type=m3u_plus&output=m3u8": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -14,7 +14,7 @@
     },
     "http://fireyx.com/get.php?username=2323526670&password=2230226014&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -23,7 +23,7 @@
     },
     "http://tconect.top/get.php?username=942877330&password=852383243&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -32,16 +32,25 @@
     },
     "http://vraws.com:80/get.php?username=2171889206&password=7111966798&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
       "working_streams": 0,
       "url": "http://vraws.com:80/get.php?username=2171889206&password=7111966798&type=m3u_plus&output=ts"
     },
+    "https://a5xv.in/get.php?username=ita29lau05&password=458327285&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:57:03",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://a5xv.in/get.php?username=ita29lau05&password=458327285&type=m3u_plus&output=ts"
+    },
     "http://ultraplay.click:80/get.php?username=ailton892&password=2037cC&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -50,34 +59,16 @@
     },
     "http://42kpm4.lat/get.php?username=kate_satiko@hotmail.com&password=eu10fiz15&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
       "working_streams": 0,
       "url": "http://42kpm4.lat/get.php?username=kate_satiko@hotmail.com&password=eu10fiz15&type=m3u_plus&output=ts"
     },
-    "http://tbest.live/get.php?username=Shelsen6992&password=11438622413&type=m3u_plus&output=ts": {
-      "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
-      "streams_found": 0,
-      "streams_filtered": 0,
-      "streams_checked": 0,
-      "working_streams": 0,
-      "url": "http://tbest.live/get.php?username=Shelsen6992&password=11438622413&type=m3u_plus&output=ts"
-    },
-    "https://a5xv.in/get.php?username=ita29lau05&password=458327285&type=m3u_plus&output=ts": {
-      "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
-      "streams_found": 0,
-      "streams_filtered": 0,
-      "streams_checked": 0,
-      "working_streams": 0,
-      "url": "https://a5xv.in/get.php?username=ita29lau05&password=458327285&type=m3u_plus&output=ts"
-    },
     "http://brxsos.com/get.php?username=DdRmMK&password=W1pA1U&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -86,61 +77,70 @@
     },
     "http://pioma77.org:80/get.php?username=269704271&password=S608R2985F&type=m3u_plus": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
       "working_streams": 0,
       "url": "http://pioma77.org:80/get.php?username=269704271&password=S608R2985F&type=m3u_plus"
     },
-    "http://cldnew.com/get.php?username=juliano193&password=ju194624924&type=m3u_plus&output=ts": {
-      "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
-      "streams_found": 0,
-      "streams_filtered": 0,
-      "streams_checked": 0,
-      "working_streams": 0,
-      "url": "http://cldnew.com/get.php?username=juliano193&password=ju194624924&type=m3u_plus&output=ts"
-    },
-    "http://cdnconect.fun:80/get.php?username=511424575&password=470627464&type=m3u_plus&output=mpegts": {
-      "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
-      "streams_found": 0,
-      "streams_filtered": 0,
-      "streams_checked": 0,
-      "working_streams": 0,
-      "url": "http://cdnconect.fun:80/get.php?username=511424575&password=470627464&type=m3u_plus&output=mpegts"
-    },
-    "http://p2golld.top/get.php?username=61751733&password=85482793&type=m3u_plus&output=ts": {
-      "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
-      "streams_found": 0,
-      "streams_filtered": 0,
-      "streams_checked": 0,
-      "working_streams": 0,
-      "url": "http://p2golld.top/get.php?username=61751733&password=85482793&type=m3u_plus&output=ts"
-    },
-    "http://sep22x.in/get.php?username=joelmar23&password=7142xd53&type=m3u_plus&output=ts": {
-      "status": "completed",
-      "timestamp": "2025-11-10 01:47:53",
-      "streams_found": 0,
-      "streams_filtered": 0,
-      "streams_checked": 0,
-      "working_streams": 0,
-      "url": "http://sep22x.in/get.php?username=joelmar23&password=7142xd53&type=m3u_plus&output=ts"
-    },
     "https://cdn7.live/get.php?username=85089728&password=123456&type=m3u_plus&output=m3u8": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:54",
+      "timestamp": "2025-11-10 01:57:03",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
       "working_streams": 0,
       "url": "https://cdn7.live/get.php?username=85089728&password=123456&type=m3u_plus&output=m3u8"
     },
+    "http://p2golld.top/get.php?username=61751733&password=85482793&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:57:03",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://p2golld.top/get.php?username=61751733&password=85482793&type=m3u_plus&output=ts"
+    },
+    "http://cldnew.com/get.php?username=juliano193&password=ju194624924&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:57:03",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://cldnew.com/get.php?username=juliano193&password=ju194624924&type=m3u_plus&output=ts"
+    },
+    "http://sep22x.in/get.php?username=joelmar23&password=7142xd53&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:57:04",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://sep22x.in/get.php?username=joelmar23&password=7142xd53&type=m3u_plus&output=ts"
+    },
+    "http://cdnconect.fun:80/get.php?username=511424575&password=470627464&type=m3u_plus&output=mpegts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:57:04",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://cdnconect.fun:80/get.php?username=511424575&password=470627464&type=m3u_plus&output=mpegts"
+    },
+    "http://tbest.live/get.php?username=Shelsen6992&password=11438622413&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:57:04",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://tbest.live/get.php?username=Shelsen6992&password=11438622413&type=m3u_plus&output=ts"
+    },
     "http://ac.cmsjoom.com/get.php?username=EsTnZbcvLv&password=eO3uwoRkAn&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:55",
+      "timestamp": "2025-11-10 01:57:05",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -149,7 +149,7 @@
     },
     "http://poliex.org/get.php?username=Marcio0121&password=Px7326853&type=m3u_plus&output=ts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:55",
+      "timestamp": "2025-11-10 01:57:05",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
@@ -158,12 +158,165 @@
     },
     "http://lft4.biz/get.php?username=720092525&password=983171418&type=m3u_plus&output=mpegts": {
       "status": "completed",
-      "timestamp": "2025-11-10 01:47:55",
+      "timestamp": "2025-11-10 01:57:05",
       "streams_found": 0,
       "streams_filtered": 0,
       "streams_checked": 0,
       "working_streams": 0,
       "url": "http://lft4.biz/get.php?username=720092525&password=983171418&type=m3u_plus&output=mpegts"
+    },
+    "https://ultraplay.click:80/get.php?username=679124195&password=097473826&type=m3u_plus&output=mpegts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://ultraplay.click:80/get.php?username=679124195&password=097473826&type=m3u_plus&output=mpegts"
+    },
+    "http://dnsbxt.com/get.php?username=9jxzqvr2d4&password=gei2hitqec&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://dnsbxt.com/get.php?username=9jxzqvr2d4&password=gei2hitqec&type=m3u_plus&output=ts"
+    },
+    "http://w3xa2.xyz/get.php?username=hellena.rodrigues26@gmail.com&password=eu10fiz15&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://w3xa2.xyz/get.php?username=hellena.rodrigues26@gmail.com&password=eu10fiz15&type=m3u_plus&output=ts"
+    },
+    "http://cdn7.live/get.php?username=4266988&password=5753797&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://cdn7.live/get.php?username=4266988&password=5753797&type=m3u_plus&output=ts"
+    },
+    "http://anytvpro.com:8080/get.php?username=DC:03:98:45:F1:0C&password=184105939866&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://anytvpro.com:8080/get.php?username=DC:03:98:45:F1:0C&password=184105939866&type=m3u_plus&output=ts"
+    },
+    "http://adtv.one:80/get.php?username=605747855917156&password=1593574628&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://adtv.one:80/get.php?username=605747855917156&password=1593574628&type=m3u_plus&output=ts"
+    },
+    "http://egmr.ca/get.php?username=8602409&password=6912901&type=m3u_plus&output=mpegts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://egmr.ca/get.php?username=8602409&password=6912901&type=m3u_plus&output=mpegts"
+    },
+    "http://multixk.net/get.php?username=tAPv4v&password=GKGWVy&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://multixk.net/get.php?username=tAPv4v&password=GKGWVy&type=m3u_plus&output=ts"
+    },
+    "https://ozctnip.com:8080/get.php?username=ozctn1451&password=tDc5gs6aS2&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://ozctnip.com:8080/get.php?username=ozctn1451&password=tDc5gs6aS2&type=m3u_plus&output=ts"
+    },
+    "http://ks7.shop/get.php?username=3632054160viniciovieira&password=3279872034&type=m3u_plus&output=mpegts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://ks7.shop/get.php?username=3632054160viniciovieira&password=3279872034&type=m3u_plus&output=mpegts"
+    },
+    "http://nixonline.cfd:80/get.php?username=788343812&password=021512647&type=m3u_plus&output=mpegts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://nixonline.cfd:80/get.php?username=788343812&password=021512647&type=m3u_plus&output=mpegts"
+    },
+    "https://csmstv.com:8080/get.php?username=f8ffba8880a371de&password=a718577daacd8c0f&type=m3u_plus&output=m3u8": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://csmstv.com:8080/get.php?username=f8ffba8880a371de&password=a718577daacd8c0f&type=m3u_plus&output=m3u8"
+    },
+    "https://tbest.live/get.php?username=Brenolopes&password=34394061973&type=m3u_plus&output=m3u8": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://tbest.live/get.php?username=Brenolopes&password=34394061973&type=m3u_plus&output=m3u8"
+    },
+    "http://cdn76.xyz:80/get.php?username=ProfessorRonaldo&password=987654321&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://cdn76.xyz:80/get.php?username=ProfessorRonaldo&password=987654321&type=m3u_plus&output=ts"
+    },
+    "https://sep22x.in/get.php?username=zWtAqE&password=4Nkpdu&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:44",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://sep22x.in/get.php?username=zWtAqE&password=4Nkpdu&type=m3u_plus&output=ts"
+    },
+    "https://ubsx.net/get.php?username=11961158911&password=4325679856&type=m3u_plus&output=ts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:46",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "https://ubsx.net/get.php?username=11961158911&password=4325679856&type=m3u_plus&output=ts"
+    },
+    "http://tv.zapping.life:8080/get.php?username=7853KevinEnamorado9876&password=atkgBYCvQ6&type=m3u_plus&output=mpegts": {
+      "status": "completed",
+      "timestamp": "2025-11-10 01:59:46",
+      "streams_found": 0,
+      "streams_filtered": 0,
+      "streams_checked": 0,
+      "working_streams": 0,
+      "url": "http://tv.zapping.life:8080/get.php?username=7853KevinEnamorado9876&password=atkgBYCvQ6&type=m3u_plus&output=mpegts"
     }
   }
 }

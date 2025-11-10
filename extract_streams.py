@@ -208,6 +208,10 @@ adapter = HTTPAdapter(max_retries=retry_strategy, pool_connections=100, pool_max
 session.mount("http://", adapter)
 session.mount("https://", adapter)
 
+# Cache for expiry dates per server/credentials to avoid repeated API calls
+expiry_cache = {}
+expiry_cache_lock = threading.Lock()
+
 # Global statistics
 global_stats = {
     # M3U file stats
@@ -582,7 +586,7 @@ def extract_bitrate_value(bitrate_str):
     return int(match.group(1)) if match else 0
 
 def extract_expiry_from_url(url):
-    """Extract expiry date from stream URL by querying the IPTV panel API"""
+    """Extract expiry date from stream URL by querying the IPTV panel API (cached)"""
     try:
         # First check for expiry in URL parameters (some services use this)
         patterns = [
@@ -611,10 +615,18 @@ def extract_expiry_from_url(url):
             username = panel_match.group(2)
             password = panel_match.group(3)
             
-            # Query the player API endpoint
+            # Create cache key
+            cache_key = f"{server}|{username}|{password}"
+            
+            # Check cache first
+            with expiry_cache_lock:
+                if cache_key in expiry_cache:
+                    return expiry_cache[cache_key]
+            
+            # Query the player API endpoint with very short timeout
             api_url = f"{server}/player_api.php?username={username}&password={password}"
             try:
-                response = session.get(api_url, timeout=3)
+                response = session.get(api_url, timeout=1.5)  # Fast timeout
                 if response.status_code == 200:
                     data = response.json()
                     
@@ -626,15 +638,29 @@ def extract_expiry_from_url(url):
                         if 'exp_date' in user_info and user_info['exp_date']:
                             exp_timestamp = int(user_info['exp_date'])
                             if exp_timestamp > 0 and 946684800 <= exp_timestamp <= 4102444800:
-                                return datetime.fromtimestamp(exp_timestamp)
+                                expiry_dt = datetime.fromtimestamp(exp_timestamp)
+                                # Cache the result
+                                with expiry_cache_lock:
+                                    expiry_cache[cache_key] = expiry_dt
+                                return expiry_dt
                         
                         # Some panels use 'exp' instead
                         if 'exp' in user_info and user_info['exp']:
                             exp_timestamp = int(user_info['exp'])
                             if exp_timestamp > 0 and 946684800 <= exp_timestamp <= 4102444800:
-                                return datetime.fromtimestamp(exp_timestamp)
+                                expiry_dt = datetime.fromtimestamp(exp_timestamp)
+                                # Cache the result
+                                with expiry_cache_lock:
+                                    expiry_cache[cache_key] = expiry_dt
+                                return expiry_dt
+                    
+                    # Cache null result to avoid repeated failed queries
+                    with expiry_cache_lock:
+                        expiry_cache[cache_key] = None
             except Exception:
-                pass  # API query failed, continue
+                # Cache null result to avoid repeated failed queries
+                with expiry_cache_lock:
+                    expiry_cache[cache_key] = None
         
         return None
     except Exception:
@@ -788,6 +814,10 @@ def download_and_parse_playlist(url, timeout=2, progress_callback=None):
         i = 0
         line_count = len(lines)
         
+        # Extract expiry once for the entire playlist (not per stream)
+        playlist_expiry = None
+        first_url_checked = False
+        
         while i < line_count:
             line = lines[i].strip()
             # Fast check: does line start with #EXTINF?
@@ -798,10 +828,16 @@ def download_and_parse_playlist(url, timeout=2, progress_callback=None):
                     stream_url = lines[i].strip()
                     if stream_url and not stream_url.startswith('#'):
                         info = parse_channel_info(line)
-                        # Extract expiry date from URL
-                        expiry = extract_expiry_from_url(stream_url)
-                        if expiry:
-                            info['expiry_date'] = expiry
+                        
+                        # Only extract expiry from the first stream URL
+                        if not first_url_checked:
+                            playlist_expiry = extract_expiry_from_url(stream_url)
+                            first_url_checked = True
+                        
+                        # Apply playlist expiry to all streams
+                        if playlist_expiry:
+                            info['expiry_date'] = playlist_expiry
+                        
                         streams.append({'extinf': line, 'url': stream_url, 'info': info})
                 i += 1
             else:
