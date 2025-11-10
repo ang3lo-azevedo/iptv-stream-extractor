@@ -15,6 +15,7 @@ import signal
 import logging
 import warnings
 import argparse
+import shutil  # For getting terminal size
 
 # Suppress timeout error messages from IPTV_checker and urllib3
 logging.getLogger().setLevel(logging.CRITICAL)
@@ -48,24 +49,47 @@ class Colors:
     WHITE = '\033[97m'
     GRAY = '\033[90m'
 
+# Common message prefixes (for consistency and easy refactoring)
+MSG_PREFIX_SUCCESS = f"{Colors.GREEN}[+]{Colors.RESET}"
+MSG_PREFIX_ERROR = f"{Colors.RED}[-]{Colors.RESET}"
+MSG_PREFIX_WARNING = f"{Colors.YELLOW}[!]{Colors.RESET}"
+MSG_PREFIX_INFO = f"{Colors.CYAN}[>]{Colors.RESET}"
+MSG_PREFIX_M3U = f"{Colors.GRAY}[M3U]{Colors.RESET}"
+MSG_PREFIX_CHK = f"{Colors.GRAY}[CHK]{Colors.RESET}"
+
+# Status markers for display
+STATUS_WORKING = f"{Colors.GREEN}[+] Working:{Colors.RESET}"
+STATUS_FAILED = f"{Colors.RED}[-] Failed:{Colors.RESET}"
+STATUS_FILTERED = f"{Colors.YELLOW}[x] Filtered:{Colors.RESET}"
+STATUS_VALID = f"{Colors.GREEN}[+] Valid:{Colors.RESET}"
+STATUS_INVALID = f"{Colors.RED}[-] Invalid:{Colors.RESET}"
+
 # Logger class to write to both console and file
 class Logger:
     def __init__(self, log_file):
         self.log_file = log_file
         self.log_handle = None
+        self.console_enabled = True  # Can be disabled during progress display
         
     def open(self):
-        """Open the log file for writing"""
+        """Open the log file for appending"""
         try:
-            self.log_handle = open(self.log_file, 'w', encoding='utf-8')
+            self.log_handle = open(self.log_file, 'a', encoding='utf-8')
             self.log(f"Log started at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         except Exception as e:
-            print(f"{Colors.RED}✗ Could not open log file: {e}{Colors.RESET}")
+            print(f"{Colors.RED}[-] Could not open log file: {e}{Colors.RESET}")
     
-    def log(self, message, strip_colors=True):
-        """Write message to both console and log file"""
-        # Print to console with colors
-        print(message, end='')
+    def log(self, message, strip_colors=True, file_only=False):
+        """Write message to both console and log file
+        
+        Args:
+            message: The message to log
+            strip_colors: Whether to strip color codes from file output
+            file_only: If True, only write to file (not console)
+        """
+        # Print to console with colors (unless file_only or console disabled)
+        if not file_only and self.console_enabled:
+            print(message, end='')
         
         # Write to file without colors
         if self.log_handle:
@@ -204,6 +228,14 @@ global_stats = {
     'num_lines': 10
 }
 
+# Cache terminal width at startup to prevent display jumping
+try:
+    TERMINAL_WIDTH = shutil.get_terminal_size().columns
+except:
+    TERMINAL_WIDTH = 80
+# Ensure width is between 78 and 120 (78 is minimum for content to fit)
+TERMINAL_WIDTH = max(78, min(120, TERMINAL_WIDTH))
+
 # For graceful exit
 stream_progress_data = {}
 working_streams_data = []
@@ -243,7 +275,7 @@ def build_filter_patterns():
         # Series/Shows
         re.compile(r'\b(series|tv\s*show|season|episode|episodio|temporada|capitulo)\b', re.IGNORECASE),
         # 24/7 channels
-        re.compile(r'\b(24/?7|24h|24\s*h|24\s*hour|non-stop|nonstop)\b', re.IGNORECASE),
+        re.compile(r'\b(24/?7|24h|24hs|24\s*h|24\s*hs|24\s*hour|non-stop|nonstop)\b', re.IGNORECASE),
         # VOD/On-demand
         re.compile(r'\b(vod|on\s*demand|catch\s*up|replay)\b', re.IGNORECASE),
     ]
@@ -268,9 +300,13 @@ def should_filter_stream(channel_name, group_title):
             return True
     return False
 
-def update_dual_progress(processed_playlists, total_playlists, start_time, current_status=""):
+def update_dual_progress(processed_playlists, total_playlists, start_time, current_status="", current_m3u_url=""):
     """Display enhanced progress with two bars - one for playlists, one for streams"""
     elapsed = time.time() - start_time
+    
+    # Use cached terminal width to prevent display jumping
+    term_width = TERMINAL_WIDTH
+    bar_length = max(20, min(40, term_width - 40))  # Dynamic bar length
     
     with stats_lock:
         valid_m3u = global_stats['valid_m3u']
@@ -280,10 +316,11 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
         working = global_stats['working']
         failed = global_stats['failed']
         filtered = global_stats['filtered']
+        current_stream = global_stats.get('current_stream', '')
+        current_m3u = global_stats.get('current_m3u', current_m3u_url)
     
     # Playlist progress bar
     playlist_percent = (processed_playlists / total_playlists * 100) if total_playlists > 0 else 0
-    bar_length = 40
     filled = int(bar_length * processed_playlists / total_playlists) if total_playlists > 0 else 0
     playlist_bar = '█' * filled + '░' * (bar_length - filled)
     
@@ -305,28 +342,70 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
     remaining_streams = total_streams - checked_streams
     stream_eta = remaining_streams / stream_rate if stream_rate > 0 and total_streams > 0 else 0
     
-    # Save cursor position, move up, clear from cursor down
-    sys.stdout.write('\033[s')      # Save cursor position
-    sys.stdout.write('\033[9A')     # Move up 9 lines
-    sys.stdout.write('\033[J')      # Clear from cursor to end of screen
+    # Always print exactly 11 lines (8 for bars + 3 for M3U/CHK/status)
+    # Move cursor up 11 lines
+    sys.stdout.write('\033[11A')  # Move up 11 lines
     
-    # Print playlist progress
-    print(f"{Colors.BOLD}{Colors.BLUE}┌─ Playlists ─────────────────────────────────────────────────────────────┐{Colors.RESET}")
-    print(f"{Colors.BLUE}│{Colors.RESET} {Colors.CYAN}{playlist_bar}{Colors.RESET} {Colors.WHITE}{playlist_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({processed_playlists:,}/{total_playlists:,}){Colors.RESET}")
-    print(f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}✓ Valid: {valid_m3u:>6,}{Colors.RESET}  {Colors.RED}✗ Invalid: {invalid_m3u:>6,}{Colors.RESET}  {Colors.MAGENTA}⚡ {playlist_rate:>5.1f} pl/s{Colors.RESET}  {Colors.CYAN}⏱ {format_time(playlist_eta)}{Colors.RESET}")
-    print(f"{Colors.BOLD}{Colors.BLUE}├─ Streams ───────────────────────────────────────────────────────────────┤{Colors.RESET}")
-    print(f"{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}{stream_bar}{Colors.RESET} {Colors.WHITE}{stream_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({checked_streams:,}/{total_streams:,}){Colors.RESET}")
-    print(f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}✓ Working: {working:>6,}{Colors.RESET}  {Colors.RED}✗ Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}⊘ Filtered: {filtered:>6,}{Colors.RESET}")
-    print(f"{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}⚡ {stream_rate:>5.1f} st/s{Colors.RESET}  {Colors.CYAN}⏱ {format_time(stream_eta)}{Colors.RESET}  {Colors.WHITE}Time: {format_time(elapsed)}{Colors.RESET}")
-    print(f"{Colors.BOLD}{Colors.BLUE}└──────────────────────────────────────────────────────────────────────────┘{Colors.RESET}")
+    # Create border lines with exact character counts
+    # Format: ┌─ Label ────...────┐  (total width = term_width)
+    # Components: ┌(1) + label + fill + ┐(1) = term_width
     
-    # Print current status line
-    if current_status:
-        print(current_status[:76])  # Limit to terminal width
+    top_label = "─ Playlists "
+    mid_label = "─ Streams "
+    
+    # Calculate fill needed: term_width - 2 (corners) - label_length
+    top_fill_len = term_width - 2 - len(top_label)
+    mid_fill_len = term_width - 2 - len(mid_label)
+    bot_fill_len = term_width - 2  # Just corners
+    
+    # Ensure fills are non-negative
+    top_fill = "─" * max(0, top_fill_len)
+    mid_fill = "─" * max(0, mid_fill_len)
+    bot_fill = "─" * max(0, bot_fill_len)
+    
+    top_border = f"{Colors.BOLD}{Colors.BLUE}┌{top_label}{top_fill}┐{Colors.RESET}"
+    mid_border = f"{Colors.BOLD}{Colors.BLUE}├{mid_label}{mid_fill}┤{Colors.RESET}"
+    bot_border = f"{Colors.BOLD}{Colors.BLUE}└{bot_fill}┘{Colors.RESET}"
+    
+    # Print playlist progress (clear each line to handle terminal resize)
+    print(f"\033[2K\033[0G{top_border}")
+    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.CYAN}{playlist_bar}{Colors.RESET} {Colors.WHITE}{playlist_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({processed_playlists:,}/{total_playlists:,}){Colors.RESET}")
+    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Valid: {valid_m3u:>6,}{Colors.RESET}  {Colors.RED}[-] Invalid: {invalid_m3u:>6,}{Colors.RESET}  {Colors.MAGENTA}Rate: {playlist_rate:>5.1f} pl/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(playlist_eta)}{Colors.RESET}")
+    print(f"\033[2K\033[0G{mid_border}")
+    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}{stream_bar}{Colors.RESET} {Colors.WHITE}{stream_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({checked_streams:,}/{total_streams:,}){Colors.RESET}")
+    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Working: {working:>6,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:>6,}{Colors.RESET}")
+    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}Rate: {stream_rate:>5.1f} st/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(stream_eta)}{Colors.RESET}  {Colors.WHITE}Time: {format_time(elapsed)}{Colors.RESET}")
+    print(f"\033[2K\033[0G{bot_border}")
+    
+    # Always print 3 more lines (M3U, CHK, status) - use empty lines if not available
+    # Adapt URL display to terminal width
+    max_url_len = term_width - 8  # Account for "[M3U] " prefix
+    
+    if current_m3u:
+        # Extract domain/filename from URL for display
+        m3u_display = current_m3u
+        if len(m3u_display) > max_url_len:
+            # Show beginning and end of URL
+            half = max_url_len // 2 - 2
+            m3u_display = current_m3u[:half] + "..." + current_m3u[-half:]
+        print(f"\033[2K\033[0G{Colors.GRAY}[M3U] {m3u_display}{Colors.RESET}")
     else:
-        print("")  # Empty line for status
+        print("\033[2K\033[0G")  # Clear line and print empty
     
-    sys.stdout.write('\033[u')      # Restore cursor position
+    if current_stream:
+        stream_display = current_stream
+        if len(stream_display) > max_url_len:
+            half = max_url_len // 2 - 2
+            stream_display = current_stream[:half] + "..." + current_stream[-half:]
+        print(f"\033[2K\033[0G{Colors.GRAY}[CHK] {stream_display}{Colors.RESET}")
+    else:
+        print("\033[2K\033[0G")  # Clear line and print empty
+    
+    if current_status:
+        print(f"\033[2K\033[0G{current_status[:term_width-2]}")  # Limit to terminal width
+    else:
+        print("\033[2K\033[0G")  # Clear line and print empty
+    
     sys.stdout.flush()
 
 def format_time(seconds):
@@ -387,6 +466,42 @@ def extract_country_code(group_title, channel_name):
     
     return 'Unknown'
 
+def extract_country_from_tvg_id(tvg_id):
+    """Extract country code from tvg_id like 'CNNBrasil.br' -> 'BR'"""
+    if not tvg_id:
+        return None
+    
+    tvg_id_lower = tvg_id.lower()
+    
+    # Check for country code after a dot (e.g., "channel.br", "channel.us")
+    if '.' in tvg_id:
+        parts = tvg_id.split('.')
+        potential_country = parts[-1].upper()
+        
+        # Map common TLDs to country codes
+        country_map = {
+            'BR': 'BR', 'US': 'US', 'UK': 'UK', 'CA': 'CA',
+            'AR': 'AR', 'MX': 'MX', 'ES': 'ES', 'FR': 'FR',
+            'DE': 'DE', 'IT': 'IT', 'PT': 'PT', 'CL': 'CL',
+            'CO': 'CO', 'PE': 'PE', 'VE': 'VE', 'EC': 'EC',
+        }
+        
+        if potential_country in country_map:
+            return country_map[potential_country]
+    
+    # Check for country code prefix pattern (e.g., "br#channel-name", "br-channel")
+    country_prefixes = {
+        'br': 'BR', 'us': 'US', 'uk': 'UK', 'ca': 'CA',
+        'ar': 'AR', 'mx': 'MX', 'es': 'ES', 'fr': 'FR',
+        'de': 'DE', 'it': 'IT', 'pt': 'PT', 'cl': 'CL',
+    }
+    
+    for prefix, country_code in country_prefixes.items():
+        if tvg_id_lower.startswith(f'{prefix}#') or tvg_id_lower.startswith(f'{prefix}-') or tvg_id_lower.startswith(f'{prefix}_'):
+            return country_code
+    
+    return None
+
 def parse_channel_info(extinf_line):
     info = {
         'tvg_id': '',
@@ -437,7 +552,7 @@ def update_playlist_progress(current, total, start_time, streams_found):
     sys.stdout.write('\033[2K\r')  # Clear current line
     print(f"{Colors.BOLD}{Colors.BLUE}Downloading M3U Files:{Colors.RESET}")
     print(f"{Colors.CYAN}{bar}{Colors.RESET} {Colors.WHITE}{percent:.1f}%{Colors.RESET} ({current}/{total})")
-    print(f"{Colors.GREEN}✓ Valid: {valid_m3u}{Colors.RESET}  {Colors.RED}✗ Invalid: {invalid_m3u}{Colors.RESET}  {Colors.BLUE}Streams Found:{Colors.RESET} {Colors.GREEN}{streams_found:,}{Colors.RESET}")
+    print(f"{Colors.GREEN}[+] Valid: {valid_m3u}{Colors.RESET}  {Colors.RED}[-] Invalid: {invalid_m3u}{Colors.RESET}  {Colors.BLUE}Streams Found:{Colors.RESET} {Colors.GREEN}{streams_found:,}{Colors.RESET}")
     print(f"{Colors.BLUE}Current M3U:{Colors.RESET} {Colors.GRAY}{current_m3u[:60]}{Colors.RESET}")
     print(f"{Colors.BLUE}ETA:{Colors.RESET} {Colors.CYAN}{format_time(eta)}{Colors.RESET}")
     # Move cursor up 5 lines for next update
@@ -472,7 +587,7 @@ def update_stream_progress_display():
     status_color = Colors.GREEN if last_status == 'working' else Colors.RED if last_status == 'failed' else Colors.YELLOW
     print(f"{Colors.BOLD}{Colors.BLUE}Checking Streams:{Colors.RESET}")
     print(f"{Colors.CYAN}{bar}{Colors.RESET} {Colors.WHITE}{percent:.1f}%{Colors.RESET} ({checked:,}/{total:,})")
-    print(f"{Colors.GREEN}✓ Working: {working:,}{Colors.RESET}  {Colors.RED}✗ Failed: {failed:,}{Colors.RESET}  {Colors.YELLOW}⊘ Filtered: {filtered:,}{Colors.RESET}")
+    print(f"{Colors.GREEN}[+] Working: {working:,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:,}{Colors.RESET}")
     print(f"{Colors.BLUE}Speed:{Colors.RESET} {Colors.MAGENTA}{rate:.1f} streams/s{Colors.RESET}  {Colors.BLUE}ETA:{Colors.RESET} {Colors.CYAN}{format_time(eta)}{Colors.RESET}")
     print(f"{Colors.BLUE}Time:{Colors.RESET} {Colors.CYAN}{format_time(elapsed)}{Colors.RESET}")
     print(f"{Colors.BLUE}Current:{Colors.RESET} {status_color}{current_stream[:65]}{Colors.RESET}")
@@ -521,8 +636,8 @@ def extract_urls_from_sql():
             seen.add(u)
             uniq.append(u)
     print(f"\n{Colors.BOLD}{Colors.CYAN}=== URL Extraction Statistics ==={Colors.RESET}")
-    print(f"{Colors.GREEN}✓ Total URLs found: {stats['total_matches']}{Colors.RESET}")
-    print(f"{Colors.GREEN}✓ Unique URLs: {len(uniq)}{Colors.RESET}")
+    print(f"{Colors.GREEN}[+] Total URLs found: {stats['total_matches']}{Colors.RESET}")
+    print(f"{Colors.GREEN}[+] Unique URLs: {len(uniq)}{Colors.RESET}")
     print(f"\n{Colors.BOLD}Top 10 playlist types:{Colors.RESET}")
     sorted_types = sorted(stats['by_type'].items(), key=lambda x: x[1], reverse=True)[:10]
     for ptype, count in sorted_types:
@@ -656,7 +771,13 @@ def check_stream_worker(stream, stream_progress):
     if status == 'Alive':
         codec_name, video_bitrate, resolution, fps = get_detailed_stream_info(stream_url)
         audio_info = get_audio_bitrate(stream_url)
-        country = extract_country_code(group_title, channel_name)
+        
+        # Try to extract country from tvg_id first, then fallback to group_title/channel_name
+        tvg_id = stream['info'].get('tvg_id', '')
+        country = extract_country_from_tvg_id(tvg_id)
+        if not country:
+            country = extract_country_code(group_title, channel_name)
+        
         result = {
             'status': 'working',
             'extinf': stream['extinf'],
@@ -667,14 +788,23 @@ def check_stream_worker(stream, stream_progress):
             'resolution': resolution,
             'fps': fps,
             'audio_info': audio_info,
-            'country': country
+            'country': country,
+            'channel_name': channel_name,
+            'group_title': group_title,
+            'checked_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         }
         with stats_lock:
             global_stats['checked'] += 1
             global_stats['working'] += 1
             global_stats['last_status'] = 'working'
     else:
-        result = {'status': 'failed', 'reason': 'Stream not working'}
+        result = {
+            'status': 'failed', 
+            'reason': 'Stream not working',
+            'channel_name': channel_name,
+            'url': stream_url,
+            'checked_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        }
         with stats_lock:
             global_stats['checked'] += 1
             global_stats['failed'] += 1
@@ -745,10 +875,10 @@ def write_m3u_output(organized_streams, output_file, expiry_date=None, increment
                     f.write(extinf)
                     f.write(stream['url'] + "\n")
         if not incremental:
-            print(f"\n{Colors.GREEN}✓ Output written to: {output_file}{Colors.RESET}")
+            print(f"\n{Colors.GREEN}[+] Output written to: {output_file}{Colors.RESET}")
     except Exception as e:
         if not incremental:
-            print(f"\n{Colors.RED}✗ Error writing output: {e}{Colors.RESET}")
+            print(f"\n{Colors.RED}[-] Error writing output: {e}{Colors.RESET}")
 
 def save_stream_progress(data):
     with lock:
@@ -758,7 +888,7 @@ def save_stream_progress(data):
                 json.dump(data, f, indent=2)
             os.replace(temp_file, stream_progress_file)
         except Exception as e:
-            print(f"\n{Colors.RED}✗ Error saving stream progress: {e}{Colors.RESET}")
+            print(f"\n{Colors.RED}[-] Error saving stream progress: {e}{Colors.RESET}")
             if os.path.exists(temp_file):
                 os.remove(temp_file)
 
@@ -769,35 +899,44 @@ def load_stream_progress():
         with open(stream_progress_file, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        print(f"{Colors.YELLOW}⚠ Could not load stream progress: {e}{Colors.RESET}")
+        print(f"{Colors.YELLOW}[!] Could not load stream progress: {e}{Colors.RESET}")
         return {}
 
 def load_playlist_progress():
     """Load the list of already processed playlist URLs"""
     if not os.path.exists(playlist_progress_file) or REPROCESS_PLAYLISTS:
-        return set()
+        return {}
     try:
         with open(playlist_progress_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            return set(data.get('processed_playlists', []))
+            # Support both old format (list) and new format (dict)
+            if 'playlists' in data:
+                return data['playlists']
+            elif 'processed_playlists' in data:
+                # Old format - convert to new format
+                return {url: {'status': 'processed', 'timestamp': data.get('last_updated', '')} 
+                        for url in data['processed_playlists']}
+            return {}
     except Exception as e:
-        print(f"{Colors.YELLOW}⚠ Could not load playlist progress: {e}{Colors.RESET}")
-        return set()
+        print(f"{Colors.YELLOW}[!] Could not load playlist progress: {e}{Colors.RESET}")
+        return {}
 
-def save_playlist_progress(processed_playlists):
-    """Save the list of processed playlist URLs"""
+def save_playlist_progress(processed_playlists_info):
+    """Save detailed playlist progress information"""
     try:
         with open(playlist_progress_file, 'w', encoding='utf-8') as f:
             json.dump({
-                'processed_playlists': list(processed_playlists),
-                'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                'version': '2.0',
+                'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                'total_processed': len(processed_playlists_info),
+                'playlists': processed_playlists_info
             }, f, indent=2)
     except Exception as e:
-        print(f"\n{Colors.RED}✗ Error saving playlist progress: {e}{Colors.RESET}")
+        print(f"\n{Colors.RED}[-] Error saving playlist progress: {e}{Colors.RESET}")
 
 def graceful_exit(signum=None, frame=None):
     """Handle graceful exit - save progress and write output"""
-    print(f"\n\n{Colors.YELLOW}⚠ Interrupted! Saving progress...{Colors.RESET}")
+    print(f"\n\n{Colors.YELLOW}[!] Interrupted! Saving progress...{Colors.RESET}")
     
     # Save stream progress
     global stream_progress_data, working_streams_data, processed_playlists_data
@@ -808,9 +947,9 @@ def graceful_exit(signum=None, frame=None):
             with open(temp_file, 'w', encoding='utf-8') as f:
                 json.dump(stream_progress_data, f, indent=2)
             os.replace(temp_file, stream_progress_file)
-            print(f"{Colors.GREEN}✓ Stream progress saved ({len(stream_progress_data):,} streams){Colors.RESET}")
+            print(f"{Colors.GREEN}[+] Stream progress saved ({len(stream_progress_data):,} streams){Colors.RESET}")
         except Exception as e:
-            print(f"{Colors.RED}✗ Error saving: {e}{Colors.RESET}")
+            print(f"{Colors.RED}[-] Error saving: {e}{Colors.RESET}")
             if os.path.exists(temp_file):
                 try:
                     os.remove(temp_file)
@@ -821,9 +960,9 @@ def graceful_exit(signum=None, frame=None):
     if processed_playlists_data:
         try:
             save_playlist_progress(processed_playlists_data)
-            print(f"{Colors.GREEN}✓ Playlist progress saved ({len(processed_playlists_data):,} playlists){Colors.RESET}")
+            print(f"{Colors.GREEN}[+] Playlist progress saved ({len(processed_playlists_data):,} playlists){Colors.RESET}")
         except Exception as e:
-            print(f"{Colors.RED}✗ Error saving playlist progress: {e}{Colors.RESET}")
+            print(f"{Colors.RED}[-] Error saving playlist progress: {e}{Colors.RESET}")
     
     # Write partial output if we have working streams
     if working_streams_data:
@@ -831,9 +970,9 @@ def graceful_exit(signum=None, frame=None):
         try:
             organized = organize_streams_by_country_and_bitrate(working_streams_data)
             write_m3u_output(organized, final_output_file, None)
-            print(f"{Colors.GREEN}✓ Partial results saved ({len(working_streams_data)} working streams){Colors.RESET}")
+            print(f"{Colors.GREEN}[+] Partial results saved ({len(working_streams_data)} working streams){Colors.RESET}")
         except Exception as e:
-            print(f"{Colors.RED}✗ Error writing output: {e}{Colors.RESET}")
+            print(f"{Colors.RED}[-] Error writing output: {e}{Colors.RESET}")
     
     print(f"{Colors.YELLOW}→ Exiting now{Colors.RESET}\n")
     os._exit(0)  # Force exit immediately without waiting for threads
@@ -864,7 +1003,7 @@ if __name__ == '__main__':
         for progress_file in [stream_progress_file, playlist_progress_file]:
             if os.path.exists(progress_file):
                 os.remove(progress_file)
-                print(f"{Colors.YELLOW}✓ Cleared {progress_file}{Colors.RESET}")
+                print(f"{Colors.YELLOW}[+] Cleared {progress_file}{Colors.RESET}")
     
     # Register signal handlers for graceful exit
     signal.signal(signal.SIGINT, graceful_exit)
@@ -898,19 +1037,19 @@ if __name__ == '__main__':
         logger.log(f"  {Colors.CYAN}Reprocess Streams:{Colors.RESET} {'Yes' if REPROCESS_STREAMS else 'No'}\n\n")
     
     if not IPTV_CHECKER_AVAILABLE:
-        logger.log(f"{Colors.RED}✗ IPTV_checker.py not available. Cannot check streams.{Colors.RESET}\n")
+        logger.log(f"{Colors.RED}[-] IPTV_checker.py not available. Cannot check streams.{Colors.RESET}\n")
         logger.close()
         sys.exit(1)
     if not os.path.exists(input_file):
-        logger.log(f"{Colors.RED}✗ SQL database file not found: {input_file}{Colors.RESET}\n")
+        logger.log(f"{Colors.RED}[-] SQL database file not found: {input_file}{Colors.RESET}\n")
         logger.close()
         sys.exit(1)
     playlist_urls = extract_urls_from_sql()
     if not playlist_urls:
-        logger.log(f"{Colors.RED}✗ No M3U URLs found in database{Colors.RESET}\n")
+        logger.log(f"{Colors.RED}[-] No M3U URLs found in database{Colors.RESET}\n")
         logger.close()
         sys.exit(1)
-    logger.log(f"{Colors.GREEN}✓ Found {len(playlist_urls)} unique M3U URLs{Colors.RESET}\n\n")
+    logger.log(f"{Colors.GREEN}[+] Found {len(playlist_urls)} unique M3U URLs{Colors.RESET}\n\n")
     
     # Load stream progress
     stream_progress = load_stream_progress()
@@ -933,13 +1072,13 @@ if __name__ == '__main__':
         logger.log(f"{Colors.GREEN}  Remaining to process: {len(playlist_urls):,} playlists{Colors.RESET}\n\n")
     elif REPROCESS_PLAYLISTS:
         logger.log(f"{Colors.YELLOW}  REPROCESS_PLAYLISTS=True: Re-checking all playlists{Colors.RESET}\n\n")
-        processed_playlists = set()  # Clear the set to track fresh
+        processed_playlists = {}  # Clear the dict to track fresh
         processed_playlists_data = processed_playlists
     else:
         logger.log(f"{Colors.GREEN}  All {len(playlist_urls):,} playlists need processing{Colors.RESET}\n\n")
     
     if not playlist_urls:
-        logger.log(f"{Colors.GREEN}✓ All playlists already processed!{Colors.RESET}\n")
+        logger.log(f"{Colors.GREEN}[+] All playlists already processed!{Colors.RESET}\n")
         logger.log(f"{Colors.CYAN}  Set REPROCESS_PLAYLISTS=True to re-check them{Colors.RESET}\n\n")
         logger.close()
         sys.exit(0)
@@ -947,28 +1086,60 @@ if __name__ == '__main__':
     # Save initial progress state
     logger.log(f"{Colors.BOLD}{Colors.BLUE}→ Saving initial progress state...{Colors.RESET}\n")
     save_stream_progress(stream_progress)
-    logger.log(f"{Colors.GREEN}✓ Progress saved{Colors.RESET}\n\n")
+    logger.log(f"{Colors.GREEN}[+] Progress saved{Colors.RESET}\n\n")
     
     # Initialize stats
     with stats_lock:
         global_stats['start_time'] = time.time()
         global_stats['total_m3u'] = len(playlist_urls)
     
-    logger.log(f"{Colors.BOLD}{Colors.BLUE}→ Downloading playlists and checking streams...{Colors.RESET}\n\n")
+    logger.log(f"{Colors.BOLD}{Colors.BLUE}→ Starting playlist extraction...{Colors.RESET}\n")
+    logger.log(f"  Playlists to process: {len(playlist_urls):,}\n")
+    logger.log(f"  Playlist workers: {MAX_PLAYLIST_WORKERS}\n")
+    logger.log(f"  Stream workers: {MAX_STREAM_WORKERS}\n")
+    logger.log(f"  Stream timeout: {STREAM_TIMEOUT}s\n")
+    logger.log(f"  Filters enabled: {ENABLE_FILTERS}\n\n")
     
     parse_start_time = time.time()
+    
+    # Rebuild working_streams from previously checked streams
     working_streams = []
+    if stream_progress:
+        logger.log(f"{Colors.CYAN}→ Rebuilding working streams from progress...{Colors.RESET}\n")
+        updated_count = 0
+        for stream_key, stream_data in stream_progress.items():
+            if isinstance(stream_data, dict) and stream_data.get('status') == 'working':
+                # Update country code if it was incorrectly detected before
+                tvg_id = stream_data.get('info', {}).get('tvg_id', '')
+                if tvg_id:
+                    new_country = extract_country_from_tvg_id(tvg_id)
+                    if new_country and new_country != stream_data.get('country'):
+                        stream_data['country'] = new_country
+                        stream_progress[stream_key] = stream_data  # Update in progress dict
+                        updated_count += 1
+                
+                working_streams.append(stream_data)
+        logger.log(f"{Colors.GREEN}  Loaded {len(working_streams):,} previously working streams{Colors.RESET}\n")
+        logger.log(f"{Colors.GRAY}  (Stream keys sample: {list(stream_progress.keys())[:3]}...){Colors.RESET}\n", file_only=True)
+        if updated_count > 0:
+            logger.log(f"{Colors.YELLOW}  Updated country codes for {updated_count} streams{Colors.RESET}\n")
+        logger.log("\n")
+        
+        # Sync working_streams_data with loaded streams for graceful_exit
+        working_streams_data = working_streams.copy()
+        logger.log(f"{Colors.GRAY}  Synced working_streams_data: {len(working_streams_data)} streams{Colors.RESET}\n", file_only=True)
+    else:
+        logger.log(f"{Colors.YELLOW}  No previous stream progress found{Colors.RESET}\n\n")
+    
     all_streams_count = 0
     save_counter = 0
     processed_count = 0
     
-    print(f"{Colors.CYAN}Parallel processing: {MAX_PLAYLIST_WORKERS} playlist workers + {MAX_STREAM_WORKERS} stream workers{Colors.RESET}\n")
-    
-    # Reserve space for progress bars (9 lines: 8 for bars + 1 for status)
-    for _ in range(9):
+    # Reserve space for progress bars (11 lines: 8 for bars + 3 for M3U/CHK/status)
+    for _ in range(11):
         print()
     
-    # Display initial progress
+    # Display initial progress (this will move cursor back up and print)
     update_dual_progress(0, len(playlist_urls), parse_start_time, "")
     
     # Process playlists with BOTH parallel downloading AND sequential stream checking
@@ -994,6 +1165,10 @@ if __name__ == '__main__':
             # Process each downloaded playlist as it completes
             for future in as_completed(batch_futures.keys()):
                 url, idx = batch_futures[future]
+                
+                # Update current M3U URL being processed
+                with stats_lock:
+                    global_stats['current_m3u'] = url
                 
                 try:
                     streams, download_time = future.result()
@@ -1024,24 +1199,38 @@ if __name__ == '__main__':
                     
                     # Show result with filtering info
                     if filtered_streams:
-                        status_msg = f"{Colors.GREEN}✓ [{idx}/{len(playlist_urls)}] Found {len(filtered_streams)} streams (filtered {filtered_out_count}/{original_count}) ({download_time:.1f}s){Colors.RESET}"
+                        status_msg = f"{Colors.GREEN}[+] [{idx}/{len(playlist_urls)}] Found {len(filtered_streams)} streams (filtered {filtered_out_count}/{original_count}) ({download_time:.1f}s){Colors.RESET}"
+                        logger.log(f"[INFO] Playlist {idx}/{len(playlist_urls)}: {url}\n", file_only=True)
+                        logger.log(f"       Streams: {len(filtered_streams)} valid, {filtered_out_count} filtered, {original_count} total\n", file_only=True)
                     elif original_count > 0:
-                        status_msg = f"{Colors.YELLOW}⚠ [{idx}/{len(playlist_urls)}] All {original_count} streams filtered out ({download_time:.1f}s){Colors.RESET}"
+                        status_msg = f"{Colors.YELLOW}[!] [{idx}/{len(playlist_urls)}] All {original_count} streams filtered out ({download_time:.1f}s){Colors.RESET}"
+                        logger.log(f"[WARN] Playlist {idx}/{len(playlist_urls)}: All {original_count} streams filtered - {url}\n", file_only=True)
                         # Mark as processed even if all streams filtered
-                        processed_playlists.add(url)
-                        processed_playlists_data.add(url)
+                        processed_playlists[url] = {
+                            'status': 'all_filtered',
+                            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                            'streams_found': original_count,
+                            'streams_filtered': original_count
+                        }
+                        processed_playlists_data[url] = processed_playlists[url]
                         processed_count += 1
                         # Save progress for filtered playlists immediately
                         save_playlist_progress(processed_playlists)
                     else:
-                        status_msg = f"{Colors.RED}✗ [{idx}/{len(playlist_urls)}] Empty or timeout ({download_time:.1f}s){Colors.RESET}"
+                        status_msg = f"{Colors.RED}[-] [{idx}/{len(playlist_urls)}] Empty or timeout ({download_time:.1f}s){Colors.RESET}"
+                        logger.log(f"[ERROR] Playlist {idx}/{len(playlist_urls)}: Empty or timeout - {url}\n", file_only=True)
                         # Mark invalid/empty playlists as processed so they won't be retried
-                        processed_playlists.add(url)
-                        processed_playlists_data.add(url)
+                        processed_playlists[url] = {
+                            'status': 'invalid',
+                            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                            'streams_found': 0,
+                            'reason': 'empty_or_timeout'
+                        }
+                        processed_playlists_data[url] = processed_playlists[url]
                         processed_count += 1
                         # Save progress for invalid playlists immediately
                         save_playlist_progress(processed_playlists)
-                    update_dual_progress(processed_count, len(playlist_urls), parse_start_time, status_msg)
+                    update_dual_progress(processed_count, len(playlist_urls), parse_start_time, status_msg, url)
                     
                     # If playlist has streams AFTER filtering, CHECK THEM ALL before continuing
                     if filtered_streams:
@@ -1061,16 +1250,20 @@ if __name__ == '__main__':
                                 if result and result['status'] == 'working':
                                     working_streams.append(result)
                                     working_streams_data.append(result)
-                            except Exception:
+                                    logger.log(f"{Colors.GRAY}  DEBUG: Added working stream '{result.get('channel_name', 'Unknown')[:40]}' (total now: {len(working_streams)}){Colors.RESET}\n", file_only=True)
+                                    # Log working stream details
+                                    if stream_count % 50 == 0:  # Log every 50 working streams
+                                        logger.log(f"[WORK] {result.get('channel_name', 'Unknown')} - {result.get('resolution', 'N/A')} @ {result.get('video_bitrate', 'N/A')}\n", file_only=True)
+                            except Exception as e:
                                 pass
                             
                             stream_count += 1
                             
-                            # Update progress display every 10 streams OR every 0.5 seconds
+                            # Update progress display every second
                             current_time = time.time()
-                            if stream_count % 10 == 0 or stream_count == len(stream_futures) or (current_time - last_update_time) >= 0.5:
-                                checking_msg = f"{Colors.CYAN}⚙ Checking streams... {stream_count}/{len(stream_futures)} from playlist {idx}{Colors.RESET}"
-                                update_dual_progress(processed_count, len(playlist_urls), parse_start_time, checking_msg)
+                            if stream_count % 10 == 0 or stream_count == len(stream_futures) or (current_time - last_update_time) >= 1.0:
+                                checking_msg = f"{Colors.CYAN}[>] Checking streams... {stream_count}/{len(stream_futures)} from playlist {idx}{Colors.RESET}"
+                                update_dual_progress(processed_count, len(playlist_urls), parse_start_time, checking_msg, url)
                                 last_update_time = current_time
                             
                             # Auto-save progress every SAVE_INTERVAL seconds during stream checking
@@ -1089,13 +1282,28 @@ if __name__ == '__main__':
                     # Increment processed count after all streams are done
                     processed_count += 1
                     
-                    # Mark this playlist as processed
-                    processed_playlists.add(url)
-                    processed_playlists_data.add(url)
+                    # Count working streams from this playlist
+                    working_from_playlist = len([s for s in working_streams if s['url'].startswith(url[:30])])
+                    
+                    # Mark this playlist as processed with details
+                    processed_playlists[url] = {
+                        'status': 'completed',
+                        'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                        'streams_found': original_count,
+                        'streams_filtered': filtered_out_count,
+                        'streams_checked': len(filtered_streams),
+                        'working_streams': working_from_playlist,
+                        'url': url
+                    }
+                    processed_playlists_data[url] = processed_playlists[url]
+                    
+                    # Log completion details
+                    logger.log(f"[DONE] Playlist {processed_count}/{len(playlist_urls)} completed\n", file_only=True)
+                    logger.log(f"       Working: {working_from_playlist}/{len(filtered_streams)} streams\n", file_only=True)
                     
                     # Final update after all streams from this playlist are done
-                    done_msg = f"{Colors.GREEN}✓ Playlist {processed_count}/{len(playlist_urls)} complete{Colors.RESET}"
-                    update_dual_progress(processed_count, len(playlist_urls), parse_start_time, done_msg)
+                    done_msg = f"{Colors.GREEN}[+] Playlist {processed_count}/{len(playlist_urls)} complete - {working_from_playlist} working{Colors.RESET}"
+                    update_dual_progress(processed_count, len(playlist_urls), parse_start_time, done_msg, url)
                     
                     # Save progress after EVERY playlist
                     save_stream_progress(stream_progress)
@@ -1111,18 +1319,23 @@ if __name__ == '__main__':
                             write_m3u_output(organized_temp, final_output_file, None, incremental=True)
                             # Show notification every 10 playlists
                             if processed_count % 10 == 0:
-                                save_msg = f"{Colors.GREEN}💾 M3U updated: {len(working_streams)} working streams{Colors.RESET}"
-                                update_dual_progress(processed_count, len(playlist_urls), parse_start_time, save_msg)
+                                save_msg = f"{Colors.GREEN}[S] M3U updated: {len(working_streams)} working streams{Colors.RESET}"
+                                update_dual_progress(processed_count, len(playlist_urls), parse_start_time, save_msg, url)
+                                logger.log(f"[SAVE] M3U file updated with {len(working_streams)} streams\n", file_only=True)
                         except Exception as e:
-                            pass
+                            logger.log(f"[ERROR] Failed to write M3U: {e}\n", file_only=True)
                     
                 except KeyboardInterrupt:
-                    print(f"\n\n{Colors.YELLOW}⚠ Interrupted by user{Colors.RESET}")
+                    print(f"\n\n{Colors.YELLOW}[!] Interrupted by user{Colors.RESET}")
                     graceful_exit()
                 except Exception as e:
                     # Mark failed playlists as processed so they won't be retried
-                    processed_playlists.add(url)
-                    processed_playlists_data.add(url)
+                    processed_playlists[url] = {
+                        'status': 'error',
+                        'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                        'error': str(e) if e else 'Unknown error'
+                    }
+                    processed_playlists_data[url] = processed_playlists[url]
                     processed_count += 1
                     # Save progress for failed playlists
                     save_playlist_progress(processed_playlists)
@@ -1137,35 +1350,51 @@ if __name__ == '__main__':
     sys.stdout.write('\033[9B')  # Move down past progress bars
     print("\n")  # Add some space
     
-    logger.log(f"\n\n{Colors.CYAN}→ All playlists processed and streams checked!{Colors.RESET}\n\n")
-    logger.log(f"\n{Colors.CYAN}→ Saving final progress...{Colors.RESET}\n")
+    # Calculate final stats
+    elapsed_total = time.time() - parse_start_time
+    
+    logger.log(f"\n\n{Colors.CYAN}[=] All playlists processed and streams checked!{Colors.RESET}\n\n")
+    logger.log(f"  Total time: {format_time(elapsed_total)}\n")
+    logger.log(f"  Playlists processed: {len(processed_playlists):,}\n")
+    logger.log(f"  Valid playlists: {global_stats['valid_m3u']:,}\n")
+    logger.log(f"  Invalid playlists: {global_stats['invalid_m3u']:,}\n")
+    logger.log(f"  Total streams found: {global_stats['total_streams']:,}\n")
+    logger.log(f"  Streams checked: {global_stats['checked']:,}\n")
+    logger.log(f"  Working streams: {global_stats['working']:,}\n")
+    logger.log(f"  Failed streams: {global_stats['failed']:,}\n")
+    logger.log(f"  Filtered streams: {global_stats['filtered']:,}\n\n")
+    
+    logger.log(f"\n{Colors.CYAN}[>] Saving final progress...{Colors.RESET}\n")
     save_stream_progress(stream_progress)
     save_playlist_progress(processed_playlists)
-    logger.log(f"{Colors.GREEN}✓ Progress saved{Colors.RESET}\n\n")
+    logger.log(f"{Colors.GREEN}[+] Progress saved{Colors.RESET}\n\n")
     
     if not working_streams:
-        logger.log(f"\n{Colors.RED}✗ No working streams found{Colors.RESET}\n")
+        logger.log(f"\n{Colors.RED}[-] No working streams found{Colors.RESET}\n")
         logger.close()
         sys.exit(1)
     
-    logger.log(f"\n{Colors.BOLD}{Colors.BLUE}→ Organizing streams by country and bitrate...{Colors.RESET}\n")
+    logger.log(f"{Colors.GRAY}  DEBUG: working_streams count before organize: {len(working_streams)}{Colors.RESET}\n", file_only=True)
+    logger.log(f"{Colors.GRAY}  DEBUG: Sample channel names: {[s.get('channel_name', 'Unknown')[:30] for s in working_streams[:5]]}{Colors.RESET}\n", file_only=True)
+    
+    logger.log(f"\n{Colors.BOLD}{Colors.BLUE}[>] Organizing streams by country and bitrate...{Colors.RESET}\n")
     organized = organize_streams_by_country_and_bitrate(working_streams)
     total_organized = sum(len(streams) for streams in organized.values())
-    logger.log(f"{Colors.GREEN}✓ Organized {total_organized} working streams across {len(organized)} countries{Colors.RESET}\n\n")
-    logger.log(f"{Colors.BOLD}{Colors.BLUE}→ Writing output file...{Colors.RESET}\n")
+    logger.log(f"{Colors.GREEN}[+] Organized {total_organized} working streams across {len(organized)} countries{Colors.RESET}\n\n")
+    logger.log(f"{Colors.BOLD}{Colors.BLUE}[>] Writing output file...{Colors.RESET}\n")
     write_m3u_output(organized, final_output_file, None)
     elapsed = time.time() - global_stats['start_time']
     logger.log(f"\n{Colors.BOLD}{Colors.GREEN}{'═' * 78}{Colors.RESET}\n")
-    logger.log(f"{Colors.BOLD}{Colors.GREEN}{'  ' * 15}✓ PROCESSING COMPLETE ✓{'  ' * 15}{Colors.RESET}\n")
+    logger.log(f"{Colors.BOLD}{Colors.GREEN}{'  ' * 15}[+] PROCESSING COMPLETE [+]{'  ' * 15}{Colors.RESET}\n")
     logger.log(f"{Colors.BOLD}{Colors.GREEN}{'═' * 78}{Colors.RESET}\n\n")
     logger.log(f"{Colors.BOLD}{Colors.BLUE}M3U Files:{Colors.RESET}\n")
-    logger.log(f"  {Colors.WHITE}Total:{Colors.RESET} {global_stats['total_m3u']}  {Colors.GREEN}✓ Valid:{Colors.RESET} {global_stats['valid_m3u']}  {Colors.RED}✗ Invalid:{Colors.RESET} {global_stats['invalid_m3u']}\n")
+    logger.log(f"  {Colors.WHITE}Total:{Colors.RESET} {global_stats['total_m3u']}  {Colors.GREEN}[+] Valid:{Colors.RESET} {global_stats['valid_m3u']}  {Colors.RED}[-] Invalid:{Colors.RESET} {global_stats['invalid_m3u']}\n")
     logger.log(f"\n{Colors.BOLD}{Colors.BLUE}Streams:{Colors.RESET}\n")
     logger.log(f"  {Colors.WHITE}Total Found:{Colors.RESET}    {global_stats['total_streams']:,}\n")
     logger.log(f"  {Colors.WHITE}Checked:{Colors.RESET}        {global_stats['checked']:,}\n")
-    logger.log(f"  {Colors.GREEN}✓ Working:{Colors.RESET}      {global_stats['working']:,}\n")
-    logger.log(f"  {Colors.RED}✗ Failed:{Colors.RESET}       {global_stats['failed']:,}\n")
-    logger.log(f"  {Colors.YELLOW}⊘ Filtered:{Colors.RESET}     {global_stats['filtered']:,}\n")
+    logger.log(f"  {Colors.GREEN}[+] Working:{Colors.RESET}     {global_stats['working']:,}\n")
+    logger.log(f"  {Colors.RED}[-] Failed:{Colors.RESET}      {global_stats['failed']:,}\n")
+    logger.log(f"  {Colors.YELLOW}[x] Filtered:{Colors.RESET}    {global_stats['filtered']:,}\n")
     logger.log(f"\n{Colors.BOLD}{Colors.BLUE}Performance:{Colors.RESET}\n")
     logger.log(f"  {Colors.WHITE}Time Elapsed:{Colors.RESET}   {Colors.CYAN}{format_time(elapsed)}{Colors.RESET}\n")
     if elapsed > 0:
