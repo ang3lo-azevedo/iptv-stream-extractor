@@ -14,6 +14,7 @@ import sys
 import signal
 import logging
 import warnings
+import argparse
 
 # Suppress timeout error messages from IPTV_checker and urllib3
 logging.getLogger().setLevel(logging.CRITICAL)
@@ -91,13 +92,78 @@ class Logger:
 # Global logger instance
 logger = None
 
-# Configuration
+def parse_arguments():
+    """Parse command-line arguments"""
+    parser = argparse.ArgumentParser(
+        description='IPTV M3U Stream Extractor & Checker - Extract and validate IPTV streams from playlists',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  %(prog)s                                    # Run with default settings
+  %(prog)s --reprocess-playlists              # Re-check all playlists
+  %(prog)s --reprocess-streams                # Re-check all streams
+  %(prog)s --workers 20 50                    # Use 20 playlist workers and 50 stream workers
+  %(prog)s --input custom.sql --output out.m3u8
+  %(prog)s --clear-progress                   # Start fresh (clears all progress)
+  %(prog)s --no-filters                       # Don't filter movies/series/VOD
+        """
+    )
+    
+    parser.add_argument('-i', '--input', type=str, default=None,
+                        help='Input SQL database file (default: middleware.sql)')
+    parser.add_argument('-o', '--output', type=str, default='IPTV.m3u8',
+                        help='Output M3U8 file (default: IPTV.m3u8)')
+    parser.add_argument('--log', type=str, default='LOG.log',
+                        help='Log file path (default: LOG.log)')
+    
+    # Progress control
+    parser.add_argument('--reprocess-playlists', action='store_true',
+                        help='Re-download and re-check all playlists (ignores playlist progress)')
+    parser.add_argument('--reprocess-streams', action='store_true',
+                        help='Re-check all streams (ignores stream progress)')
+    parser.add_argument('--clear-progress', action='store_true',
+                        help='Clear all progress files and start fresh')
+    
+    # Performance tuning
+    parser.add_argument('-w', '--workers', type=int, nargs=2, metavar=('PLAYLIST', 'STREAM'),
+                        default=[10, 30],
+                        help='Number of workers: playlist_workers stream_workers (default: 10 30)')
+    parser.add_argument('--timeout', type=int, default=10,
+                        help='Stream check timeout in seconds (default: 10)')
+    parser.add_argument('--save-interval', type=int, default=30,
+                        help='Auto-save interval in seconds during stream checking (default: 30)')
+    
+    # Filtering options
+    parser.add_argument('--no-filters', action='store_true',
+                        help='Disable all content filters (include movies, series, VOD, etc.)')
+    parser.add_argument('--include-radio', action='store_true',
+                        help='Include radio streams (disabled by default)')
+    parser.add_argument('--include-adult', action='store_true',
+                        help='Include adult content (disabled by default)')
+    
+    # Output options
+    parser.add_argument('--quiet', action='store_true',
+                        help='Minimal output (only errors and final summary)')
+    parser.add_argument('--no-colors', action='store_true',
+                        help='Disable colored output')
+    
+    return parser.parse_args()
+
+# Configuration (will be updated by command-line args)
 input_file = "../middleware.sql" if os.path.exists("../middleware.sql") else "middleware.sql"
 stream_progress_file = "stream_check_progress.json"
 playlist_progress_file = "playlist_progress.json"
 final_output_file = "IPTV.m3u8"
 log_file = "LOG.log"
-REPROCESS_PLAYLISTS = False  # Set to True to re-check already processed playlists
+REPROCESS_PLAYLISTS = False
+REPROCESS_STREAMS = False
+STREAM_TIMEOUT = 10
+SAVE_INTERVAL = 30
+MAX_PLAYLIST_WORKERS = 10
+MAX_STREAM_WORKERS = 30
+ENABLE_FILTERS = True
+INCLUDE_RADIO = False
+INCLUDE_ADULT = False
 
 # Regex to match M3U/IPTV playlist URLs
 m3u_pattern = re.compile(
@@ -160,23 +226,42 @@ COUNTRY_CODES = {
 }
 
 # Filters - streams to exclude (pre-compiled regex for speed)
-EXCLUDE_PATTERNS = [
-    # Movies
-    re.compile(r'\b(movie|film|cinema|pelicula|filme|cine)\b', re.IGNORECASE),
-    # Series/Shows
-    re.compile(r'\b(series|tv\s*show|season|episode|episodio|temporada|capitulo)\b', re.IGNORECASE),
-    # 24/7 channels
-    re.compile(r'\b(24/?7|24h|24\s*h|24\s*hour|non-stop|nonstop)\b', re.IGNORECASE),
-    # Adult content
-    re.compile(r'\b(xxx|adult|porn|sexy|\+18|18\+|erotic|playboy|hustler)\b', re.IGNORECASE),
-    # VOD/On-demand
-    re.compile(r'\b(vod|on\s*demand|catch\s*up|replay)\b', re.IGNORECASE),
-    # Radio (optional - uncomment if you want to exclude radio)
-    # re.compile(r'\b(radio|fm)\b', re.IGNORECASE),
-]
+# These will be built dynamically based on command-line flags
+EXCLUDE_PATTERNS = []
+
+def build_filter_patterns():
+    """Build filter patterns based on configuration flags"""
+    global EXCLUDE_PATTERNS
+    
+    if not ENABLE_FILTERS:
+        EXCLUDE_PATTERNS = []
+        return
+    
+    patterns = [
+        # Movies
+        re.compile(r'\b(movie|film|cinema|pelicula|filme|cine)\b', re.IGNORECASE),
+        # Series/Shows
+        re.compile(r'\b(series|tv\s*show|season|episode|episodio|temporada|capitulo)\b', re.IGNORECASE),
+        # 24/7 channels
+        re.compile(r'\b(24/?7|24h|24\s*h|24\s*hour|non-stop|nonstop)\b', re.IGNORECASE),
+        # VOD/On-demand
+        re.compile(r'\b(vod|on\s*demand|catch\s*up|replay)\b', re.IGNORECASE),
+    ]
+    
+    # Adult content (unless --include-adult flag is set)
+    if not INCLUDE_ADULT:
+        patterns.append(re.compile(r'\b(xxx|adult|porn|sexy|\+18|18\+|erotic|playboy|hustler)\b', re.IGNORECASE))
+    
+    # Radio (unless --include-radio flag is set)
+    if not INCLUDE_RADIO:
+        patterns.append(re.compile(r'\b(radio|fm)\b', re.IGNORECASE))
+    
+    EXCLUDE_PATTERNS = patterns
 
 def should_filter_stream(channel_name, group_title):
     """Fast stream filtering with pre-compiled regex and early exit"""
+    if not ENABLE_FILTERS:
+        return False
     text = f"{channel_name} {group_title}".lower()
     for pattern in EXCLUDE_PATTERNS:
         if pattern.search(text):
@@ -567,7 +652,7 @@ def check_stream_worker(stream, stream_progress):
         global_stats['current_stream'] = channel_name
         global_stats['last_status'] = 'checking'
     
-    status = check_channel_status(stream_url, timeout=10, extended_timeout=15)
+    status = check_channel_status(stream_url, timeout=STREAM_TIMEOUT, extended_timeout=STREAM_TIMEOUT + 5)
     if status == 'Alive':
         codec_name, video_bitrate, resolution, fps = get_detailed_stream_info(stream_url)
         audio_info = get_audio_bitrate(stream_url)
@@ -678,7 +763,7 @@ def save_stream_progress(data):
                 os.remove(temp_file)
 
 def load_stream_progress():
-    if not os.path.exists(stream_progress_file):
+    if not os.path.exists(stream_progress_file) or REPROCESS_STREAMS:
         return {}
     try:
         with open(stream_progress_file, 'r', encoding='utf-8') as f:
@@ -689,7 +774,7 @@ def load_stream_progress():
 
 def load_playlist_progress():
     """Load the list of already processed playlist URLs"""
-    if not os.path.exists(playlist_progress_file):
+    if not os.path.exists(playlist_progress_file) or REPROCESS_PLAYLISTS:
         return set()
     try:
         with open(playlist_progress_file, 'r', encoding='utf-8') as f:
@@ -754,6 +839,33 @@ def graceful_exit(signum=None, frame=None):
     os._exit(0)  # Force exit immediately without waiting for threads
 
 if __name__ == '__main__':
+    # Parse command-line arguments
+    args = parse_arguments()
+    
+    # Update configuration from arguments
+    if args.input:
+        input_file = args.input
+    final_output_file = args.output
+    log_file = args.log
+    REPROCESS_PLAYLISTS = args.reprocess_playlists
+    REPROCESS_STREAMS = args.reprocess_streams
+    STREAM_TIMEOUT = args.timeout
+    SAVE_INTERVAL = args.save_interval
+    MAX_PLAYLIST_WORKERS, MAX_STREAM_WORKERS = args.workers
+    ENABLE_FILTERS = not args.no_filters
+    INCLUDE_RADIO = args.include_radio
+    INCLUDE_ADULT = args.include_adult
+    
+    # Build filter patterns based on flags
+    build_filter_patterns()
+    
+    # Clear progress if requested
+    if args.clear_progress:
+        for progress_file in [stream_progress_file, playlist_progress_file]:
+            if os.path.exists(progress_file):
+                os.remove(progress_file)
+                print(f"{Colors.YELLOW}✓ Cleared {progress_file}{Colors.RESET}")
+    
     # Register signal handlers for graceful exit
     signal.signal(signal.SIGINT, graceful_exit)
     signal.signal(signal.SIGTERM, graceful_exit)
@@ -765,6 +877,26 @@ if __name__ == '__main__':
     logger.log(f"\n{Colors.BOLD}{Colors.CYAN}{'═' * 78}{Colors.RESET}\n")
     logger.log(f"{Colors.BOLD}{Colors.CYAN}  IPTV M3U Stream Extractor & Checker{Colors.RESET}\n")
     logger.log(f"{Colors.BOLD}{Colors.CYAN}{'═' * 78}{Colors.RESET}\n\n")
+    
+    # Show configuration
+    if not args.quiet:
+        logger.log(f"{Colors.BOLD}{Colors.BLUE}Configuration:{Colors.RESET}\n")
+        logger.log(f"  {Colors.CYAN}Input:{Colors.RESET} {input_file}\n")
+        logger.log(f"  {Colors.CYAN}Output:{Colors.RESET} {final_output_file}\n")
+        logger.log(f"  {Colors.CYAN}Workers:{Colors.RESET} {MAX_PLAYLIST_WORKERS} playlist, {MAX_STREAM_WORKERS} stream\n")
+        logger.log(f"  {Colors.CYAN}Stream Timeout:{Colors.RESET} {STREAM_TIMEOUT}s\n")
+        logger.log(f"  {Colors.CYAN}Filters:{Colors.RESET} {'Disabled' if not ENABLE_FILTERS else 'Enabled'}\n")
+        if ENABLE_FILTERS:
+            filters = []
+            if not INCLUDE_ADULT:
+                filters.append("Adult")
+            if not INCLUDE_RADIO:
+                filters.append("Radio")
+            if filters:
+                logger.log(f"  {Colors.CYAN}Excluding:{Colors.RESET} Movies, Series, VOD, 24/7, {', '.join(filters)}\n")
+        logger.log(f"  {Colors.CYAN}Reprocess Playlists:{Colors.RESET} {'Yes' if REPROCESS_PLAYLISTS else 'No'}\n")
+        logger.log(f"  {Colors.CYAN}Reprocess Streams:{Colors.RESET} {'Yes' if REPROCESS_STREAMS else 'No'}\n\n")
+    
     if not IPTV_CHECKER_AVAILABLE:
         logger.log(f"{Colors.RED}✗ IPTV_checker.py not available. Cannot check streams.{Colors.RESET}\n")
         logger.close()
@@ -828,11 +960,9 @@ if __name__ == '__main__':
     working_streams = []
     all_streams_count = 0
     save_counter = 0
-    max_playlist_workers = 10  # Process 10 playlists concurrently
-    max_stream_workers = 30    # Check 30 streams concurrently
     processed_count = 0
     
-    print(f"{Colors.CYAN}Parallel processing: {max_playlist_workers} playlist workers + {max_stream_workers} stream workers{Colors.RESET}\n")
+    print(f"{Colors.CYAN}Parallel processing: {MAX_PLAYLIST_WORKERS} playlist workers + {MAX_STREAM_WORKERS} stream workers{Colors.RESET}\n")
     
     # Reserve space for progress bars (9 lines: 8 for bars + 1 for status)
     for _ in range(9):
@@ -842,13 +972,13 @@ if __name__ == '__main__':
     update_dual_progress(0, len(playlist_urls), parse_start_time, "")
     
     # Process playlists with BOTH parallel downloading AND sequential stream checking
-    with ThreadPoolExecutor(max_workers=max_playlist_workers) as playlist_executor, \
-         ThreadPoolExecutor(max_workers=max_stream_workers) as stream_executor:
+    with ThreadPoolExecutor(max_workers=MAX_PLAYLIST_WORKERS) as playlist_executor, \
+         ThreadPoolExecutor(max_workers=MAX_STREAM_WORKERS) as stream_executor:
         
         last_update_time = time.time()
         
         # Submit playlists in batches for parallel downloading
-        playlist_batch_size = max_playlist_workers * 2  # Download 2x workers at a time
+        playlist_batch_size = MAX_PLAYLIST_WORKERS * 2  # Download 2x workers at a time
         playlist_index = 0
         
         while playlist_index < len(playlist_urls):
@@ -897,8 +1027,20 @@ if __name__ == '__main__':
                         status_msg = f"{Colors.GREEN}✓ [{idx}/{len(playlist_urls)}] Found {len(filtered_streams)} streams (filtered {filtered_out_count}/{original_count}) ({download_time:.1f}s){Colors.RESET}"
                     elif original_count > 0:
                         status_msg = f"{Colors.YELLOW}⚠ [{idx}/{len(playlist_urls)}] All {original_count} streams filtered out ({download_time:.1f}s){Colors.RESET}"
+                        # Mark as processed even if all streams filtered
+                        processed_playlists.add(url)
+                        processed_playlists_data.add(url)
+                        processed_count += 1
+                        # Save progress for filtered playlists immediately
+                        save_playlist_progress(processed_playlists)
                     else:
                         status_msg = f"{Colors.RED}✗ [{idx}/{len(playlist_urls)}] Empty or timeout ({download_time:.1f}s){Colors.RESET}"
+                        # Mark invalid/empty playlists as processed so they won't be retried
+                        processed_playlists.add(url)
+                        processed_playlists_data.add(url)
+                        processed_count += 1
+                        # Save progress for invalid playlists immediately
+                        save_playlist_progress(processed_playlists)
                     update_dual_progress(processed_count, len(playlist_urls), parse_start_time, status_msg)
                     
                     # If playlist has streams AFTER filtering, CHECK THEM ALL before continuing
@@ -931,9 +1073,10 @@ if __name__ == '__main__':
                                 update_dual_progress(processed_count, len(playlist_urls), parse_start_time, checking_msg)
                                 last_update_time = current_time
                             
-                            # Auto-save progress every 30 seconds during stream checking
-                            if current_time - last_save_time >= 30.0:
+                            # Auto-save progress every SAVE_INTERVAL seconds during stream checking
+                            if current_time - last_save_time >= SAVE_INTERVAL:
                                 save_stream_progress(stream_progress)
+                                save_playlist_progress(processed_playlists)
                                 # Also write incremental M3U if we have working streams
                                 if working_streams:
                                     try:
@@ -977,7 +1120,14 @@ if __name__ == '__main__':
                     print(f"\n\n{Colors.YELLOW}⚠ Interrupted by user{Colors.RESET}")
                     graceful_exit()
                 except Exception as e:
+                    # Mark failed playlists as processed so they won't be retried
+                    processed_playlists.add(url)
+                    processed_playlists_data.add(url)
                     processed_count += 1
+                    # Save progress for failed playlists
+                    save_playlist_progress(processed_playlists)
+                    with stats_lock:
+                        global_stats['invalid_m3u'] += 1
                     pass  # Continue with next playlist
             
             # Move to next batch
