@@ -173,12 +173,39 @@ Examples:
     
     return parser.parse_args()
 
+def find_sql_file():
+    """Auto-detect SQL file in current or parent directory"""
+    # First check if user specified a file
+    for arg in sys.argv:
+        if arg.endswith('.sql') and os.path.exists(arg):
+            return arg
+    
+    # Check current directory for any .sql files
+    sql_files = [f for f in os.listdir('.') if f.endswith('.sql') and os.path.isfile(f)]
+    if sql_files:
+        # If multiple SQL files, prefer middleware.sql if it exists
+        if 'middleware.sql' in sql_files:
+            return 'middleware.sql'
+        # Otherwise return the first one found
+        return sql_files[0]
+    
+    # Check parent directory
+    if os.path.exists('../'):
+        sql_files = [f'../{f}' for f in os.listdir('../') if f.endswith('.sql') and os.path.isfile(f'../{f}')]
+        if sql_files:
+            # Prefer ../middleware.sql if it exists
+            if '../middleware.sql' in sql_files:
+                return '../middleware.sql'
+            return sql_files[0]
+    
+    return None
+
 # Configuration (will be updated by command-line args)
-input_file = "../middleware.sql" if os.path.exists("../middleware.sql") else "middleware.sql"
+input_file = find_sql_file() # Auto-detect
 stream_progress_file = "stream_check_progress.json"
 playlist_progress_file = "playlist_progress.json"
 final_output_file = "IPTV.m3u8"
-log_file = "LOG.log"
+log_file = "LOG.txt"
 REPROCESS_PLAYLISTS = False
 REPROCESS_STREAMS = False
 STREAM_TIMEOUT = 10
@@ -228,6 +255,7 @@ global_stats = {
     'current_stream': '',
     'last_status': '',
     'start_time': time.time(),
+    'stream_checking_time': 0.0,  # Time spent checking streams (excluded from playlist ETA)
     'first_display': True,
     'num_lines': 10
 }
@@ -369,6 +397,7 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
         filtered = global_stats['filtered']
         current_stream = global_stats.get('current_stream', '')
         current_m3u = global_stats.get('current_m3u', current_m3u_url)
+        stream_checking_time = global_stats.get('stream_checking_time', 0.0)
     
     # Playlist progress bar
     playlist_percent = (processed_playlists / total_playlists * 100) if total_playlists > 0 else 0
@@ -385,11 +414,16 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
         stream_bar = '░' * bar_length
     
     # Calculate rates and ETAs
-    playlist_rate = processed_playlists / elapsed if elapsed > 0 else 0
+    # For playlist rate: exclude time spent checking streams
+    playlist_elapsed = elapsed - stream_checking_time
+    playlist_rate = processed_playlists / playlist_elapsed if playlist_elapsed > 0 else 0
     remaining_playlists = total_playlists - processed_playlists
     playlist_eta = remaining_playlists / playlist_rate if playlist_rate > 0 else 0
     
-    stream_rate = checked_streams / elapsed if elapsed > 0 else 0
+    # For stream rate: only count time spent checking streams
+    # Use stream_checking_time if available, otherwise fall back to elapsed time
+    stream_elapsed = stream_checking_time if stream_checking_time > 0 else elapsed
+    stream_rate = checked_streams / stream_elapsed if stream_elapsed > 0 else 0
     remaining_streams = total_streams - checked_streams
     stream_eta = remaining_streams / stream_rate if stream_rate > 0 and total_streams > 0 else 0
     
@@ -939,6 +973,15 @@ def check_stream_worker(stream, stream_progress):
         if not country:
             country = extract_country_code(group_title, channel_name)
         
+        # Get expiry date from stream info and serialize for JSON
+        expiry_date = stream['info'].get('expiry_date')
+        expiry_date_str = None
+        if expiry_date:
+            if isinstance(expiry_date, datetime):
+                expiry_date_str = expiry_date.strftime('%Y-%m-%d')
+            else:
+                expiry_date_str = expiry_date  # Already a string
+        
         result = {
             'status': 'working',
             'extinf': stream['extinf'],
@@ -952,6 +995,7 @@ def check_stream_worker(stream, stream_progress):
             'country': country,
             'channel_name': channel_name,
             'group_title': group_title,
+            'expiry_date': expiry_date_str,
             'checked_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         }
         with stats_lock:
@@ -1043,9 +1087,11 @@ def write_m3u_output(organized_streams, output_file, expiry_date=None, increment
                     resolution = stream.get('resolution', 'Unknown')
                     video_bitrate = stream.get('video_bitrate', 'Unknown')
                     name_with_info = f"{final_name} [{resolution} {video_bitrate}]"
-                    if expiry_date:
-                        expiry_str = expiry_date.strftime('%Y-%m-%d')
-                        name_with_info += f" [Expires: {expiry_str}]"
+                    # Get expiry date from stream data (check both root level and info dict)
+                    stream_expiry = stream.get('expiry_date') or stream.get('info', {}).get('expiry_date')
+                    if stream_expiry:
+                        # It's already a string in YYYY-MM-DD format
+                        name_with_info += f" [Expires: {stream_expiry}]"
                     extinf += f",{name_with_info}\n"
                     f.write(extinf)
                     f.write(stream['url'] + "\n")
@@ -1375,12 +1421,26 @@ if __name__ == '__main__':
                     for stream in streams:
                         channel_name = stream['info']['channel_name']
                         group_title = stream['info']['group_title']
+                        expiry_date = stream['info'].get('expiry_date')
                         
+                        # Filter by content type
                         if should_filter_stream(channel_name, group_title):
                             filtered_out_count += 1
                             with stats_lock:
                                 global_stats['filtered'] += 1
+                        # Filter by expiry date (filter out streams expiring in LESS than 30 days)
+                        elif expiry_date:
+                            days_until_expiry = (expiry_date - datetime.now()).days
+                            if days_until_expiry < 30:
+                                # Filter out streams that expire soon (less than 30 days)
+                                filtered_out_count += 1
+                                with stats_lock:
+                                    global_stats['filtered'] += 1
+                            else:
+                                # Keep streams expiring in 30+ days
+                                filtered_streams.append(stream)
                         else:
+                            # No expiry date - keep the stream
                             filtered_streams.append(stream)
                     
                     # Update M3U stats
@@ -1438,6 +1498,9 @@ if __name__ == '__main__':
                     
                     # If playlist has streams AFTER filtering, CHECK THEM ALL before continuing
                     if filtered_streams:
+                        # Track time spent checking streams
+                        stream_check_start = time.time()
+                        
                         # Submit only non-filtered streams for checking
                         stream_futures = {}
                         for stream in filtered_streams:
@@ -1467,6 +1530,9 @@ if __name__ == '__main__':
                             # Update progress display every second
                             current_time = time.time()
                             if stream_count % 10 == 0 or stream_count == len(stream_futures) or (current_time - last_update_time) >= 1.0:
+                                # Update stream checking time continuously
+                                with stats_lock:
+                                    global_stats['stream_checking_time'] = time.time() - stream_check_start
                                 checking_msg = f"{Colors.CYAN}[>] Checking streams... {stream_count}/{len(stream_futures)} from playlist {idx}{Colors.RESET}"
                                 update_dual_progress(processed_count, len(playlist_urls), parse_start_time, checking_msg, url)
                                 last_update_time = current_time
@@ -1485,6 +1551,11 @@ if __name__ == '__main__':
                                     except Exception:
                                         pass
                                 last_save_time = current_time
+                        
+                        # Set final stream checking time (already being tracked continuously)
+                        stream_check_elapsed = time.time() - stream_check_start
+                        with stats_lock:
+                            global_stats['stream_checking_time'] = stream_check_elapsed
                     
                     # Increment processed count after all streams are done
                     processed_count += 1
