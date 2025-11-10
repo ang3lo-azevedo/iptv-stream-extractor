@@ -379,11 +379,12 @@ def truncate_line(line, max_width):
         
     return ''.join(result) + Colors.RESET  # Ensure colors are reset
 
-def update_dual_progress(processed_playlists, total_playlists, start_time, current_status="", current_m3u_url="", current_playlist_streams=None):
+def update_dual_progress(processed_playlists, total_playlists, start_time, current_status="", current_m3u_url="", current_playlist_streams=None, original_playlist_total=None):
     """Display enhanced progress with two bars - one for playlists, one for streams
     
     Args:
         current_playlist_streams: Optional tuple of (checked, total) for current playlist being processed
+        original_playlist_total: Optional int for original total streams before filtering
     """
     elapsed = time.time() - start_time
     
@@ -484,9 +485,9 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
     line2 = f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Valid: {valid_m3u:>6,}{Colors.RESET}  {Colors.RED}[-] Invalid: {invalid_m3u:>6,}{Colors.RESET}  {Colors.MAGENTA}Rate: {playlist_rate:>5.1f} pl/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(playlist_eta)}{Colors.RESET}"
     line3 = f"{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}{stream_bar}{Colors.RESET} {Colors.WHITE}{stream_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({display_checked:,}/{display_total:,}){Colors.RESET}"
     
-    # Show current playlist total if checking streams
-    if current_playlist_streams:
-        line4 = f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Working: {working:>6,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:>6,}{Colors.RESET}  {Colors.CYAN}[Current: {display_total:,}]{Colors.RESET}"
+    # Show current playlist total if checking streams (use original total before filtering)
+    if current_playlist_streams and original_playlist_total:
+        line4 = f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Working: {working:>6,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:>6,}{Colors.RESET}  {Colors.CYAN}[Current: {original_playlist_total:,}]{Colors.RESET}"
     else:
         line4 = f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Working: {working:>6,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:>6,}{Colors.RESET}"
     line5 = f"{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}Rate: {stream_rate:>5.1f} st/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(stream_eta)}{Colors.RESET}  {Colors.WHITE}Time: {format_time(elapsed)}{Colors.RESET}"
@@ -1564,7 +1565,7 @@ if __name__ == '__main__':
                                 # Update stream checking time continuously
                                 with stats_lock:
                                     global_stats['stream_checking_time'] = time.time() - stream_check_start
-                                update_dual_progress(processed_count, len(playlist_urls), parse_start_time, "", url, current_playlist_streams=(stream_count, len(stream_futures)))
+                                update_dual_progress(processed_count, len(playlist_urls), parse_start_time, "", url, current_playlist_streams=(stream_count, len(stream_futures)), original_playlist_total=original_count)
                                 last_update_time = current_time
                             
                             # Auto-save progress every SAVE_INTERVAL seconds during stream checking

@@ -13902,7 +13902,7 @@
     "group_title": "ALBANIA",
     "expiry_date": null,
     "checked_at": "2025-11-10 22:51:10",
-    "final_name": "AL: Klan Kosova"
+    "final_name": "AL: Klan Kosova backup 1"
   },
   "AL: Family FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9590": {
     "status": "working",
@@ -14142,7 +14142,8 @@
     "channel_name": "AL: RTV 21",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:19"
+    "checked_at": "2025-11-10 22:51:19",
+    "final_name": "AL: RTV 21"
   },
   "AL: RTSH 2_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9683": {
     "status": "failed",
@@ -14172,7 +14173,8 @@
     "channel_name": "AL: RTK 2 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:20"
+    "checked_at": "2025-11-10 22:51:20",
+    "final_name": "AL: RTK 2"
   },
   "AL: RTSH 3_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9682": {
     "status": "working",
@@ -14195,7 +14197,8 @@
     "channel_name": "AL: RTSH 3",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:20"
+    "checked_at": "2025-11-10 22:51:20",
+    "final_name": "AL: RTSH 3"
   },
   "AL: Tv Tetova_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9758": {
     "status": "failed",
@@ -14232,7 +14235,8 @@
     "channel_name": "AL: RTSH 1",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:21"
+    "checked_at": "2025-11-10 22:51:21",
+    "final_name": "AL: RTSH 1"
   },
   "AL: RTK 4 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9777": {
     "status": "failed",
@@ -14262,7 +14266,8 @@
     "channel_name": "AL: Super Sport 6 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:21"
+    "checked_at": "2025-11-10 22:51:21",
+    "final_name": "AL: Super Sport 6"
   },
   "AL: Tring Sport 2 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9740": {
     "status": "working",
@@ -14285,7 +14290,8 @@
     "channel_name": "AL: Tring Sport 2 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:22"
+    "checked_at": "2025-11-10 22:51:22",
+    "final_name": "AL: Tring Sport 2"
   },
   "AL: KTV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9778": {
     "status": "failed",
@@ -14315,7 +14321,8 @@
     "channel_name": "AL: Super Sport 4 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:22"
+    "checked_at": "2025-11-10 22:51:22",
+    "final_name": "AL: Super Sport 4"
   },
   "AL: Super Sport 5 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9703": {
     "status": "working",
@@ -14338,7 +14345,8 @@
     "channel_name": "AL: Super Sport 5 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:23"
+    "checked_at": "2025-11-10 22:51:23",
+    "final_name": "AL: Super Sport 5"
   },
   "AL: Super Sport 3 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9707": {
     "status": "working",
@@ -14361,7 +14369,8 @@
     "channel_name": "AL: Super Sport 3 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:23"
+    "checked_at": "2025-11-10 22:51:23",
+    "final_name": "AL: Super Sport 3"
   },
   "AL: Tring Life_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9747": {
     "status": "working",
@@ -14384,7 +14393,8 @@
     "channel_name": "AL: Tring Life",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:23"
+    "checked_at": "2025-11-10 22:51:23",
+    "final_name": "AL: Tring Life"
   },
   "AL: Tring Super_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9735": {
     "status": "working",
@@ -14407,7 +14417,8 @@
     "channel_name": "AL: Tring Super",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:23"
+    "checked_at": "2025-11-10 22:51:23",
+    "final_name": "AL: Tring Super"
   },
   "AL: Tring Sport 3 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9738": {
     "status": "working",
@@ -14430,7 +14441,8 @@
     "channel_name": "AL: Tring Sport 3 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:23"
+    "checked_at": "2025-11-10 22:51:23",
+    "final_name": "AL: Tring Sport 3"
   },
   "AL: Super Sport 2 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9709": {
     "status": "working",
@@ -14453,7 +14465,8 @@
     "channel_name": "AL: Super Sport 2 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:23"
+    "checked_at": "2025-11-10 22:51:23",
+    "final_name": "AL: Super Sport 2"
   },
   "AL: RTSH Plus_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9794": {
     "status": "failed",
@@ -14497,7 +14510,8 @@
     "channel_name": "AL: Tring Sport 1 HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:24"
+    "checked_at": "2025-11-10 22:51:24",
+    "final_name": "AL: Tring Sport 1"
   },
   "AL: Tring Kids_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9748": {
     "status": "working",
@@ -14520,7 +14534,8 @@
     "channel_name": "AL: Tring Kids",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:24"
+    "checked_at": "2025-11-10 22:51:24",
+    "final_name": "AL: Tring Kids"
   },
   "AL: TV Vali_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9803": {
     "status": "failed",
@@ -14550,7 +14565,8 @@
     "channel_name": "AL: Tring Planet",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:27"
+    "checked_at": "2025-11-10 22:51:27",
+    "final_name": "AL: Tring Planet"
   },
   "AL: TV Mitrovica_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9804": {
     "status": "failed",
@@ -14587,7 +14603,8 @@
     "channel_name": "AL: Klan Kosova",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:29"
+    "checked_at": "2025-11-10 22:51:29",
+    "final_name": "AL: Klan Kosova"
   },
   "AL: TV Prizreni_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9808": {
     "status": "failed",
@@ -14624,7 +14641,8 @@
     "channel_name": "SE: SVT1",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:29"
+    "checked_at": "2025-11-10 22:51:29",
+    "final_name": "SE: SVT1"
   },
   "AL: Klan TV HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9788": {
     "status": "working",
@@ -14647,7 +14665,8 @@
     "channel_name": "AL: Klan TV HD",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:30"
+    "checked_at": "2025-11-10 22:51:30",
+    "final_name": "AL: Klan TV"
   },
   "AL: Rrokum TV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9823": {
     "status": "failed",
@@ -14691,7 +14710,8 @@
     "channel_name": "SE: SVT2",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:31"
+    "checked_at": "2025-11-10 22:51:31",
+    "final_name": "SE: SVT2"
   },
   "SE: C More First HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3758": {
     "status": "failed",
@@ -14749,7 +14769,8 @@
     "channel_name": "AL: TV Tema",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:32"
+    "checked_at": "2025-11-10 22:51:32",
+    "final_name": "AL: TV Tema"
   },
   "AL: Tring Smile_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9879": {
     "status": "failed",
@@ -14793,7 +14814,8 @@
     "channel_name": "SE: TLC",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:33"
+    "checked_at": "2025-11-10 22:51:33",
+    "final_name": "SE: TLC"
   },
   "AL: Tring History_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9893": {
     "status": "failed",
@@ -14830,7 +14852,8 @@
     "channel_name": "SE: TV4",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:34"
+    "checked_at": "2025-11-10 22:51:34",
+    "final_name": "SE: TV4"
   },
   "ALB: Humor HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12308": {
     "status": "failed",
@@ -14860,7 +14883,8 @@
     "channel_name": "SE: TV6",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:35"
+    "checked_at": "2025-11-10 22:51:35",
+    "final_name": "SE: TV6"
   },
   "ALB: Humor 1 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12310": {
     "status": "failed",
@@ -14904,7 +14928,8 @@
     "channel_name": "AL: Stinet",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:35"
+    "checked_at": "2025-11-10 22:51:35",
+    "final_name": "AL: Stinet"
   },
   "SE: SVT24/B_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3777": {
     "status": "failed",
@@ -14948,7 +14973,8 @@
     "channel_name": "AL: Kujtesa Sport 2",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:39"
+    "checked_at": "2025-11-10 22:51:39",
+    "final_name": "AL: Kujtesa Sport 2"
   },
   "AL: Kujtesa Sport 3_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9940": {
     "status": "working",
@@ -14971,7 +14997,8 @@
     "channel_name": "AL: Kujtesa Sport 3",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:40"
+    "checked_at": "2025-11-10 22:51:40",
+    "final_name": "AL: Kujtesa Sport 3"
   },
   "SE: TV8_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3764": {
     "status": "failed",
@@ -15001,7 +15028,8 @@
     "channel_name": "SE: Viasat Sport Premium",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:40"
+    "checked_at": "2025-11-10 22:51:40",
+    "final_name": "SE: Viasat Sport Premium"
   },
   "SE: KANAL 11_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3761": {
     "status": "failed",
@@ -15080,7 +15108,8 @@
     "channel_name": "AL: Kujtesa Sport 1",
     "group_title": "ALBANIA",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:43"
+    "checked_at": "2025-11-10 22:51:43",
+    "final_name": "AL: Kujtesa Sport 1"
   },
   "SE: Discovery Channel_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3728": {
     "status": "failed",
@@ -15124,7 +15153,8 @@
     "channel_name": "SE: TV12",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:44"
+    "checked_at": "2025-11-10 22:51:44",
+    "final_name": "SE: TV12"
   },
   "SE: History HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3736": {
     "status": "failed",
@@ -15182,7 +15212,8 @@
     "channel_name": "SE: TV4 GULD",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:46"
+    "checked_at": "2025-11-10 22:51:46",
+    "final_name": "SE: TV4 GULD"
   },
   "SE: C More Live 3 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3715": {
     "status": "working",
@@ -15205,6 +15236,1465 @@
     "channel_name": "SE: C More Live 3 HD",
     "group_title": "SWEDEN",
     "expiry_date": null,
-    "checked_at": "2025-11-10 22:51:47"
+    "checked_at": "2025-11-10 22:51:47",
+    "final_name": "SE: C More Live 3"
+  },
+  "SE: Animal Planet_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3742": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "SE: Animal Planet",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3742",
+    "checked_at": "2025-11-10 22:51:48"
+  },
+  "[DK] KANAL 4 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8763": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] KANAL 4 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8763",
+    "checked_at": "2025-11-10 22:51:48"
+  },
+  "[DK] TV2_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3672": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV2",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3672",
+    "checked_at": "2025-11-10 22:51:48"
+  },
+  "SE: C More Live HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3718": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"SE: C More Live HD\" tvg-logo=\"\" group-title=\"SWEDEN\",SE: C More Live HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3718",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "SE: C More Live HD",
+      "tvg_logo": "",
+      "group_title": "SWEDEN",
+      "channel_name": "SE: C More Live HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "839 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "SE: C More Live HD",
+    "group_title": "SWEDEN",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:48"
+  },
+  "SE: Viasat Motor HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3738": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"SE: Viasat Motor HD\" tvg-logo=\"\" group-title=\"SWEDEN\",SE: Viasat Motor HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3738",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "SE: Viasat Motor HD",
+      "tvg_logo": "",
+      "group_title": "SWEDEN",
+      "channel_name": "SE: Viasat Motor HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "2546 kbps",
+    "resolution": "720p",
+    "fps": 50,
+    "audio_info": "147 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "SE: Viasat Motor HD",
+    "group_title": "SWEDEN",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:49"
+  },
+  "NL: NPO 1 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8306": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: NPO 1 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8306",
+    "checked_at": "2025-11-10 22:51:49"
+  },
+  "SE: Disney Channel_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3748": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"SE: Disney Channel\" tvg-logo=\"\" group-title=\"SWEDEN\",SE: Disney Channel",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3748",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "SE: Disney Channel",
+      "tvg_logo": "",
+      "group_title": "SWEDEN",
+      "channel_name": "SE: Disney Channel",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "2231 kbps",
+    "resolution": "1080p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "SE: Disney Channel",
+    "group_title": "SWEDEN",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:50"
+  },
+  "[DK] TV 3 HD PULS_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3670": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV 3 HD PULS",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3670",
+    "checked_at": "2025-11-10 22:51:51"
+  },
+  "[DK] VIASAT NATURE_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8729": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] VIASAT NATURE",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8729",
+    "checked_at": "2025-11-10 22:51:51"
+  },
+  "[DK] NAT GEOGRAPHIC_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3681": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] NAT GEOGRAPHIC\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] NAT GEOGRAPHIC",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3681",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] NAT GEOGRAPHIC",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] NAT GEOGRAPHIC",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "711 kbps",
+    "resolution": "720p",
+    "fps": 50,
+    "audio_info": "320 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "[DK] NAT GEOGRAPHIC",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:51"
+  },
+  "NL: RTL 5 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8310": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: RTL 5 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8310",
+    "checked_at": "2025-11-10 22:51:51"
+  },
+  "[DK] TV2 Zulu HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8730": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV2 Zulu HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8730",
+    "checked_at": "2025-11-10 22:51:51"
+  },
+  "NL: SBS 6 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8311": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: SBS 6 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8311",
+    "checked_at": "2025-11-10 22:51:51"
+  },
+  "[DK] TV2 Nord HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8732": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV2 Nord HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8732",
+    "checked_at": "2025-11-10 22:51:52"
+  },
+  "NL: RTL 8 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8313": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: RTL 8 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8313",
+    "checked_at": "2025-11-10 22:51:52"
+  },
+  "[DK] TV2 News HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8733": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV2 News HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8733",
+    "checked_at": "2025-11-10 22:51:52"
+  },
+  "NL: NET 5 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8315": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: NET 5 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8315",
+    "checked_at": "2025-11-10 22:51:52"
+  },
+  "NL: VERONICA/DISNEYXD FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8316": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: VERONICA/DISNEYXD FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8316",
+    "checked_at": "2025-11-10 22:51:52"
+  },
+  "[DK] TV3 PLUS_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8734": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV3 PLUS",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8734",
+    "checked_at": "2025-11-10 22:51:53"
+  },
+  "[DK] TV2 Fri HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8736": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV2 Fri HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8736",
+    "checked_at": "2025-11-10 22:51:53"
+  },
+  "NL: Baby TV HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8321": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Baby TV HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8321",
+    "checked_at": "2025-11-10 22:51:53"
+  },
+  "NL: Omroep West HD NL_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8320": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Omroep West HD NL",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8320",
+    "checked_at": "2025-11-10 22:51:53"
+  },
+  "[DK] TV2 Charlie HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8737": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] TV2 Charlie HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8737",
+    "checked_at": "2025-11-10 22:51:53"
+  },
+  "[DK] TV3 SPORT 1 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3684": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] TV3 SPORT 1 HD\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] TV3 SPORT 1 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3684",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] TV3 SPORT 1 HD",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] TV3 SPORT 1 HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1788 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "133 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "[DK] TV3 SPORT 1 HD",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:54"
+  },
+  "[DK] TV3 SPORT 2 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3677": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] TV3 SPORT 2 HD\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] TV3 SPORT 2 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3677",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] TV3 SPORT 2 HD",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] TV3 SPORT 2 HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1133 kbps",
+    "resolution": "720p",
+    "fps": 50,
+    "audio_info": "93 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "[DK] TV3 SPORT 2 HD",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:54"
+  },
+  "NL: NPO 2 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8307": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: NPO 2 FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: NPO 2 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8307",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: NPO 2 FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: NPO 2 FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1048 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: NPO 2 FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:54"
+  },
+  "[DK] Disney XD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8755": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] Disney XD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8755",
+    "checked_at": "2025-11-10 22:51:54"
+  },
+  "[DK]  NICKELODEON HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8756": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK]  NICKELODEON HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8756",
+    "checked_at": "2025-11-10 22:51:55"
+  },
+  "[DK] VIASAT HISTORY_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3679": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] VIASAT HISTORY\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] VIASAT HISTORY",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3679",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] VIASAT HISTORY",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] VIASAT HISTORY",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1968 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "99 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "[DK] VIASAT HISTORY",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:55"
+  },
+  "NL: 100% NL TV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8329": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: 100% NL TV",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8329",
+    "checked_at": "2025-11-10 22:51:55"
+  },
+  "NL: NPO 3 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8308": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: NPO 3 FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: NPO 3 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8308",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: NPO 3 FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: NPO 3 FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "210 kbps",
+    "resolution": "1080p",
+    "fps": 50,
+    "audio_info": "127 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: NPO 3 FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:55"
+  },
+  "NL: Slam HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8330": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Slam HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8330",
+    "checked_at": "2025-11-10 22:51:55"
+  },
+  "[DK] Cartoon Network_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8759": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] Cartoon Network",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8759",
+    "checked_at": "2025-11-10 22:51:56"
+  },
+  "[DK] CANAL 9 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8760": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] CANAL 9 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8760",
+    "checked_at": "2025-11-10 22:51:56"
+  },
+  "[DK] 6 EREN HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8761": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] 6 EREN HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8761",
+    "checked_at": "2025-11-10 22:51:56"
+  },
+  "NL: RTL 4 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8309": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: RTL 4 FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: RTL 4 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8309",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: RTL 4 FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: RTL 4 FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "472 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: RTL 4 FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:56"
+  },
+  "NL: 192TV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8333": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: 192TV",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8333",
+    "checked_at": "2025-11-10 22:51:56"
+  },
+  "NL: ONS_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8336": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: ONS",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8336",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "[DK] TV 2 SPORT HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3757": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] TV 2 SPORT HD \" tvg-logo=\"\" group-title=\"DENMARK\",[DK] TV 2 SPORT HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3757",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] TV 2 SPORT HD ",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] TV 2 SPORT HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "501 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "[DK] TV 2 SPORT HD",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: Film1 Premiere FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8340": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Film1 Premiere FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8340",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: E! ENTERTAINMENT HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8337": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: E! ENTERTAINMENT HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8337",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: Film1 Drama FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8343": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Film1 Drama FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8343",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: TV ORANJE HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8338": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: TV ORANJE HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8338",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "[DK] Kanal 5 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8762": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] Kanal 5 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8762",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: NPO Politiek HD NL_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8319": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: NPO Politiek HD NL\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: NPO Politiek HD NL",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8319",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: NPO Politiek HD NL",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: NPO Politiek HD NL",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1654 kbps",
+    "resolution": "SD",
+    "fps": 25,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "NL: NPO Politiek HD NL",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: Film1 Drama HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8344": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Film1 Drama HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8344",
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: RTL 7 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8312": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: RTL 7 FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: RTL 7 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8312",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: RTL 7 FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: RTL 7 FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "711 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "127 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: RTL 7 FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:57"
+  },
+  "NL: RTL Z FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8317": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: RTL Z FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: RTL Z FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8317",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: RTL Z FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: RTL Z FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1415 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: RTL Z FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: National Geographic HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8348": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: National Geographic HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8348",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: SBS 9 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8314": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: SBS 9 FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: SBS 9 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8314",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: SBS 9 FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: SBS 9 FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "786 kbps",
+    "resolution": "1080p",
+    "fps": 50,
+    "audio_info": "160 kbps MP2",
+    "country": "Unknown",
+    "channel_name": "NL: SBS 9 FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: National Geographic FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8347": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: National Geographic FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8347",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: Discovery ID FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8350": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Discovery ID FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8350",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: Film1 Action HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8346": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Film1 Action HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8346",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: Discovery Channel FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8351": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Discovery Channel FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8351",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: Discovery Science FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8352": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Discovery Science FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8352",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: Discovery World FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8353": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Discovery World FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8353",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "[DK] DK 4 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8765": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] DK 4 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8765",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: Disney Channel FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8322": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: Disney Channel FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: Disney Channel FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8322",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: Disney Channel FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: Disney Channel FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "N/A",
+    "resolution": "1080p",
+    "fps": 50,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "NL: Disney Channel FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "[DK]TV 3 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8766": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK]TV 3 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8766",
+    "checked_at": "2025-11-10 22:51:58"
+  },
+  "NL: NPO 1 Extra HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8318": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: NPO 1 Extra HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: NPO 1 Extra HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8318",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: NPO 1 Extra HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: NPO 1 Extra HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "396 kbps",
+    "resolution": "1080p",
+    "fps": 50,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "NL: NPO 1 Extra HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: Animal Planet HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8355": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Animal Planet HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8355",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: Comedy Central HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8354": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Comedy Central HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8354",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: Nick Toons HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8324": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: Nick Toons HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: Nick Toons HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8324",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: Nick Toons HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: Nick Toons HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1497 kbps",
+    "resolution": "SD",
+    "fps": 25,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "NL: Nick Toons HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: ULKE TV HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5715": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: ULKE TV HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5715",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "[DK] C MORE STARS_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8745": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] C MORE STARS\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] C MORE STARS",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8745",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] C MORE STARS",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] C MORE STARS",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "N/A",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "[DK] C MORE STARS",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TV 8_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5691": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TV 8",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5691",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TRT World_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5743": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT World",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5743",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TRT Turk_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5742": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT Turk",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5742",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "[DK] DR 1 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8768": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] DR 1 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8768",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TRT MUZIK_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5738": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT MUZIK",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5738",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: Boomerang HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8357": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Boomerang HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8357",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: Investigation Discovery_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8358": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: Investigation Discovery",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8358",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TRT HABER HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5734": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT HABER HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5734",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: SPIKE FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8360": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: SPIKE FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8360",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TRT Avaz_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5739": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT Avaz",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5739",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: TRT 2 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5744": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT 2 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5744",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: Nickelodeon FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8325": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: Nickelodeon FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: Nickelodeon FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8325",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: Nickelodeon FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: Nickelodeon FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "210 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "127 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: Nickelodeon FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "[DK] DR 2 FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8767": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "[DK] DR 2 FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8767",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: STAR FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5685": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: STAR FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5685",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: SHOW TV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5718": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: SHOW TV",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5718",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: National Geographic Turk_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5681": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: National Geographic Turk",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5681",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: MINICA GO_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5683": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: MINICA GO",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5683",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: NatGeo Wild Turk_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5680": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: NatGeo Wild Turk",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5680",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "[DK] DR Ramasjang_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8751": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] DR Ramasjang\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] DR Ramasjang",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8751",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] DR Ramasjang",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] DR Ramasjang",
+      "expiry_date": null
+    },
+    "codec": null,
+    "video_bitrate": "N/A",
+    "resolution": "Unknown",
+    "fps": null,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "[DK] DR Ramasjang",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "[DK]ANIMAL PLANET HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8748": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK]ANIMAL PLANET HD\" tvg-logo=\"\" group-title=\"DENMARK\",[DK]ANIMAL PLANET HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8748",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK]ANIMAL PLANET HD",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK]ANIMAL PLANET HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "3722 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "[DK]ANIMAL PLANET HD",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "NL: BBC FIRST FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8356": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: BBC FIRST FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8356",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: HABER TURK HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5723": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: HABER TURK HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5723",
+    "checked_at": "2025-11-10 22:51:59"
+  },
+  "TR: ATV HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5732": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: ATV HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5732",
+    "checked_at": "2025-11-10 22:52:00"
+  },
+  "RUS: Russia 24_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7590": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: Russia 24",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7590",
+    "checked_at": "2025-11-10 22:52:00"
+  },
+  "NL: Nick Junior HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8323": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: Nick Junior HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: Nick Junior HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8323",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: Nick Junior HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: Nick Junior HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1206 kbps",
+    "resolution": "SD",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: Nick Junior HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:00"
+  },
+  "[DK] TV2 SYD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8731": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"[DK] TV2 SYD\" tvg-logo=\"\" group-title=\"DENMARK\",[DK] TV2 SYD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8731",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "[DK] TV2 SYD",
+      "tvg_logo": "",
+      "group_title": "DENMARK",
+      "channel_name": "[DK] TV2 SYD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1025 kbps",
+    "resolution": "720p",
+    "fps": 50,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "[DK] TV2 SYD",
+    "group_title": "DENMARK",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:00"
+  },
+  "NL: MTV FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8331": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: MTV FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: MTV FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8331",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: MTV FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: MTV FHD",
+      "expiry_date": null
+    },
+    "codec": null,
+    "video_bitrate": "2021 kbps",
+    "resolution": "Unknown",
+    "fps": null,
+    "audio_info": "127 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: MTV FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:01"
+  },
+  "NL: MTV 24 Music HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8332": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: MTV 24 Music HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: MTV 24 Music HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8332",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: MTV 24 Music HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: MTV 24 Music HD",
+      "expiry_date": null
+    },
+    "codec": null,
+    "video_bitrate": "1678 kbps",
+    "resolution": "Unknown",
+    "fps": null,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: MTV 24 Music HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:02"
+  },
+  "NL: FOX HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8335": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: FOX HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: FOX HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8335",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: FOX HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: FOX HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1549 kbps",
+    "resolution": "SD",
+    "fps": 50,
+    "audio_info": "160 kbps MP2",
+    "country": "Unknown",
+    "channel_name": "NL: FOX HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:02"
+  },
+  "TR: NTV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5727": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: NTV",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5727",
+    "checked_at": "2025-11-10 22:52:02"
+  },
+  "NL: Film1 Family HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8342": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: Film1 Family HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: Film1 Family HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8342",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: Film1 Family HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: Film1 Family HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "3238 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "130 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: Film1 Family HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:03"
+  },
+  "NL: VICELAND FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8326": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: VICELAND FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8326",
+    "checked_at": "2025-11-10 22:52:04"
+  },
+  "NL: National Geographic Wild HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8349": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: National Geographic Wild HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: National Geographic Wild HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8349",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: National Geographic Wild HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: National Geographic Wild HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "2336 kbps",
+    "resolution": "1080p",
+    "fps": 25,
+    "audio_info": "127 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: National Geographic Wild HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:05"
+  },
+  "NL: XITE HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8328": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NL: XITE HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8328",
+    "checked_at": "2025-11-10 22:52:05"
+  },
+  "NL: TLC FHD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8361": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: TLC FHD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: TLC FHD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8361",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: TLC FHD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: TLC FHD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1864 kbps",
+    "resolution": "1080p",
+    "fps": 50,
+    "audio_info": "130 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: TLC FHD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:05"
+  },
+  "TR: TRT KURDI_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5735": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT KURDI",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5735",
+    "checked_at": "2025-11-10 22:52:07"
+  },
+  "TR: TLC_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5684": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TLC",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5684",
+    "checked_at": "2025-11-10 22:52:10"
+  },
+  "TR: Star HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5731": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: Star HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5731",
+    "checked_at": "2025-11-10 22:52:10"
+  },
+  "TR: Kanal D HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5730": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: Kanal D HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5730",
+    "checked_at": "2025-11-10 22:52:10"
+  },
+  "TR: Dream Turk_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5720": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: Dream Turk",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5720",
+    "checked_at": "2025-11-10 22:52:10"
+  },
+  "NL: 24 Kitchen HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8327": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NL: 24 Kitchen HD\" tvg-logo=\"\" group-title=\"NEDERLAND\",NL: 24 Kitchen HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8327",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "NL: 24 Kitchen HD",
+      "tvg_logo": "",
+      "group_title": "NEDERLAND",
+      "channel_name": "NL: 24 Kitchen HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "5177 kbps",
+    "resolution": "1080p",
+    "fps": 25,
+    "audio_info": "128 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "NL: 24 Kitchen HD",
+    "group_title": "NEDERLAND",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:11"
+  },
+  "RUS: AMEDIA 2 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7593": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: AMEDIA 2 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7593",
+    "checked_at": "2025-11-10 22:52:12"
+  },
+  "RUS: NTV FOOTBALL 3 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7586": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: NTV FOOTBALL 3 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7586",
+    "checked_at": "2025-11-10 22:52:13"
+  },
+  "RUS: Aris 24 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7594": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: Aris 24 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7594",
+    "checked_at": "2025-11-10 22:52:13"
+  },
+  "TR: TRT BELGESEL_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5733": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: TRT BELGESEL",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5733",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "TR: Kanal B_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5724": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: Kanal B",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5724",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "TR: FX TV_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5716": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: FX TV",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5716",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "TR: CNN TURK HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5722": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: CNN TURK HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5722",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "TR: DISNEY CHANNEL_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5682": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: DISNEY CHANNEL",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5682",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "RUS: MATCH! FOOTBALL 2 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7600": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: MATCH! FOOTBALL 2 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7600",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "RUS: RT Documentary_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7587": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: RT Documentary",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7587",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "RUS: HTB HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7582": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: HTB HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7582",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "RUS: TV 1000 Mega Hit HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7583": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"RUS: TV 1000 Mega Hit HD\" tvg-logo=\"\" group-title=\"RUSSIA\",RUS: TV 1000 Mega Hit HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7583",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "RUS: TV 1000 Mega Hit HD",
+      "tvg_logo": "",
+      "group_title": "RUSSIA",
+      "channel_name": "RUS: TV 1000 Mega Hit HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "816 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "162 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "RUS: TV 1000 Mega Hit HD",
+    "group_title": "RUSSIA",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "RUS: MTV HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7597": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: MTV HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7597",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "RUS: MATCH! FOOTBALL 3 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7601": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: MATCH! FOOTBALL 3 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7601",
+    "checked_at": "2025-11-10 22:52:15"
+  },
+  "TR: TRT 1 HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5745": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"TR: TRT 1 HD\" tvg-logo=\"\" group-title=\"TURKEY\",TR: TRT 1 HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5745",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "TR: TRT 1 HD",
+      "tvg_logo": "",
+      "group_title": "TURKEY",
+      "channel_name": "TR: TRT 1 HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1078 kbps",
+    "resolution": "1080p",
+    "fps": 50,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "TR: TRT 1 HD",
+    "group_title": "TURKEY",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:16"
+  },
+  "TR: Kanal 7_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5725": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "TR: Kanal 7",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5725",
+    "checked_at": "2025-11-10 22:52:16"
+  },
+  "RUS: TV1000 ACTION HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7591": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "RUS: TV1000 ACTION HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7591",
+    "checked_at": "2025-11-10 22:52:17"
+  },
+  "HU: Viasat6_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8235": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"HU: Viasat6\" tvg-logo=\"\" group-title=\"HUNGARY\",HU: Viasat6",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8235",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "HU: Viasat6",
+      "tvg_logo": "",
+      "group_title": "HUNGARY",
+      "channel_name": "HU: Viasat6",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "973 kbps",
+    "resolution": "SD",
+    "fps": 25,
+    "audio_info": "98 kbps AAC",
+    "country": "Unknown",
+    "channel_name": "HU: Viasat6",
+    "group_title": "HUNGARY",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:17"
+  },
+  "RUS: VIASAT EXPLORER HD_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7584": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"RUS: VIASAT EXPLORER HD\" tvg-logo=\"\" group-title=\"RUSSIA\",RUS: VIASAT EXPLORER HD",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7584",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "RUS: VIASAT EXPLORER HD",
+      "tvg_logo": "",
+      "group_title": "RUSSIA",
+      "channel_name": "RUS: VIASAT EXPLORER HD",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "711 kbps",
+    "resolution": "720p",
+    "fps": 25,
+    "audio_info": "192 kbps MP2",
+    "country": "Unknown",
+    "channel_name": "RUS: VIASAT EXPLORER HD",
+    "group_title": "RUSSIA",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:17"
+  },
+  "RUS: TV1000_http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7592": {
+    "status": "working",
+    "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"RUS: TV1000\" tvg-logo=\"\" group-title=\"RUSSIA\",RUS: TV1000",
+    "url": "http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7592",
+    "info": {
+      "tvg_id": "",
+      "tvg_name": "RUS: TV1000",
+      "tvg_logo": "",
+      "group_title": "RUSSIA",
+      "channel_name": "RUS: TV1000",
+      "expiry_date": null
+    },
+    "codec": "H264",
+    "video_bitrate": "1130 kbps",
+    "resolution": "1080p",
+    "fps": 25,
+    "audio_info": "Unknown",
+    "country": "Unknown",
+    "channel_name": "RUS: TV1000",
+    "group_title": "RUSSIA",
+    "expiry_date": null,
+    "checked_at": "2025-11-10 22:52:18"
   }
 }

@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated: 2025-11-10 22:51:47
+# Generated: 2025-11-10 22:52:43
 # Organized by country, alphabetically, and by bitrate
 
 
@@ -377,7 +377,7 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9947
 #EXTINF:-1 tvg-name="IT: TOPCrime HD" group-title="IT",IT: TOPCrime backup 1 [720p 816 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9947
 
-# ===== Unknown (732 streams) =====
+# ===== Unknown (804 streams) =====
 #EXTINF:-1 tvg-name="AL: Art Sport 2 FHD" group-title="Unknown",AL: Art Sport 2 [1080p 5375 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9613
 #EXTINF:-1 tvg-name="AL: Art Sport 3 FHD" group-title="Unknown",AL: Art Sport 3 [1080p 1047 kbps]
@@ -1000,6 +1000,68 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/557
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/556
 #EXTINF:-1 tvg-id="htv5" tvg-name="HRT 5" tvg-logo="http://116.203.156.75/logo/hrt5_logo.png" group-title="Unknown",HRT 5 backup 1 [1080p 2099 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/556
+#EXTINF:-1 tvg-name="HU: Animal Planet HD" group-title="Unknown",HU: Animal Planet [1080p 3822 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8278
+#EXTINF:-1 tvg-name="HU: Discovery Channel" group-title="Unknown",HU: Discovery Channel [1080p 2021 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8273
+#EXTINF:-1 tvg-name="HU: Duna HD" group-title="Unknown",HU: Duna [720p 2254 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8272
+#EXTINF:-1 tvg-name="HU: DunaWorld" group-title="Unknown",HU: DunaWorld [720p 1654 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8271
+#EXTINF:-1 tvg-name="HU: HBO HD (HU)" group-title="Unknown",HU: HBO [1080p 868 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8267
+#EXTINF:-1 tvg-name="HU: HBO 3 HU" group-title="Unknown",HU: HBO 3 HU [Unknown 629 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8268
+#EXTINF:-1 tvg-name="HU: HISTORY HD" group-title="Unknown",HU: HISTORY [1080p 792 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8265
+#EXTINF:-1 tvg-name="HU: M1 HD" group-title="Unknown",HU: M1 [1080p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8263
+#EXTINF:-1 tvg-name="HU: M2 HD" group-title="Unknown",HU: M2 [1080p 839 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8262
+#EXTINF:-1 tvg-name="HU: M4 HD" group-title="Unknown",HU: M4 [1080p 839 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8261
+#EXTINF:-1 tvg-name="HU: M5 HD" group-title="Unknown",HU: M5 [1080p 868 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8260
+#EXTINF:-1 tvg-name="HU: Nat Geo Wild HD" group-title="Unknown",HU: Nat Geo Wild [SD 210 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8259
+#EXTINF:-1 tvg-name="HU: National Geo HD" group-title="Unknown",HU: National Geo [1080p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8258
+#EXTINF:-1 tvg-name="HU: Nick Jr" group-title="Unknown",HU: Nick Jr [SD 2493 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8257
+#EXTINF:-1 tvg-name="HU: RTL" group-title="Unknown",HU: RTL [720p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8255
+#EXTINF:-1 tvg-name="HU: RTL GOLD HU" group-title="Unknown",HU: RTL GOLD HU [SD 681 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8254
+#EXTINF:-1 tvg-name="HU: RTL II HD" group-title="Unknown",HU: RTL II [720p 944 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8253
+#EXTINF:-1 tvg-name="HU: RTL Klub HD" group-title="Unknown",HU: RTL Klub [720p 658 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8252
+#EXTINF:-1 tvg-name="HU: Sorozat+" group-title="Unknown",HU: Sorozat+ [SD 2907 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8274
+#EXTINF:-1 tvg-name="HU: Spektrum HD" group-title="Unknown",HU: Spektrum [Unknown 845 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8249
+#EXTINF:-1 tvg-name="HU: Spiler TV" group-title="Unknown",HU: Spiler TV [1080p 1468 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8248
+#EXTINF:-1 tvg-name="HU: SuperTV2" group-title="Unknown",HU: SuperTV2 [1080p 1497 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8246
+#EXTINF:-1 tvg-name="HU: TLC HU" group-title="Unknown",HU: TLC HU [720p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8245
+#EXTINF:-1 tvg-name="HU: TV Paprika HU" group-title="Unknown",HU: TV Paprika HU [1080p 868 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8242
+#EXTINF:-1 tvg-name="HU: TV2 HD" group-title="Unknown",HU: TV2 [1080p 891 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8241
+#EXTINF:-1 tvg-name="HU: Travel Channel HD" group-title="Unknown",HU: Travel Channel [1080p 868 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8244
+#EXTINF:-1 tvg-name="HU: Viasat Explore" group-title="Unknown",HU: Viasat Explore [720p 920 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8239
+#EXTINF:-1 tvg-name="HU: Viasat History" group-title="Unknown",HU: Viasat History [1080p 1445 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8238
+#EXTINF:-1 tvg-name="HU: Viasat Nature" group-title="Unknown",HU: Viasat Nature [SD 839 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8237
+#EXTINF:-1 tvg-name="HU: Viasat3" group-title="Unknown",HU: Viasat3 [SD 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8236
+#EXTINF:-1 tvg-name="HU: Viasat6" group-title="Unknown",HU: Viasat6 [SD 973 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8235
 #EXTINF:-1 tvg-name="Happy Drustvo" tvg-logo="http://nova-iptv.com/logo/happy_drustvo.png" group-title="Unknown",Happy Drustvo backup 1 [1080p 1078 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12704
 #EXTINF:-1 tvg-name="Happy Drustvo" tvg-logo="http://nova-iptv.com/logo/happy_drustvo.png" group-title="Unknown",Happy Drustvo backup 1 [1080p 1078 kbps]
@@ -1152,6 +1214,44 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9273
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9272
 #EXTINF:-1 tvg-id="N1 HD (HR)" tvg-name="N1 HR" tvg-logo="http://nova-iptv.com/logo/n1-logo.png" group-title="Unknown",N1 HR backup 1 [1080p 1415 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9272
+#EXTINF:-1 tvg-name="NL: 24 Kitchen HD" group-title="Unknown",NL: 24 Kitchen [1080p 5177 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8327
+#EXTINF:-1 tvg-name="NL: Disney Channel FHD" group-title="Unknown",NL: Disney Channel [1080p N/A]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8322
+#EXTINF:-1 tvg-name="NL: FOX HD" group-title="Unknown",NL: FOX [SD 1549 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8335
+#EXTINF:-1 tvg-name="NL: Film1 Family HD" group-title="Unknown",NL: Film1 Family [720p 3238 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8342
+#EXTINF:-1 tvg-name="NL: MTV FHD" group-title="Unknown",NL: MTV [Unknown 2021 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8331
+#EXTINF:-1 tvg-name="NL: MTV 24 Music HD" group-title="Unknown",NL: MTV 24 Music [Unknown 1678 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8332
+#EXTINF:-1 tvg-name="NL: NPO 1 Extra HD" group-title="Unknown",NL: NPO 1 Extra [1080p 396 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8318
+#EXTINF:-1 tvg-name="NL: NPO 2 FHD" group-title="Unknown",NL: NPO 2 [720p 1048 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8307
+#EXTINF:-1 tvg-name="NL: NPO 3 FHD" group-title="Unknown",NL: NPO 3 [1080p 210 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8308
+#EXTINF:-1 tvg-name="NL: NPO Politiek HD NL" group-title="Unknown",NL: NPO PolitiekNL [SD 1654 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8319
+#EXTINF:-1 tvg-name="NL: National Geographic Wild HD" group-title="Unknown",NL: National Geographic Wild [1080p 2336 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8349
+#EXTINF:-1 tvg-name="NL: Nick Junior HD" group-title="Unknown",NL: Nick Junior [SD 1206 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8323
+#EXTINF:-1 tvg-name="NL: Nick Toons HD" group-title="Unknown",NL: Nick Toons [SD 1497 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8324
+#EXTINF:-1 tvg-name="NL: Nickelodeon FHD" group-title="Unknown",NL: Nickelodeon [720p 210 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8325
+#EXTINF:-1 tvg-name="NL: RTL 4 FHD" group-title="Unknown",NL: RTL 4 [720p 472 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8309
+#EXTINF:-1 tvg-name="NL: RTL 7 FHD" group-title="Unknown",NL: RTL 7 [720p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8312
+#EXTINF:-1 tvg-name="NL: RTL Z FHD" group-title="Unknown",NL: RTL Z [720p 1415 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8317
+#EXTINF:-1 tvg-name="NL: SBS 9 FHD" group-title="Unknown",NL: SBS 9 [1080p 786 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8314
+#EXTINF:-1 tvg-name="NL: TLC FHD" group-title="Unknown",NL: TLC [1080p 1864 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8361
 #EXTINF:-1 tvg-id="Nova BH HD" tvg-name="NOVA BH" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaBH_logo.png" group-title="Unknown",NOVA BH backup 1 [1080p 3212 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9279
 #EXTINF:-1 tvg-id="Nova BH HD" tvg-name="NOVA BH" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaBH_logo.png" group-title="Unknown",NOVA BH backup 1 [1080p 3212 kbps]
@@ -1524,6 +1624,20 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6762
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/513
 #EXTINF:-1 tvg-id="RTV 1" tvg-name="RTV Vojvodina" tvg-logo="http://nova-iptv.com/logo/rtv-1.png" group-title="Unknown",RTV Vojvodina backup 1 [1080p 210 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/513
+#EXTINF:-1 tvg-name="RUS: DISCOVERY CHANNEL HD" group-title="Unknown",RUS: DISCOVERY CHANNEL [1080p 868 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7596
+#EXTINF:-1 tvg-name="RUS: DISNEY CHANNEL HD" group-title="Unknown",RUS: DISNEY CHANNEL [SD 1497 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7588
+#EXTINF:-1 tvg-name="RUS: FOX HD" group-title="Unknown",RUS: FOX [1080p 2136 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7589
+#EXTINF:-1 tvg-name="RUS: NAT GEO HD" group-title="Unknown",RUS: NAT GEO [SD 1224 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7598
+#EXTINF:-1 tvg-name="RUS: TV 1000 Mega Hit HD" group-title="Unknown",RUS: TV 1000 Mega Hit [720p 816 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7583
+#EXTINF:-1 tvg-name="RUS: TV1000" group-title="Unknown",RUS: TV1000 [1080p 1130 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7592
+#EXTINF:-1 tvg-name="RUS: VIASAT EXPLORER HD" group-title="Unknown",RUS: VIASAT EXPLORER [720p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7584
 #EXTINF:-1 tvg-id="RED" tvg-name="Red TV" tvg-logo="http://116.203.156.75/logo/Red-TV-Pink-Logo.png" group-title="Unknown",Red TV backup 1 [1080p 1048 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/375
 #EXTINF:-1 tvg-id="RED" tvg-name="Red TV" tvg-logo="http://116.203.156.75/logo/Red-TV-Pink-Logo.png" group-title="Unknown",Red TV backup 1 [1080p 1048 kbps]
@@ -1532,8 +1646,12 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/375
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10165
 #EXTINF:-1 tvg-id="rtl-croworld" tvg-name="Rtl Croatia World" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Croatia_World_logo.png" group-title="Unknown",Rtl Croatia World backup 1 [1080p 472 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10165
+#EXTINF:-1 tvg-name="SE: C More Live HD" group-title="Unknown",SE: C More Live [720p 839 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3718
 #EXTINF:-1 tvg-name="SE: C More Live 3 HD" group-title="Unknown",SE: C More Live 3 [720p 1078 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3715
+#EXTINF:-1 tvg-name="SE: Disney Channel" group-title="Unknown",SE: Disney Channel [1080p 2231 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3748
 #EXTINF:-1 tvg-name="SE: SVT1" group-title="Unknown",SE: SVT1 [720p 1078 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3772
 #EXTINF:-1 tvg-name="SE: SVT2" group-title="Unknown",SE: SVT2 [720p 7001 kbps]
@@ -1548,6 +1666,8 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3770
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3769
 #EXTINF:-1 tvg-name="SE: TV6" group-title="Unknown",SE: TV6 [720p 944 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3765
+#EXTINF:-1 tvg-name="SE: Viasat Motor HD" group-title="Unknown",SE: Viasat Motor [720p 2546 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3738
 #EXTINF:-1 tvg-name="SE: Viasat Sport Premium" group-title="Unknown",SE: Viasat Sport Premium [720p 1258 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3712
 #EXTINF:-1 tvg-name="SLO 1" group-title="Unknown",SLO 1 backup 1 [1080p 553 kbps]
@@ -1750,6 +1870,8 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6307
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6308
 #EXTINF:-1 tvg-id="FOX Movies HD (INT)" tvg-name="Star Movies HD" tvg-logo="http://nova-iptv.com/logo/star_movies.png" group-title="Unknown",Star Movies backup 1 [720p 786 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6308
+#EXTINF:-1 tvg-name="TR: TRT 1 HD" group-title="Unknown",TR: TRT 1 [1080p 1078 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5745
 #EXTINF:-1 tvg-name="TV 7 Tuzla" group-title="Unknown",TV 7 Tuzla backup 1 [SD 1730 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8901
 #EXTINF:-1 tvg-name="TV 7 Tuzla" group-title="Unknown",TV 7 Tuzla backup 1 [SD 1730 kbps]
@@ -1782,6 +1904,8 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12847
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3651
 #EXTINF:-1 tvg-id="Travel Channel" tvg-name="Travel Channel HD" tvg-logo="http://116.203.156.75/logo/travel.png" group-title="Unknown",Travel Channel backup 1 [720p 262 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3651
+#EXTINF:-1 tvg-name="UK: MOVIES COMEDY HD" group-title="Unknown",UK: MOVIES COMEDY [1080p 1078 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9421
 #EXTINF:-1 tvg-id="Viasat History HD" tvg-name="Viasat History HD" tvg-logo="http://116.203.156.75/logo/6.png" group-title="Unknown",Viasat History backup 1 [1080p 839 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/502
 #EXTINF:-1 tvg-id="Viasat History HD" tvg-name="Viasat History HD" tvg-logo="http://116.203.156.75/logo/6.png" group-title="Unknown",Viasat History backup 1 [1080p 839 kbps]
@@ -1806,6 +1930,26 @@ http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/499
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8302
 #EXTINF:-1 tvg-name="Zvezda TV" group-title="Unknown",Zvezda TV backup 1 [720p 262 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8302
+#EXTINF:-1 tvg-name="[DK] C MORE STARS" group-title="Unknown",[DK] C MORE STARS [720p N/A]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8745
+#EXTINF:-1 tvg-name="[DK] DR Ramasjang" group-title="Unknown",[DK] DR Ramasjang [Unknown N/A]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8751
+#EXTINF:-1 tvg-name="[DK] Discovery Channel FHD" group-title="Unknown",[DK] Discovery Channel [Unknown Unknown]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8758
+#EXTINF:-1 tvg-name="[DK] NAT GEOGRAPHIC" group-title="Unknown",[DK] NAT GEOGRAPHIC [720p 711 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3681
+#EXTINF:-1 tvg-name="[DK] TV 2 SPORT HD " group-title="Unknown",[DK] TV 2 SPORT [720p 501 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3757
+#EXTINF:-1 tvg-name="[DK] TV2 SYD" group-title="Unknown",[DK] TV2 SYD [720p 1025 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8731
+#EXTINF:-1 tvg-name="[DK] TV3 SPORT 1 HD" group-title="Unknown",[DK] TV3 SPORT 1 [720p 1788 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3684
+#EXTINF:-1 tvg-name="[DK] TV3 SPORT 2 HD" group-title="Unknown",[DK] TV3 SPORT 2 [720p 1133 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3677
+#EXTINF:-1 tvg-name="[DK] VIASAT HISTORY" group-title="Unknown",[DK] VIASAT HISTORY [720p 1968 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3679
+#EXTINF:-1 tvg-name="[DK]ANIMAL PLANET HD" group-title="Unknown",[DK]ANIMAL PLANET [720p 3722 kbps]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8748
 #EXTINF:-1 tvg-name="[MK] 24 VESTI" group-title="Unknown",[MK] 24 VESTI [1080p 920 kbps]
 http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3655
 #EXTINF:-1 tvg-name="[MK] ALFA TV" group-title="Unknown",[MK] ALFA TV [SD 2692 kbps]
