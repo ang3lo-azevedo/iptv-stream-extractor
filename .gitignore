@@ -1,4 +1,3 @@
-middleware.sql
-stream_check_progress.json
+*.sql
 __pycache__/
 *.log

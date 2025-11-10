@@ -300,6 +300,43 @@ def should_filter_stream(channel_name, group_title):
             return True
     return False
 
+def truncate_line(line, max_width):
+    """Truncate a line to max_width visible characters, preserving ANSI color codes"""
+    # Pattern to match ANSI escape sequences
+    ansi_pattern = re.compile(r'\033\[[0-9;]+m')
+    
+    # Split line into parts: text and ANSI codes
+    parts = ansi_pattern.split(line)
+    codes = ansi_pattern.findall(line)
+    
+    # Calculate visible length
+    visible_len = sum(len(part) for part in parts)
+    
+    if visible_len <= max_width:
+        return line
+    
+    # Truncate by removing characters from visible parts
+    result = []
+    current_len = 0
+    part_idx = 0
+    
+    for i, part in enumerate(parts):
+        if current_len + len(part) <= max_width - 3:  # Leave room for "..."
+            result.append(part)
+            current_len += len(part)
+            # Add corresponding ANSI code if exists
+            if i < len(codes):
+                result.append(codes[i])
+        else:
+            # Truncate this part
+            remaining = max_width - 3 - current_len
+            if remaining > 0:
+                result.append(part[:remaining])
+            result.append("...")
+            break
+        
+    return ''.join(result) + Colors.RESET  # Ensure colors are reset
+
 def update_dual_progress(processed_playlists, total_playlists, start_time, current_status="", current_m3u_url=""):
     """Display enhanced progress with two bars - one for playlists, one for streams"""
     elapsed = time.time() - start_time
@@ -367,15 +404,26 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
     mid_border = f"{Colors.BOLD}{Colors.BLUE}├{mid_label}{mid_fill}┤{Colors.RESET}"
     bot_border = f"{Colors.BOLD}{Colors.BLUE}└{bot_fill}┘{Colors.RESET}"
     
+    # Build content lines
+    line1 = f"{Colors.BLUE}│{Colors.RESET} {Colors.CYAN}{playlist_bar}{Colors.RESET} {Colors.WHITE}{playlist_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({processed_playlists:,}/{total_playlists:,}){Colors.RESET}"
+    line2 = f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Valid: {valid_m3u:>6,}{Colors.RESET}  {Colors.RED}[-] Invalid: {invalid_m3u:>6,}{Colors.RESET}  {Colors.MAGENTA}Rate: {playlist_rate:>5.1f} pl/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(playlist_eta)}{Colors.RESET}"
+    line3 = f"{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}{stream_bar}{Colors.RESET} {Colors.WHITE}{stream_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({checked_streams:,}/{total_streams:,}){Colors.RESET}"
+    line4 = f"{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Working: {working:>6,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:>6,}{Colors.RESET}"
+    line5 = f"{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}Rate: {stream_rate:>5.1f} st/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(stream_eta)}{Colors.RESET}  {Colors.WHITE}Time: {format_time(elapsed)}{Colors.RESET}"
+    
+    # Truncate lines if terminal is too narrow (accounting for ANSI codes)
+    # Visible length limit is term_width
+    max_visible = term_width
+    
     # Print playlist progress (clear each line to handle terminal resize)
-    print(f"\033[2K\033[0G{top_border}")
-    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.CYAN}{playlist_bar}{Colors.RESET} {Colors.WHITE}{playlist_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({processed_playlists:,}/{total_playlists:,}){Colors.RESET}")
-    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Valid: {valid_m3u:>6,}{Colors.RESET}  {Colors.RED}[-] Invalid: {invalid_m3u:>6,}{Colors.RESET}  {Colors.MAGENTA}Rate: {playlist_rate:>5.1f} pl/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(playlist_eta)}{Colors.RESET}")
-    print(f"\033[2K\033[0G{mid_border}")
-    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}{stream_bar}{Colors.RESET} {Colors.WHITE}{stream_percent:>5.1f}%{Colors.RESET} {Colors.GRAY}({checked_streams:,}/{total_streams:,}){Colors.RESET}")
-    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.GREEN}[+] Working: {working:>6,}{Colors.RESET}  {Colors.RED}[-] Failed: {failed:>6,}{Colors.RESET}  {Colors.YELLOW}[x] Filtered: {filtered:>6,}{Colors.RESET}")
-    print(f"\033[2K\033[0G{Colors.BLUE}│{Colors.RESET} {Colors.MAGENTA}Rate: {stream_rate:>5.1f} st/s{Colors.RESET}  {Colors.CYAN}ETA: {format_time(stream_eta)}{Colors.RESET}  {Colors.WHITE}Time: {format_time(elapsed)}{Colors.RESET}")
-    print(f"\033[2K\033[0G{bot_border}")
+    print(f"\033[2K\033[0G{top_border[:term_width]}")
+    print(f"\033[2K\033[0G{truncate_line(line1, max_visible)}")
+    print(f"\033[2K\033[0G{truncate_line(line2, max_visible)}")
+    print(f"\033[2K\033[0G{mid_border[:term_width]}")
+    print(f"\033[2K\033[0G{truncate_line(line3, max_visible)}")
+    print(f"\033[2K\033[0G{truncate_line(line4, max_visible)}")
+    print(f"\033[2K\033[0G{truncate_line(line5, max_visible)}")
+    print(f"\033[2K\033[0G{bot_border[:term_width]}")
     
     # Always print 3 more lines (M3U, CHK, status) - use empty lines if not available
     # Adapt URL display to terminal width
