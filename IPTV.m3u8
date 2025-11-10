@@ -1,19 +1,1465 @@
 #EXTM3U
-# Generated: 2025-11-10 09:58:13
+# Generated: 2025-11-10 18:48:17
 # Organized by country, alphabetically, and by bitrate
 # Subscription Expires: 2025-11-28 17:36:10
 
 
-# ===== BR (3 streams) =====
-#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN HD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN [1080p 3027 kbps] [Expires: 2025-11-28]
+# ===== BR (2 streams) =====
+#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN HD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN [720p 2617 kbps] [Expires: 2025-11-28]
 http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/16.ts
-#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN FHD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN backup 1 [1080p 2994 kbps] [Expires: 2025-11-28]
-http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/14.ts
-#EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1 FHD" tvg-logo="https://imgmxa.net/arte1.png" group-title="BR",Arte 1 [1080p 3606 kbps] [Expires: 2025-11-28]
+#EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1 FHD" tvg-logo="https://imgmxa.net/arte1.png" group-title="BR",Arte 1 [1080p 2965 kbps] [Expires: 2025-11-28]
 http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/450.ts
 
-# ===== Unknown (2 streams) =====
-#EXTINF:-1 tvg-id="lch150" tvg-name="A&E FHD" tvg-logo="https://imgmxa.net/ae.png" group-title="Unknown",A&E [1080p 3055 kbps] [Expires: 2025-11-28]
+# ===== DE (59 streams) =====
+#EXTINF:-1 tvg-name="3Sat DE" group-title="DE",3Sat DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/345
+#EXTINF:-1 tvg-name="ARD" group-title="DE",ARD [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/341
+#EXTINF:-1 tvg-name="ARD alpha HD" group-title="DE",ARD alpha [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13050
+#EXTINF:-1 tvg-name="ARTE HD" group-title="DE",ARTE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6106
+#EXTINF:-1 tvg-name="Comedy Central DE" group-title="DE",Comedy Central DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/306
+#EXTINF:-1 tvg-name="Crime +" group-title="DE",Crime + [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13033
+#EXTINF:-1 tvg-name="Das Erste DE" group-title="DE",Das Erste DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13036
+#EXTINF:-1 tvg-name="Discovery Channel DE" group-title="DE",Discovery Channel DE [1080p 868 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/338
+#EXTINF:-1 tvg-name="Disney Cinemagic DE" group-title="DE",Disney Cinemagic DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/337
+#EXTINF:-1 tvg-name="EUROSPORT 1 DE" group-title="DE",EUROSPORT 1 DE [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6296
+#EXTINF:-1 tvg-name="EUROSPORT 2 DE" group-title="DE",EUROSPORT 2 DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6297
+#EXTINF:-1 tvg-name="KINOWELT.TV" group-title="DE",KINOWELT.TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/328
+#EXTINF:-1 tvg-name="Kabel 1 Doku" group-title="DE",Kabel 1 Doku [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/331
+#EXTINF:-1 tvg-name="Kabel Eins DE" group-title="DE",Kabel Eins DE [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/330
+#EXTINF:-1 tvg-name="KiKa DE" group-title="DE",KiKa DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/329
+#EXTINF:-1 tvg-name="N-TV DE" group-title="DE",N-TV DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10434
+#EXTINF:-1 tvg-name="N24 DE" group-title="DE",N24 DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/326
+#EXTINF:-1 tvg-name="Nat Geo Wild DE" group-title="DE",Nat Geo Wild DE [SD 262 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/324
+#EXTINF:-1 tvg-name="National Geographic DE" group-title="DE",National Geographic DE [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/325
+#EXTINF:-1 tvg-name="Nick Jr DE" group-title="DE",Nick Jr DE [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13034
+#EXTINF:-1 tvg-name="Nickelodeon DE" group-title="DE",Nickelodeon DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6047
+#EXTINF:-1 tvg-name="Nicktoons DE" group-title="DE",Nicktoons DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13035
+#EXTINF:-1 tvg-name="ORF 1 DE" group-title="DE",ORF 1 DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/323
+#EXTINF:-1 tvg-name="ORF 2 DE" group-title="DE",ORF 2 DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/322
+#EXTINF:-1 tvg-name="ORF 3 DE" group-title="DE",ORF 3 DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13051
+#EXTINF:-1 tvg-name="ORF Sport+ HD" group-title="DE",ORF Sport+ [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6740
+#EXTINF:-1 tvg-name="Pro7 DE" group-title="DE",Pro7 DE [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/321
+#EXTINF:-1 tvg-name="Pro7 Maxx DE" group-title="DE",Pro7 Maxx DE [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/320
+#EXTINF:-1 tvg-name="RTL 2 DE" group-title="DE",RTL 2 DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7522
+#EXTINF:-1 tvg-name="RTL Crime DE" group-title="DE",RTL Crime DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7528
+#EXTINF:-1 tvg-name="RTL DE" group-title="DE",RTL DE [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7521
+#EXTINF:-1 tvg-name="RTL LIVING DE" group-title="DE",RTL LIVING DE [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7524
+#EXTINF:-1 tvg-name="RTL Nitro DE" group-title="DE",RTL Nitro DE [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7529
+#EXTINF:-1 tvg-name="RTL Passion DE" group-title="DE",RTL Passion DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7530
+#EXTINF:-1 tvg-name="Romance TV" group-title="DE",Romance TV [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6701
+#EXTINF:-1 tvg-name="SRF 1 HD" group-title="DE",SRF 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/269
+#EXTINF:-1 tvg-name="Sat 1 DE" group-title="DE",Sat 1 DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/311
+#EXTINF:-1 tvg-name="Sat 1 Gold DE" group-title="DE",Sat 1 Gold DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/310
+#EXTINF:-1 tvg-name="Sixx DE" group-title="DE",Sixx DE [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/309
+#EXTINF:-1 tvg-name="Sky Action DE" group-title="DE",Sky Action DE [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/305
+#EXTINF:-1 tvg-name="Sky Atlantic HD" group-title="DE",Sky Atlantic [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13042
+#EXTINF:-1 tvg-name="Sky Hits DE" group-title="DE",Sky Hits DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/298
+#EXTINF:-1 tvg-name="Sky Krimi DE" group-title="DE",Sky Krimi DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/297
+#EXTINF:-1 tvg-name="Sky One DE" group-title="DE",Sky One DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13040
+#EXTINF:-1 tvg-name="Sky Select 2 HD" group-title="DE",Sky Select 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/294
+#EXTINF:-1 tvg-name="Sky Select 3 HD" group-title="DE",Sky Select 3 [1080p 501 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/293
+#EXTINF:-1 tvg-name="Sky Select 4 HD" group-title="DE",Sky Select 4 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3689
+#EXTINF:-1 tvg-name="Sky Select 5 HD" group-title="DE",Sky Select 5 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/292
+#EXTINF:-1 tvg-name="Sky Select 6 HD" group-title="DE",Sky Select 6 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3690
+#EXTINF:-1 tvg-name="Super RTL" group-title="DE",Super RTL [720p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7526
+#EXTINF:-1 tvg-name="Syfy DE" group-title="DE",Syfy DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/270
+#EXTINF:-1 tvg-name="TNT Serie DE" group-title="DE",TNT Serie DE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/308
+#EXTINF:-1 tvg-name="TOGGO Plus" group-title="DE",TOGGO Plus [720p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7527
+#EXTINF:-1 tvg-name="Tele 5 DE" group-title="DE",Tele 5 DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/268
+#EXTINF:-1 tvg-name="Universal DE" group-title="DE",Universal DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/271
+#EXTINF:-1 tvg-name="VOX DE" group-title="DE",VOX DE [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7525
+#EXTINF:-1 tvg-name="ZDF DE" group-title="DE",ZDF DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/267
+#EXTINF:-1 tvg-name="ZDF Info DE" group-title="DE",ZDF Info DE [720p 209 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13037
+#EXTINF:-1 tvg-name="ZDF Neo DE" group-title="DE",ZDF Neo DE [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13038
+
+# ===== FR (14 streams) =====
+#EXTINF:-1 tvg-name="FR: 13eme rue HD" group-title="FR",FR: 13eme rue [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9534
+#EXTINF:-1 tvg-name="FR: ARTE HD" group-title="FR",FR: ARTE [1080p 203 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9528
+#EXTINF:-1 tvg-name="FR: Boomerang FHD" group-title="FR",FR: Boomerang [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9526
+#EXTINF:-1 tvg-name="FR: C8" group-title="FR",FR: C8 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9553
+#EXTINF:-1 tvg-name="FR: Cherie 25 HD" group-title="FR",FR: Cherie 25 [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9550
+#EXTINF:-1 tvg-name="FR: EuroNews" group-title="FR",FR: EuroNews [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9549
+#EXTINF:-1 tvg-name="FR: France 3" group-title="FR",FR: France 3 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9543
+#EXTINF:-1 tvg-name="FR: LCI HD" group-title="FR",FR: LCI [Unknown 327 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9529
+#EXTINF:-1 tvg-name="FR: M6 HD" group-title="FR",FR: M6 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9538
+#EXTINF:-1 tvg-name="FR: NRj 12" group-title="FR",FR: NRj 12 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9537
+#EXTINF:-1 tvg-name="FR: TF 1 HD" group-title="FR",FR: TF 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9535
+#EXTINF:-1 tvg-name="FR: TFX" group-title="FR",FR: TFX [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9513
+#EXTINF:-1 tvg-name="FR: TFX HD" group-title="FR",FR: TFX backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9540
+#EXTINF:-1 tvg-name="FR: TMC HD" group-title="FR",FR: TMC [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9532
+
+# ===== INT (1 streams) =====
+#EXTINF:-1 tvg-name="USA: CBSN News International" group-title="INT",USA: CBSN News International [720p 209 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9500
+
+# ===== IT (20 streams) =====
+#EXTINF:-1 tvg-name="IT: Canale 5 HD" group-title="IT",IT: Canale 5 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9999
+#EXTINF:-1 tvg-name="IT: GIALLO" group-title="IT",IT: GIALLO [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9979
+#EXTINF:-1 tvg-name="IT: History" group-title="IT",IT: History [1080p 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9996
+#EXTINF:-1 tvg-name="IT: Iris" group-title="IT",IT: Iris [1080p 1415 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9968
+#EXTINF:-1 tvg-name="IT: Italia 1 HD" group-title="IT",IT: Italia 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9995
+#EXTINF:-1 tvg-name="IT: LA7" group-title="IT",IT: LA7 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9994
+#EXTINF:-1 tvg-name="IT: La5" group-title="IT",IT: La5 [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9962
+#EXTINF:-1 tvg-name="IT: Mediaset EXTRA HD" group-title="IT",IT: Mediaset EXTRA [1080p 681 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10000
+#EXTINF:-1 tvg-name="IT: Mediaset Italia 2" group-title="IT",IT: Mediaset Italia 2 [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9967
+#EXTINF:-1 tvg-name="IT: Primafila 4" group-title="IT",IT: Primafila 4 [720p 734 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9963
+#EXTINF:-1 tvg-name="IT: RSI LA 1 HD" group-title="IT",IT: RSI LA 1 [720p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9982
+#EXTINF:-1 tvg-name="IT: Rai 1 HD" group-title="IT",IT: Rai 1 [720p 340 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9993
+#EXTINF:-1 tvg-name="IT: Rai 1" group-title="IT",IT: Rai 1 backup 1 [720p 209 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9988
+#EXTINF:-1 tvg-name="IT: Rai 3" group-title="IT",IT: Rai 3 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9990
+#EXTINF:-1 tvg-name="IT: Rai 4" group-title="IT",IT: Rai 4 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9991
+#EXTINF:-1 tvg-name="IT: Rai 5" group-title="IT",IT: Rai 5 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9992
+#EXTINF:-1 tvg-name="IT: Rai Gulp" group-title="IT",IT: Rai Gulp [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9987
+#EXTINF:-1 tvg-name="IT: Rai Yoyo" group-title="IT",IT: Rai Yoyo [1080p 1078 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9956
+#EXTINF:-1 tvg-name="IT: Rete 4 HD" group-title="IT",IT: Rete 4 [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9983
+#EXTINF:-1 tvg-name="IT: TOPCrime HD" group-title="IT",IT: TOPCrime [720p 556 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9947
+
+# ===== US (1 streams) =====
+#EXTINF:-1 tvg-name="USA : DISCOVERY" group-title="US",USA : DISCOVERY [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9478
+
+# ===== Unknown (626 streams) =====
+#EXTINF:-1 tvg-id="24Kitchen HD (INT)" tvg-name="24 Kitchen" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/71.png" group-title="Unknown",24 Kitchen [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/601
+#EXTINF:-1 tvg-id="lch150" tvg-name="A&E FHD" tvg-logo="https://imgmxa.net/ae.png" group-title="Unknown",A&E [1080p 3676 kbps] [Expires: 2025-11-28]
 http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/1.ts
-#EXTINF:-1 tvg-id="lch5580" tvg-name="AMC FHD" tvg-logo="https://imgmxa.net/amc.png" group-title="Unknown",AMC [1080p 2984 kbps] [Expires: 2025-11-28]
-http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/6.ts
+#EXTINF:-1 tvg-name="AL: Art Sport 1 FHD" group-title="Unknown",AL: Art Sport 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9614
+#EXTINF:-1 tvg-name="AL: Art Sport 2 FHD" group-title="Unknown",AL: Art Sport 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9613
+#EXTINF:-1 tvg-name="AL: Art Sport 3 FHD" group-title="Unknown",AL: Art Sport 3 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9612
+#EXTINF:-1 tvg-name="AL: Family FHD" group-title="Unknown",AL: Family [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9590
+#EXTINF:-1 tvg-name="AL: Junior TV" group-title="Unknown",AL: Junior TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9564
+#EXTINF:-1 tvg-name="AL: Klan FHD" group-title="Unknown",AL: Klan [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9559
+#EXTINF:-1 tvg-name="AL: Klan Kosova" group-title="Unknown",AL: Klan Kosova [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9557
+#EXTINF:-1 tvg-name="AL: Klan Plus HD" group-title="Unknown",AL: Klan Plus [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9556
+#EXTINF:-1 tvg-name="AL: Klan TV HD" group-title="Unknown",AL: Klan TV [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9788
+#EXTINF:-1 tvg-name="AL: Kujtesa Sport 2" group-title="Unknown",AL: Kujtesa Sport 2 [720p 347 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9939
+#EXTINF:-1 tvg-name="AL: MTV Kosova" group-title="Unknown",AL: MTV Kosova [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9643
+#EXTINF:-1 tvg-name="AL: RTK 2 HD" group-title="Unknown",AL: RTK 2 [1080p 216 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9688
+#EXTINF:-1 tvg-name="AL: RTK 3 HD" group-title="Unknown",AL: RTK 3 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9687
+#EXTINF:-1 tvg-name="AL: RTSH 1" group-title="Unknown",AL: RTSH 1 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9684
+#EXTINF:-1 tvg-name="AL: RTSH 2" group-title="Unknown",AL: RTSH 2 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9683
+#EXTINF:-1 tvg-name="AL: RTSH 3" group-title="Unknown",AL: RTSH 3 [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9682
+#EXTINF:-1 tvg-name="AL: RTV 21" group-title="Unknown",AL: RTV 21 [720p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9680
+#EXTINF:-1 tvg-name="AL: RTV 21 Junior" group-title="Unknown",AL: RTV 21 Junior [SD N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9678
+#EXTINF:-1 tvg-name="AL: RTV 21 Mix" group-title="Unknown",AL: RTV 21 Mix [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9677
+#EXTINF:-1 tvg-name="AL: RTV 21 Plus" group-title="Unknown",AL: RTV 21 Plus [720p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9671
+#EXTINF:-1 tvg-name="AL: RTV 21 Popullore" group-title="Unknown",AL: RTV 21 Popullore [Unknown 209 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9669
+#EXTINF:-1 tvg-name="AL: Super Sport 2 HD" group-title="Unknown",AL: Super Sport 2 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9709
+#EXTINF:-1 tvg-name="AL: Super Sport 3 HD" group-title="Unknown",AL: Super Sport 3 [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9707
+#EXTINF:-1 tvg-name="AL: Super Sport 4 HD" group-title="Unknown",AL: Super Sport 4 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9705
+#EXTINF:-1 tvg-name="AL: Super Sport 5 HD" group-title="Unknown",AL: Super Sport 5 [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9703
+#EXTINF:-1 tvg-name="AL: Super Sport 6 HD" group-title="Unknown",AL: Super Sport 6 [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9701
+#EXTINF:-1 tvg-name="AL: Tring Kids" group-title="Unknown",AL: Tring Kids [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9748
+#EXTINF:-1 tvg-name="AL: Tring Sport 1 HD" group-title="Unknown",AL: Tring Sport 1 [Unknown 209 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9742
+#EXTINF:-1 tvg-name="AL: Tring Sport 3 HD" group-title="Unknown",AL: Tring Sport 3 [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9738
+#EXTINF:-1 tvg-name="AL: Çufo TV" group-title="Unknown",AL: Çufo TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9602
+#EXTINF:-1 tvg-id="AMC HD (INT)" tvg-name="AMC" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/99.png" group-title="Unknown",AMC [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/599
+#EXTINF:-1 tvg-name="AT: ATV" group-title="Unknown",AT: ATV [Unknown 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9402
+#EXTINF:-1 tvg-name="AT: ATV 2" group-title="Unknown",AT: ATV 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9407
+#EXTINF:-1 tvg-name="AT: ORF 1 HD" group-title="Unknown",AT: ORF 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9409
+#EXTINF:-1 tvg-name="AT: ORF 2 HD" group-title="Unknown",AT: ORF 2 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9410
+#EXTINF:-1 tvg-name="AT: Plus 4" group-title="Unknown",AT: Plus 4 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9403
+#EXTINF:-1 tvg-name="AT: SERVUS TV HD" group-title="Unknown",AT: SERVUS TV [SD Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9401
+#EXTINF:-1 tvg-name="AT: Sport 1+ HD" group-title="Unknown",AT: Sport 1+ [1080p Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9399
+#EXTINF:-1 tvg-name="AT:ORF 3" group-title="Unknown",AT:ORF 3 [720p Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9406
+#EXTINF:-1 tvg-id="htv1" tvg-name="AXN" tvg-logo="http://116.203.156.75/logo/axn.png" group-title="Unknown",AXN [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/596
+#EXTINF:-1 tvg-id="htv1" tvg-name="AXN Spin" tvg-logo="http://nova-iptv.com/logo/axn_spin_logo.png" group-title="Unknown",AXN Spin [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/595
+#EXTINF:-1 tvg-id="Alfa (Sarajevo)" tvg-name="Alfa TV Sarajevo" tvg-logo="http://nova-iptv.com/logo/alfatvlogo.png" group-title="Unknown",Alfa TV Sarajevo [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5600
+#EXTINF:-1 tvg-id="Animal Planet HD" tvg-name="Animal Planet HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/animal_planet_poland.png" group-title="Unknown",Animal Planet [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8848
+#EXTINF:-1 tvg-id="Animal Planet" tvg-name="Animal Planet" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/animal_planet_poland.png" group-title="Unknown",Animal Planet backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/598
+#EXTINF:-1 tvg-name="Arena Adrenalin" tvg-logo="http://116.203.156.75/logo/adrenalin.png" group-title="Unknown",Arena Adrenalin [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13567
+#EXTINF:-1 tvg-name="Arena Esport" tvg-logo="http://nova-iptv.com/logo/arena_esport_logo.png" group-title="Unknown",Arena Esport [SD 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12555
+#EXTINF:-1 tvg-name="Arena Fight HD" tvg-logo="http://116.203.156.75/logo/arena_fight.png" group-title="Unknown",Arena Fight [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13402
+#EXTINF:-1 tvg-id="tv-arena-sport-1.sport" tvg-name="Arena Sport 1" tvg-logo="http://nova-iptv.com/logo/arena-sport-1.png" group-title="Unknown",Arena Sport 1 [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/495
+#EXTINF:-1 tvg-id="arena-sport-1-ba.sport" tvg-name="Arena Sport 1 BIH" tvg-logo="http://nova-iptv.com/logo/arena-sport-1.png" group-title="Unknown",Arena Sport 1 BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12166
+#EXTINF:-1 tvg-id="arena-sport-1-premium" tvg-name="Arena Sport 1 Premium HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_1_Premium_RS_logo.png" group-title="Unknown",Arena Sport 1 Premium [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12342
+#EXTINF:-1 tvg-id="arena-sport-1-premium" tvg-name="Arena Sport 1 Premium" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_1_Premium_RS_logo.png" group-title="Unknown",Arena Sport 1 Premium backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12362
+#EXTINF:-1 tvg-id="Arena1Premium BA" tvg-name="Arena Sport 1 Premium BIH" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_1_Premium_RS_logo.png" group-title="Unknown",Arena Sport 1 Premium BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13011
+#EXTINF:-1 tvg-name="Arena Sport 10 HD HR" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_10_HR_logo.png" group-title="Unknown",Arena Sport 10HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12109
+#EXTINF:-1 tvg-name="Arena Sport 10 HD SRB" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_10_HR_logo.png" group-title="Unknown",Arena Sport 10SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13072
+#EXTINF:-1 tvg-id="BN TV" tvg-name="Arena Sport 1 HD BIH" tvg-logo="http://nova-iptv.com/logo/arena-sport-1.png" group-title="Unknown",Arena Sport 1BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6776
+#EXTINF:-1 tvg-id="tv-arena-sport-1-hr.sport" tvg-name="Arena Sport 1 HD HR" tvg-logo="http://nova-iptv.com/logo/arena-sport-1.png" group-title="Unknown",Arena Sport 1HR [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/486
+#EXTINF:-1 tvg-id="tv-arena-sport-1.sport" tvg-name="Arena Sport 1 HD SRB" tvg-logo="http://nova-iptv.com/logo/arena-sport-1.png" group-title="Unknown",Arena Sport 1SRB [720p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/490
+#EXTINF:-1 tvg-id="tv-arena-sport-2.sport" tvg-name="Arena Sport 2" tvg-logo="http://nova-iptv.com/logo/arena-sport-2.png" group-title="Unknown",Arena Sport 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12045
+#EXTINF:-1 tvg-id="ArenaSport 2 BA" tvg-name="Arena Sport 2 BIH" tvg-logo="http://nova-iptv.com/logo/arena-sport-2.png" group-title="Unknown",Arena Sport 2 BIH [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13002
+#EXTINF:-1 tvg-id="arena-sport-2-premium" tvg-name="Arena Sport 2 Premium" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_2_Premium_RS_logo.png" group-title="Unknown",Arena Sport 2 Premium [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12363
+#EXTINF:-1 tvg-id="arena-sport-2-premium" tvg-name="Arena Sport 2 Premium HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_2_Premium_RS_logo.png" group-title="Unknown",Arena Sport 2 Premium backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12343
+#EXTINF:-1 tvg-id="Arena2Premium BA" tvg-name="Arena Sport 2 Premium BIH" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_2_Premium_RS_logo.png" group-title="Unknown",Arena Sport 2 Premium BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13012
+#EXTINF:-1 tvg-name="Arena Sport 2 HD HR" tvg-logo="http://nova-iptv.com/logo/arena-sport-2.png" group-title="Unknown",Arena Sport 2HR [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/485
+#EXTINF:-1 tvg-id="tv-arena-sport-2.sport" tvg-name="Arena Sport 2 HD SRB" tvg-logo="http://nova-iptv.com/logo/arena-sport-2.png" group-title="Unknown",Arena Sport 2SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12051
+#EXTINF:-1 tvg-id="tv-arena-sport-3.sport" tvg-name="Arena Sport 3" tvg-logo="http://nova-iptv.com/logo/arena-sport-3.png" group-title="Unknown",Arena Sport 3 [1080p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12046
+#EXTINF:-1 tvg-id="ArenaSport 3 BA" tvg-name="Arena Sport 3 BIH" tvg-logo="http://nova-iptv.com/logo/arena-sport-3.png" group-title="Unknown",Arena Sport 3 BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13003
+#EXTINF:-1 tvg-id="arena-sport-3-premium" tvg-name="Arena Sport 3 Premium HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_3_Premium_RS_logo.png" group-title="Unknown",Arena Sport 3 Premium [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12344
+#EXTINF:-1 tvg-id="arena-sport-3-premium" tvg-name="Arena Sport 3 Premium" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_3_Premium_RS_logo.png" group-title="Unknown",Arena Sport 3 Premium backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12392
+#EXTINF:-1 tvg-id="Arena3Premium BA" tvg-name="Arena Sport 3 Premium BIH" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/Arena_Sport_3_Premium_RS_logo.png" group-title="Unknown",Arena Sport 3 Premium BIH [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13013
+#EXTINF:-1 tvg-name="Arena Sport 3 HD HR" tvg-logo="http://nova-iptv.com/logo/arena-sport-3.png" group-title="Unknown",Arena Sport 3HR [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12052
+#EXTINF:-1 tvg-id="tv-arena-sport-3.sport" tvg-name="Arena Sport 3 HD SRB" tvg-logo="http://nova-iptv.com/logo/arena-sport-3.png" group-title="Unknown",Arena Sport 3SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12050
+#EXTINF:-1 tvg-id="tv-arena-sport-4" tvg-name="Arena Sport 4" tvg-logo="http://nova-iptv.com/logo/arena-sport-4.png" group-title="Unknown",Arena Sport 4 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12047
+#EXTINF:-1 tvg-id="ArenaSport 4 BA" tvg-name="Arena Sport 4 BIH" tvg-logo="http://nova-iptv.com/logo/arena-sport-4.png" group-title="Unknown",Arena Sport 4 BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13004
+#EXTINF:-1 tvg-name="Arena Sport 4 Premium HD" tvg-logo="http://116.203.156.75/logo/arena4premium.png" group-title="Unknown",Arena Sport 4 Premium [Unknown 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13565
+#EXTINF:-1 tvg-name="Arena Sport 4 HD HR" tvg-logo="http://nova-iptv.com/logo/arena-sport-4.png" group-title="Unknown",Arena Sport 4HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12053
+#EXTINF:-1 tvg-id="ArenaSport 4 SR" tvg-name="Arena Sport 4 HD SRB" tvg-logo="http://nova-iptv.com/logo/arena-sport-4.png" group-title="Unknown",Arena Sport 4SRB [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12049
+#EXTINF:-1 tvg-id="ArenaSport 5 BA" tvg-name="Arena Sport 5 BIH" tvg-logo="https://cdn-0.tvprofil.com/img/kanali-logo/Arena_Sport_5_RS_logo.png" group-title="Unknown",Arena Sport 5 BIH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13005
+#EXTINF:-1 tvg-name="Arena Sport 5 Premium HD" tvg-logo="http://116.203.156.75/logo/arena5premium.png" group-title="Unknown",Arena Sport 5 Premium [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13566
+#EXTINF:-1 tvg-name="Arena Sport 5 HD HR" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_5_RS_logo.png" group-title="Unknown",Arena Sport 5HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/482
+#EXTINF:-1 tvg-id="ArenaSport 5 SR" tvg-name="Arena Sport 5 HD SRB" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_5_RS_logo.png" group-title="Unknown",Arena Sport 5SRB [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/491
+#EXTINF:-1 tvg-id="ArenaSport 6 BA" tvg-name="Arena Sport 6 BIH" tvg-logo="https://cdn-0.tvprofil.com/img/kanali-logo/Arena_Sport_6_RS_logo.png" group-title="Unknown",Arena Sport 6 BIH [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13006
+#EXTINF:-1 tvg-id="arena-sport-6-hr" tvg-name="Arena Sport 6 HD HR" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_6_HR_logo.png" group-title="Unknown",Arena Sport 6HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/481
+#EXTINF:-1 tvg-name="Arena Sport 6 HD SRB" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_6_HR_logo.png" group-title="Unknown",Arena Sport 6SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13068
+#EXTINF:-1 tvg-name="Arena Sport 7 HD HR" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_7_HR_logo.png" group-title="Unknown",Arena Sport 7HR [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12106
+#EXTINF:-1 tvg-name="Arena Sport 7 HD SRB" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_7_HR_logo.png" group-title="Unknown",Arena Sport 7SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13069
+#EXTINF:-1 tvg-name="Arena Sport 8 HD HR" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_8_HR_logo.png" group-title="Unknown",Arena Sport 8HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12107
+#EXTINF:-1 tvg-name="Arena Sport 8 HD SRB" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_8_HR_logo.png" group-title="Unknown",Arena Sport 8SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13070
+#EXTINF:-1 tvg-name="Arena Sport 9 HD HR" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_9_HR_logo.png" group-title="Unknown",Arena Sport 9HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12108
+#EXTINF:-1 tvg-name="Arena Sport 9 HD SRB" tvg-logo="http://nova-iptv.com/logo/Arena_Sport_9_HR_logo.png" group-title="Unknown",Arena Sport 9SRB [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13071
+#EXTINF:-1 tvg-name="Arena Tenis" tvg-logo="http://116.203.156.75/logo/arena_tenis.png" group-title="Unknown",Arena Tenis [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13568
+#EXTINF:-1 tvg-name="Auto Motor Sport" group-title="Unknown",Auto Motor Sport [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/340
+#EXTINF:-1 tvg-id="b92.sr" tvg-name="B92 TV" tvg-logo="http://116.203.156.75/logo/b92_logo_2020.png" group-title="Unknown",B92 TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8022
+#EXTINF:-1 tvg-id="b92.sr" tvg-name="B92 TV HD." tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/b92_logo_2020.png" group-title="Unknown",B92 TV. [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12345
+#EXTINF:-1 tvg-name="BANG U" group-title="Unknown",BANG U [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12657
+#EXTINF:-1 tvg-id="BBC Earth HD" tvg-name="BBC Earth HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/44/BBC_Earth_logo.png" group-title="Unknown",BBC Earth [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12803
+#EXTINF:-1 tvg-id="BBC Earth HD" tvg-name="BBC Earth" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/44/BBC_Earth_logo.png" group-title="Unknown",BBC Earth backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5677
+#EXTINF:-1 tvg-name="BELLE AMIE" tvg-logo="http://116.203.156.75/logo/belle-amie-logo.png" group-title="Unknown",BELLE AMIE [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3665
+#EXTINF:-1 tvg-name="BG : BNT 1" group-title="Unknown",BG : BNT 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8478
+#EXTINF:-1 tvg-name="BG: Balkanika HD" group-title="Unknown",BG: Balkanika [1080p 868 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8461
+#EXTINF:-1 tvg-name="BG: Balkanika" group-title="Unknown",BG: Balkanika backup 1 [1080p 839 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8451
+#EXTINF:-1 tvg-name="BG: Folklor TV" group-title="Unknown",BG: Folklor TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8458
+#EXTINF:-1 tvg-name="BG: Kino Nova HD" group-title="Unknown",BG: Kino Nova [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8471
+#EXTINF:-1 tvg-name="BG: Planeta TV" group-title="Unknown",BG: Planeta TV [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8448
+#EXTINF:-1 tvg-name="BG: Ring HD" group-title="Unknown",BG: Ring [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8460
+#EXTINF:-1 tvg-id="BHT 1" tvg-name="BHT 1 HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/22.png" group-title="Unknown",BHT 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/592
+#EXTINF:-1 tvg-name="BIR TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/BIR_TV_logo.png" group-title="Unknown",BIR TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8899
+#EXTINF:-1 tvg-name="BN Music HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/34.png" group-title="Unknown",BN Music [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/591
+#EXTINF:-1 tvg-id="BN" tvg-name="BN TV." tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/13.png" group-title="Unknown",BN TV. [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8847
+#EXTINF:-1 tvg-name="BT Sport 1 HD" group-title="Unknown",BT Sport 1 [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12071
+#EXTINF:-1 tvg-name="BT Sport 2 HD" group-title="Unknown",BT Sport 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12072
+#EXTINF:-1 tvg-name="BT Sport 3 HD" group-title="Unknown",BT Sport 3 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12073
+#EXTINF:-1 tvg-name="Babes HD" group-title="Unknown",Babes [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12677
+#EXTINF:-1 tvg-name="Baby TV" tvg-logo="http://116.203.156.75/logo/Babytv.png" group-title="Unknown",Baby TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/388
+#EXTINF:-1 tvg-id="balkan-trip" tvg-name="Balkan Trip" tvg-logo="http://nova-iptv.com/logo/balkan-trip_logo.png" group-title="Unknown",Balkan Trip [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10270
+#EXTINF:-1 tvg-name="Balkanika TV" group-title="Unknown",Balkanika TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/391
+#EXTINF:-1 tvg-id="RTV Banovina" tvg-name="Banovina TV" tvg-logo="http://116.203.156.75/logo/banovina.png" group-title="Unknown",Banovina TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/593
+#EXTINF:-1 tvg-name="Barely Legal" group-title="Unknown",Barely Legal [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12661
+#EXTINF:-1 tvg-name="Bein Sports 1" group-title="Unknown",Bein Sports 1 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9255
+#EXTINF:-1 tvg-name="Bein Sports 10" group-title="Unknown",Bein Sports 10 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9264
+#EXTINF:-1 tvg-name="Bein Sports 2" group-title="Unknown",Bein Sports 2 [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9256
+#EXTINF:-1 tvg-name="Bein Sports 3" group-title="Unknown",Bein Sports 3 [1080p 350 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9257
+#EXTINF:-1 tvg-name="Bein Sports 4" group-title="Unknown",Bein Sports 4 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9258
+#EXTINF:-1 tvg-name="Bein Sports 5" group-title="Unknown",Bein Sports 5 [720p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9259
+#EXTINF:-1 tvg-name="Bein Sports 6" group-title="Unknown",Bein Sports 6 [1080p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9260
+#EXTINF:-1 tvg-name="Bein Sports 7" group-title="Unknown",Bein Sports 7 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9261
+#EXTINF:-1 tvg-name="Bein Sports 8" group-title="Unknown",Bein Sports 8 [SD N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9262
+#EXTINF:-1 tvg-name="Bein Sports 9" group-title="Unknown",Bein Sports 9 [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9263
+#EXTINF:-1 tvg-name="Blacked" group-title="Unknown",Blacked [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12649
+#EXTINF:-1 tvg-name="Blic TV HD" tvg-logo="http://nova-iptv.com/logo/blictv.png" group-title="Unknown",Blic TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12703
+#EXTINF:-1 tvg-name="Brazzers TV" group-title="Unknown",Brazzers TV [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12644
+#EXTINF:-1 tvg-name="CMC" group-title="Unknown",CMC [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/588
+#EXTINF:-1 tvg-name="Capital TV" group-title="Unknown",Capital TV [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6502
+#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="http://116.203.156.75/logo/Cartoon_Network_Logo.jpg" group-title="Unknown",Cartoon Network [SD 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/389
+#EXTINF:-1 tvg-id="boomerang" tvg-name="Cartoonito" tvg-logo="http://116.203.156.75/logo/Boomerang_Logo_2014.png" group-title="Unknown",Cartoonito [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/387
+#EXTINF:-1 tvg-id="CineStar TV Fantasy HD" tvg-name="CineStar Fantasy" tvg-logo="http://116.203.156.75/logo/cinestartv_fantasy_logo.png" group-title="Unknown",CineStar Fantasy [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/432
+#EXTINF:-1 tvg-id="CineStar TV Premiere 1 HD" tvg-name="CineStar Premiere 1" tvg-logo="http://nova-iptv.com/logo/CineStar_TV_premiere_1_logo.png" group-title="Unknown",CineStar Premiere 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6543
+#EXTINF:-1 tvg-id="CineStar TV Premiere 1 HD" tvg-name="CineStar Premiere 1 HD" tvg-logo="http://nova-iptv.com/logo/CineStar_TV_premiere_1_logo.png" group-title="Unknown",CineStar Premiere 1 backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/431
+#EXTINF:-1 tvg-id="CineStar TV Premiere 2 HD" tvg-name="CineStar Premiere 2" tvg-logo="http://nova-iptv.com/logo/CineStar_TV_premiere_2_logo.png" group-title="Unknown",CineStar Premiere 2 [720p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6542
+#EXTINF:-1 tvg-id="CineStar TV Premiere 2 HD" tvg-name="CineStar Premiere 2 HD" tvg-logo="http://nova-iptv.com/logo/CineStar_TV_premiere_2_logo.png" group-title="Unknown",CineStar Premiere 2 backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/430
+#EXTINF:-1 tvg-id="CineStar TV (HR)" tvg-name="CineStar TV" tvg-logo="http://116.203.156.75/logo/cine.png" group-title="Unknown",CineStar TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/429
+#EXTINF:-1 tvg-id="CineStar TV 2 HD" tvg-name="CineStar TV 2 HD" tvg-logo="http://nova-iptv.com/logo/Cinestar_tv2_logo.png" group-title="Unknown",CineStar TV 2 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8304
+#EXTINF:-1 tvg-id="Cinemania HD" tvg-name="Cinemania HD" tvg-logo="http://nova-iptv.com/logo/cinemania-logo.png" group-title="Unknown",Cinemania [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9284
+#EXTINF:-1 tvg-id="Cinemax HD" tvg-name="Cinemax 1 HD" tvg-logo="http://116.203.156.75/logo/176.png" group-title="Unknown",Cinemax 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/435
+#EXTINF:-1 tvg-id="Cinemax 2 HD" tvg-name="Cinemax 2 HD" tvg-logo="http://116.203.156.75/logo/177.png" group-title="Unknown",Cinemax 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/434
+#EXTINF:-1 tvg-id="CineStar TV Action (HR)" tvg-name="Cinestar Action" tvg-logo="http://116.203.156.75/logo/cineaction.png" group-title="Unknown",Cinestar Action [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/433
+#EXTINF:-1 tvg-id="CineStar TV Comedy & Family HD" tvg-name="Cinestar Comedy" tvg-logo="http://nova-iptv.com/logo/cinestartv_comedy_logo.png" group-title="Unknown",Cinestar Comedy [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10320
+#EXTINF:-1 tvg-name="Comedy Central Extra" tvg-logo="http://nova-iptv.com/logo/comedy_central_ro.png" group-title="Unknown",Comedy Central Extra [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/586
+#EXTINF:-1 tvg-id="Crime & Investigation" tvg-name="Crime & Investigation" tvg-logo="http://116.203.156.75/logo/crimeinvest.jpg" group-title="Unknown",Crime & Investigation [SD 501 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/585
+#EXTINF:-1 tvg-name="DM Sat" group-title="Unknown",DM Sat [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/406
+#EXTINF:-1 tvg-name="DOBRA HD" group-title="Unknown",DOBRA [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8583
+#EXTINF:-1 tvg-name="DOBRA CRNOGORSKA" group-title="Unknown",DOBRA CRNOGORSKA [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8579
+#EXTINF:-1 tvg-name="DOBRA EXCLUSIVE" group-title="Unknown",DOBRA EXCLUSIVE [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8582
+#EXTINF:-1 tvg-id="doma-tv.movie" tvg-name="DOMA TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/doma.png" group-title="Unknown",DOMA TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9286
+#EXTINF:-1 tvg-id="doma-tv.movie" tvg-name="DOMA TV HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/doma.png" group-title="Unknown",DOMA TV backup 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12091
+#EXTINF:-1 tvg-id="doma-tv.movie" tvg-name="DOMA TV HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/doma.png" group-title="Unknown",DOMA TV backup 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9287
+#EXTINF:-1 tvg-name="DUCK TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x64/4/img/kanali-logo/Duck_TV_Plus_PL_logo.png" group-title="Unknown",DUCK TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10256
+#EXTINF:-1 tvg-id="davinci" tvg-name="Da Vinci Learning" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/90.png" group-title="Unknown",Da Vinci Learning [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/584
+#EXTINF:-1 tvg-id="discovery-europe.doc" tvg-name="Discovery Channel" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/47.png" group-title="Unknown",Discovery Channel [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/583
+#EXTINF:-1 tvg-id="investigation-discovery" tvg-name="Discovery ID" tvg-logo="https://cdn-0.tvprofil.com/img/kanali-logo/investigation-discovery-logo.png" group-title="Unknown",Discovery ID [1080p 501 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7275
+#EXTINF:-1 tvg-id="TLC" tvg-name="Discovery TLC" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/70.png" group-title="Unknown",Discovery TLC [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12942
+#EXTINF:-1 tvg-name="Disney" tvg-logo="http://nova-iptv.com/logo/disney_channel_2019.png" group-title="Unknown",Disney [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12559
+#EXTINF:-1 tvg-name="Disney Junior" tvg-logo="http://nova-iptv.com/logo/disney-junior-logo.png" group-title="Unknown",Disney Junior [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12560
+#EXTINF:-1 tvg-id="Diva" tvg-name="Diva" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/50.png" group-title="Unknown",Diva [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/576
+#EXTINF:-1 tvg-name="Dizi" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/4/img/kanali-logo/DIZI_PL_logo.png" group-title="Unknown",Dizi [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9342
+#EXTINF:-1 tvg-id="docubox-hd" tvg-name="Docu Box HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/158.png" group-title="Unknown",Docu Box [1080p 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/577
+#EXTINF:-1 tvg-name="Dorcel HD" group-title="Unknown",Dorcel [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12656
+#EXTINF:-1 tvg-name="Dubrovacka Televizija" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/dutv-logo.png" group-title="Unknown",Dubrovacka Televizija [720p Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6322
+#EXTINF:-1 tvg-name="Duga TV" group-title="Unknown",Duga TV [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5416
+#EXTINF:-1 tvg-name="Dusk" group-title="Unknown",Dusk [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12663
+#EXTINF:-1 tvg-id="Eurosport 1 HD" tvg-name="EUROSPORT 1 HD" tvg-logo="http://nova-iptv.com/logo/eurosport.png" group-title="Unknown",EUROSPORT 1 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6540
+#EXTINF:-1 tvg-id="Eurosport 2 HD" tvg-name="EUROSPORT 2 HD" tvg-logo="http://nova-iptv.com/logo/eurosport-2.png" group-title="Unknown",EUROSPORT 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/467
+#EXTINF:-1 tvg-name="EXTAZY HD" group-title="Unknown",EXTAZY [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12702
+#EXTINF:-1 tvg-name="Elita Live 1" tvg-logo="http://nova-iptv.com/logo/elita1.png" group-title="Unknown",Elita Live 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6334
+#EXTINF:-1 tvg-name="Elita Live 2" tvg-logo="http://nova-iptv.com/logo/elita2.png" group-title="Unknown",Elita Live 2 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8217
+#EXTINF:-1 tvg-name="Elita Live 3" tvg-logo="http://nova-iptv.com/logo/elita3.png" group-title="Unknown",Elita Live 3 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8218
+#EXTINF:-1 tvg-name="Elita Live 4" tvg-logo="http://nova-iptv.com/logo/elita4.png" group-title="Unknown",Elita Live 4 [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8501
+#EXTINF:-1 tvg-id="E! Entertainment" tvg-name="Entertaimment +" tvg-logo="http://116.203.156.75/logo/Entertainment.jpg" group-title="Unknown",Entertaimment + [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3664
+#EXTINF:-1 tvg-id="Epic Drama HD" tvg-name="Epic Drama" tvg-logo="http://nova-iptv.com/logo/Epic_Drama_BG_logo.png" group-title="Unknown",Epic Drama [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6656
+#EXTINF:-1 tvg-name="Eroxxx HD" group-title="Unknown",Eroxxx [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12665
+#EXTINF:-1 tvg-name="Euro News Srb" tvg-logo="http://nova-iptv.com/logo/Euronews_2016_Logo.png" group-title="Unknown",Euro News Srb [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6524
+#EXTINF:-1 tvg-name="Evil Angel HD" group-title="Unknown",Evil Angel [1080p 501 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12660
+#EXTINF:-1 tvg-name="FOX Sports 1" group-title="Unknown",FOX Sports 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/471
+#EXTINF:-1 tvg-id="Face HD" tvg-name="Face Tv HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/35.png" group-title="Unknown",Face Tv [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/573
+#EXTINF:-1 tvg-name="Fake Taxi" group-title="Unknown",Fake Taxi [SD 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12662
+#EXTINF:-1 tvg-id="Federalna TV" tvg-name="Federalna TV" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/44.png" group-title="Unknown",Federalna TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/572
+#EXTINF:-1 tvg-name="Fight Box HD" group-title="Unknown",Fight Box [1080p 216 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5509
+#EXTINF:-1 tvg-id="food-network" tvg-name="Food Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f9/Food_Network_New_Logo.png" group-title="Unknown",Food Network [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6314
+#EXTINF:-1 tvg-name="Fox Crime SLO" group-title="Unknown",Fox Crime SLO [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8040
+#EXTINF:-1 tvg-name="Fox Life SLO" group-title="Unknown",Fox Life SLO [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8039
+#EXTINF:-1 tvg-name="GOLICA" group-title="Unknown",GOLICA [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/209
+#EXTINF:-1 tvg-name="Grand" group-title="Unknown",Grand [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9275
+#EXTINF:-1 tvg-name="Grand 2" group-title="Unknown",Grand 2 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9276
+#EXTINF:-1 tvg-name="Grizzy & the Lemmings" group-title="Unknown",Grizzy & the Lemmings [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8233
+#EXTINF:-1 tvg-name="HAPPY PAROVI 24 SATA" tvg-logo="http://116.203.156.75/logo/happy.png" group-title="Unknown",HAPPY PAROVI 24 SATA [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/568
+#EXTINF:-1 tvg-id="HBO HD" tvg-name="HBO 1 HD" tvg-logo="http://116.203.156.75/logo/173.png" group-title="Unknown",HBO 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/419
+#EXTINF:-1 tvg-name="HBO 1 SLO" group-title="Unknown",HBO 1 SLO [1080p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/226
+#EXTINF:-1 tvg-id="HBO HD" tvg-name="HBO 1 HD." tvg-logo="http://116.203.156.75/logo/173.png" group-title="Unknown",HBO 1. [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12809
+#EXTINF:-1 tvg-id="HBO 2 HD" tvg-name="HBO 2 HD" tvg-logo="http://116.203.156.75/logo/174.png" group-title="Unknown",HBO 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/418
+#EXTINF:-1 tvg-id="HBO 2 HD" tvg-name="HBO 2 HD." tvg-logo="http://116.203.156.75/logo/174.png" group-title="Unknown",HBO 2. [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12810
+#EXTINF:-1 tvg-id="HBO 3 HD" tvg-name="HBO 3 HD" tvg-logo="http://116.203.156.75/logo/175.png" group-title="Unknown",HBO 3 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/417
+#EXTINF:-1 tvg-name="HBO 3 SLO" group-title="Unknown",HBO 3 SLO [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/224
+#EXTINF:-1 tvg-id="HBO 3 HD" tvg-name="HBO 3 HD." tvg-logo="http://116.203.156.75/logo/175.png" group-title="Unknown",HBO 3. [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12811
+#EXTINF:-1 tvg-name="HGTV" tvg-logo="https://cdn-0.tvprofil.com/img/kanali-logo/hgtv_logo.png" group-title="Unknown",HGTV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6298
+#EXTINF:-1 tvg-id="htv1.hr" tvg-name="HRT 1 HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/12.png" group-title="Unknown",HRT 1 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/560
+#EXTINF:-1 tvg-id="htv1.hr" tvg-name="HRT 1 HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/htv1-logo.png" group-title="Unknown",HRT 1 backup 1 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12097
+#EXTINF:-1 tvg-id="htv1.hr" tvg-name="HRT 1" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/12.png" group-title="Unknown",HRT 1 backup 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6858
+#EXTINF:-1 tvg-id="htv2.hr" tvg-name="HRT 2 HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/16.png" group-title="Unknown",HRT 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6049
+#EXTINF:-1 tvg-id="htv2.hr" tvg-name="HRT 2" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/16.png" group-title="Unknown",HRT 2 backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/559
+#EXTINF:-1 tvg-id="htv2.hr" tvg-name="HRT 2 HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/htv2-logo.png" group-title="Unknown",HRT 2 backup 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12100
+#EXTINF:-1 tvg-id="htv3.hr" tvg-name="HRT 3 HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/75.png" group-title="Unknown",HRT 3 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/558
+#EXTINF:-1 tvg-id="htv3.hr" tvg-name="HRT 3" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/75.png" group-title="Unknown",HRT 3 backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6859
+#EXTINF:-1 tvg-id="htv3.hr" tvg-name="HRT 3 HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/HRT3_logo.png" group-title="Unknown",HRT 3 backup 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12098
+#EXTINF:-1 tvg-id="htv4.hr" tvg-name="HRT 4 HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/HRT4-logo.png" group-title="Unknown",HRT 4 [720p 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12099
+#EXTINF:-1 tvg-id="htv4.hr" tvg-name="HRT 4 HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/76.png" group-title="Unknown",HRT 4 backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/557
+#EXTINF:-1 tvg-id="htv4.hr" tvg-name="HRT 4" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/76.png" group-title="Unknown",HRT 4 backup 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6860
+#EXTINF:-1 tvg-id="htv5" tvg-name="HRT 5" tvg-logo="http://116.203.156.75/logo/hrt5_logo.png" group-title="Unknown",HRT 5 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/556
+#EXTINF:-1 tvg-name="HU: Animal Planet HD" group-title="Unknown",HU: Animal Planet [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8278
+#EXTINF:-1 tvg-name="HU: Discovery Channel" group-title="Unknown",HU: Discovery Channel [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8273
+#EXTINF:-1 tvg-name="HU: Duna HD" group-title="Unknown",HU: Duna [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8272
+#EXTINF:-1 tvg-name="HU: HBO HD (HU)" group-title="Unknown",HU: HBO [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8267
+#EXTINF:-1 tvg-name="HU: HBO 3 HU" group-title="Unknown",HU: HBO 3 HU [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8268
+#EXTINF:-1 tvg-name="HU: HBO2" group-title="Unknown",HU: HBO2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8266
+#EXTINF:-1 tvg-name="HU: M1 HD" group-title="Unknown",HU: M1 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8263
+#EXTINF:-1 tvg-name="HU: M4 HD" group-title="Unknown",HU: M4 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8261
+#EXTINF:-1 tvg-name="HU: M5 HD" group-title="Unknown",HU: M5 [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8260
+#EXTINF:-1 tvg-name="HU: Nat Geo Wild HD" group-title="Unknown",HU: Nat Geo Wild [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8259
+#EXTINF:-1 tvg-name="HU: National Geo HD" group-title="Unknown",HU: National Geo [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8258
+#EXTINF:-1 tvg-name="HU: Nick Jr" group-title="Unknown",HU: Nick Jr [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8257
+#EXTINF:-1 tvg-name="HU: RTL" group-title="Unknown",HU: RTL [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8255
+#EXTINF:-1 tvg-name="HU: Spektrum HD" group-title="Unknown",HU: Spektrum [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8249
+#EXTINF:-1 tvg-name="HU: Spiler TV" group-title="Unknown",HU: Spiler TV [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8248
+#EXTINF:-1 tvg-name="HU: SuperTV2" group-title="Unknown",HU: SuperTV2 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8246
+#EXTINF:-1 tvg-name="HU: TLC HU" group-title="Unknown",HU: TLC HU [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8245
+#EXTINF:-1 tvg-name="HU: TV Paprika HU" group-title="Unknown",HU: TV Paprika HU [1080p 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8242
+#EXTINF:-1 tvg-name="HU: Travel Channel HD" group-title="Unknown",HU: Travel Channel [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8244
+#EXTINF:-1 tvg-name="HU: Viasat Explore" group-title="Unknown",HU: Viasat Explore [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8239
+#EXTINF:-1 tvg-name="HU: Viasat History" group-title="Unknown",HU: Viasat History [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8238
+#EXTINF:-1 tvg-name="HU: Viasat Nature" group-title="Unknown",HU: Viasat Nature [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8237
+#EXTINF:-1 tvg-name="HU: Viasat3" group-title="Unknown",HU: Viasat3 [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8236
+#EXTINF:-1 tvg-name="HU: Viasat6" group-title="Unknown",HU: Viasat6 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8235
+#EXTINF:-1 tvg-name="Hajduk TV" tvg-logo="http://116.203.156.75/logo/hajduktv.png" group-title="Unknown",Hajduk TV [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13559
+#EXTINF:-1 tvg-name="Happy Drustvo" tvg-logo="http://nova-iptv.com/logo/happy_drustvo.png" group-title="Unknown",Happy Drustvo [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12704
+#EXTINF:-1 tvg-name="Happy Muzika" tvg-logo="http://nova-iptv.com/logo/happy_muzika.png" group-title="Unknown",Happy Muzika [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12706
+#EXTINF:-1 tvg-id="happytv.rs" tvg-name="Happy TV" tvg-logo="http://116.203.156.75/logo/happy.png" group-title="Unknown",Happy TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/567
+#EXTINF:-1 tvg-name="Happy Zemlja" tvg-logo="http://nova-iptv.com/logo/happy_zemlja.png" group-title="Unknown",Happy Zemlja [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12800
+#EXTINF:-1 tvg-name="Happy Zivot" tvg-logo="http://nova-iptv.com/logo/happy_zivot.png" group-title="Unknown",Happy Zivot [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12705
+#EXTINF:-1 tvg-id="hayat-tv.ba" tvg-name="Hayat HD" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/43.png" group-title="Unknown",Hayat [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/566
+#EXTINF:-1 tvg-id="Hayat Plus" tvg-name="Hayat 2" tvg-logo="http://116.203.156.75/logo/hayat-2.png" group-title="Unknown",Hayat 2 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/563
+#EXTINF:-1 tvg-name="Hayat Folk Box" tvg-logo="http://116.203.156.75/logo/hayat-folk-box.png" group-title="Unknown",Hayat Folk Box [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/565
+#EXTINF:-1 tvg-name="Hayat Music Box" tvg-logo="http://116.203.156.75/logo/hayat-music-box.png" group-title="Unknown",Hayat Music Box [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/564
+#EXTINF:-1 tvg-id="Hayatovci" tvg-name="Hayatovci" tvg-logo="http://116.203.156.75/logo/hayatovci-logo.png" group-title="Unknown",Hayatovci [SD 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/562
+#EXTINF:-1 tvg-id="History HD" tvg-name="History Channel" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/66.png" group-title="Unknown",History Channel [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/561
+#EXTINF:-1 tvg-id="History 2 HD" tvg-name="History Channel 2" tvg-logo="http://116.203.156.75/logo/h2-logo.png" group-title="Unknown",History Channel 2 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/569
+#EXTINF:-1 tvg-name="Hype TV HD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3f/Hype_TV.png" group-title="Unknown",Hype TV [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12578
+#EXTINF:-1 tvg-name="Informer TV" tvg-logo="http://nova-iptv.com/logo/informer_tv.png" group-title="Unknown",Informer TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13010
+#EXTINF:-1 tvg-name="Insajder TV" tvg-logo="http://nova-iptv.com/logo/InsajderRV_Srb_logo.png" group-title="Unknown",Insajder TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/515
+#EXTINF:-1 tvg-name="Izvorna TV" tvg-logo="http://116.203.156.75/logo/izvorna.png" group-title="Unknown",Izvorna TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/402
+#EXTINF:-1 tvg-name="Jim Jam" tvg-logo="http://nova-iptv.com/logo/JimJam-_logo_new3.png" group-title="Unknown",Jim Jam [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12561
+#EXTINF:-1 tvg-name="Jugoton TV" group-title="Unknown",Jugoton TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/401
+#EXTINF:-1 tvg-id="K1" tvg-name="K1 HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/k1-tv-srbija.png" group-title="Unknown",K1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10263
+#EXTINF:-1 tvg-id="K::CN 1" tvg-name="K::CN 1" tvg-logo="http://116.203.156.75/logo/kcn1.png" group-title="Unknown",K::CN 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/400
+#EXTINF:-1 tvg-id="K::CN Music 2" tvg-name="K::CN 2" tvg-logo="http://116.203.156.75/logo/kcn2.png" group-title="Unknown",K::CN 2 [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/399
+#EXTINF:-1 tvg-id="K::CN Svet +3 (W2)" tvg-name="K::CN 3" tvg-logo="http://116.203.156.75/logo/kcn3.png" group-title="Unknown",K::CN 3 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/398
+#EXTINF:-1 tvg-name="KANAL 6 HD" group-title="Unknown",KANAL 6 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10252
+#EXTINF:-1 tvg-name="Kazbuka" tvg-logo="http://nova-iptv.com/logo/kazbuka.png" group-title="Unknown",Kazbuka [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12550
+#EXTINF:-1 tvg-id="kinotv.hr" tvg-name="Kino TV" tvg-logo="http://nova-iptv.com/logo/kinotv_logo.png" group-title="Unknown",Kino TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/416
+#EXTINF:-1 tvg-name="Klape i Tambure" group-title="Unknown",Klape i Tambure [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10237
+#EXTINF:-1 tvg-id="htv1" tvg-name="Klasik Tv" tvg-logo="http://116.203.156.75/logo/klasik.png" group-title="Unknown",Klasik Tv [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/415
+#EXTINF:-1 tvg-id="Kurir TV" tvg-name="Kurir TV HD" tvg-logo="http://116.203.156.75/logo/KurirTV_logo.png" group-title="Unknown",Kurir TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9305
+#EXTINF:-1 tvg-name="Laudato TV" tvg-logo="http://116.203.156.75/logo/laudato.png" group-title="Unknown",Laudato TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/553
+#EXTINF:-1 tvg-name="Leo TV" group-title="Unknown",Leo TV [720p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12692
+#EXTINF:-1 tvg-id="Libertas TV" tvg-name="Libertas TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/LibertasTV.png" group-title="Unknown",Libertas TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6329
+#EXTINF:-1 tvg-id="loviribolov" tvg-name="Lov i Ribolov" group-title="Unknown",Lov i Ribolov [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9304
+#EXTINF:-1 tvg-name="M1 Gold" tvg-logo="http://nova-iptv.com/logo/M1-glod_logo.png" group-title="Unknown",M1 Gold [SD 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8900
+#EXTINF:-1 tvg-name="MARY TV MEDJUGORJE" group-title="Unknown",MARY TV MEDJUGORJE [720p 262 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10247
+#EXTINF:-1 tvg-name="MASA I MEDVJED" group-title="Unknown",MASA I MEDVJED [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5671
+#EXTINF:-1 tvg-name="MAX SPORT 1 HD" tvg-logo="http://116.203.156.75/logo/MAXSport_1_HR_logo_v2.png" group-title="Unknown",MAX SPORT 1 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12540
+#EXTINF:-1 tvg-name="MAX SPORT 2 HD" tvg-logo="http://116.203.156.75/logo/MAXSport_2_HR_logo_v2.png" group-title="Unknown",MAX SPORT 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12986
+#EXTINF:-1 tvg-name="MAX SPORT 3 HD" tvg-logo="http://116.203.156.75/logo/MAXSport_3_HR_logo_v2.png" group-title="Unknown",MAX SPORT 3 [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13490
+#EXTINF:-1 tvg-id="Minimax" tvg-name="MINIMAX" tvg-logo="http://116.203.156.75/logo/minimax.png" group-title="Unknown",MINIMAX [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/384
+#EXTINF:-1 tvg-name="MTV 00s" group-title="Unknown",MTV 00s [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/504
+#EXTINF:-1 tvg-name="MTV Adria" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/46.png" group-title="Unknown",MTV Adria [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/551
+#EXTINF:-1 tvg-name="MTV Igman" tvg-logo="http://116.203.156.75/logo/mtv-igman-logo.png" group-title="Unknown",MTV Igman [720p 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3795
+#EXTINF:-1 tvg-name="MTV Music" group-title="Unknown",MTV Music [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/392
+#EXTINF:-1 tvg-name="Mekka TV" tvg-logo="http://116.203.156.75/logo/makkah.png" group-title="Unknown",Mekka TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5602
+#EXTINF:-1 tvg-name="Mia Khalifa" group-title="Unknown",Mia Khalifa [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12658
+#EXTINF:-1 tvg-id="minitv" tvg-name="Mini TV" tvg-logo="http://nova-iptv.com/logo/minitv.png" group-title="Unknown",Mini TV [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9282
+#EXTINF:-1 tvg-name="Mofos" group-title="Unknown",Mofos [1080p 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12653
+#EXTINF:-1 tvg-name="Moja TV Premier Liga BiH" group-title="Unknown",Moja TV Premier Liga BiH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/480
+#EXTINF:-1 tvg-name="Mreza Zagreb" group-title="Unknown",Mreza Zagreb [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8041
+#EXTINF:-1 tvg-name="Muzzik HD" group-title="Unknown",Muzzik [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12526
+#EXTINF:-1 tvg-name="Muzzik HipHop HD" group-title="Unknown",Muzzik HipHop [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12531
+#EXTINF:-1 tvg-name="Muzzik World HD" group-title="Unknown",Muzzik World [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12528
+#EXTINF:-1 tvg-id="N1 HD (BH)" tvg-name="N1 BIH" tvg-logo="http://nova-iptv.com/logo/n1-logo.png" group-title="Unknown",N1 BIH [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9273
+#EXTINF:-1 tvg-id="N1 HD (HR)" tvg-name="N1 HR" tvg-logo="http://nova-iptv.com/logo/n1-logo.png" group-title="Unknown",N1 HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9272
+#EXTINF:-1 tvg-id="N1 HD (SR)" tvg-name="N1 SRB" tvg-logo="http://nova-iptv.com/logo/n1-logo.png" group-title="Unknown",N1 SRB [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9271
+#EXTINF:-1 tvg-name="NL: 24 Kitchen HD" group-title="Unknown",NL: 24 Kitchen [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8327
+#EXTINF:-1 tvg-name="NL: BBC FIRST FHD" group-title="Unknown",NL: BBC FIRST [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8356
+#EXTINF:-1 tvg-name="NL: Disney Channel FHD" group-title="Unknown",NL: Disney Channel [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8322
+#EXTINF:-1 tvg-name="NL: FOX HD" group-title="Unknown",NL: FOX [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8335
+#EXTINF:-1 tvg-name="NL: Film1 Action HD" group-title="Unknown",NL: Film1 Action [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8346
+#EXTINF:-1 tvg-name="NL: Film1 Drama FHD" group-title="Unknown",NL: Film1 Drama [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8343
+#EXTINF:-1 tvg-name="NL: Film1 Family HD" group-title="Unknown",NL: Film1 Family [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8342
+#EXTINF:-1 tvg-name="NL: MTV FHD" group-title="Unknown",NL: MTV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8331
+#EXTINF:-1 tvg-name="NL: MTV 24 Music HD" group-title="Unknown",NL: MTV 24 Music [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8332
+#EXTINF:-1 tvg-name="NL: NPO 1 Extra HD" group-title="Unknown",NL: NPO 1 Extra [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8318
+#EXTINF:-1 tvg-name="NL: NPO 2 FHD" group-title="Unknown",NL: NPO 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8307
+#EXTINF:-1 tvg-name="NL: NPO 3 FHD" group-title="Unknown",NL: NPO 3 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8308
+#EXTINF:-1 tvg-name="NL: NPO Politiek HD NL" group-title="Unknown",NL: NPO PolitiekNL [SD 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8319
+#EXTINF:-1 tvg-name="NL: National Geographic Wild HD" group-title="Unknown",NL: National Geographic Wild [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8349
+#EXTINF:-1 tvg-name="NL: Nick Junior HD" group-title="Unknown",NL: Nick Junior [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8323
+#EXTINF:-1 tvg-name="NL: Nick Toons HD" group-title="Unknown",NL: Nick Toons [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8324
+#EXTINF:-1 tvg-name="NL: Nickelodeon FHD" group-title="Unknown",NL: Nickelodeon [720p 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8325
+#EXTINF:-1 tvg-name="NL: RTL 4 FHD" group-title="Unknown",NL: RTL 4 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8309
+#EXTINF:-1 tvg-name="NL: RTL 7 FHD" group-title="Unknown",NL: RTL 7 [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8312
+#EXTINF:-1 tvg-name="NL: RTL Z FHD" group-title="Unknown",NL: RTL Z [720p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8317
+#EXTINF:-1 tvg-name="NL: SBS 9 FHD" group-title="Unknown",NL: SBS 9 [1080p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8314
+#EXTINF:-1 tvg-name="NL: TLC FHD" group-title="Unknown",NL: TLC [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8361
+#EXTINF:-1 tvg-id="Nova BH HD" tvg-name="NOVA BH" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaBH_logo.png" group-title="Unknown",NOVA BH [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9279
+#EXTINF:-1 tvg-id="Nova BH HD" tvg-name="NOVA BH." tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaBH_logo.png" group-title="Unknown",NOVA BH. [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9280
+#EXTINF:-1 tvg-name="NOVA DOKU" group-title="Unknown",NOVA DOKU [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10319
+#EXTINF:-1 tvg-id="nova-m" tvg-name="NOVA M" group-title="Unknown",NOVA M [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9281
+#EXTINF:-1 tvg-name="NOVA PREMIUM HD" group-title="Unknown",NOVA PREMIUM [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8219
+#EXTINF:-1 tvg-id="NOVA S HD (RS)" tvg-name="NOVA S" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/nova_s_logo.png" group-title="Unknown",NOVA S [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9274
+#EXTINF:-1 tvg-id="Nova HR HD" tvg-name="NOVA TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaTV_logo_2019.png" group-title="Unknown",NOVA TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9270
+#EXTINF:-1 tvg-id="Nova HR HD" tvg-name="NOVA TV HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaTV_logo_2019.png" group-title="Unknown",NOVA TV backup 1 [Unknown 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9278
+#EXTINF:-1 tvg-id="Nova HR HD" tvg-name="NOVA TV HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/NovaTV_logo_2019.png" group-title="Unknown",NOVA TV backup 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12090
+#EXTINF:-1 tvg-name="NTV 101" group-title="Unknown",NTV 101 [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10264
+#EXTINF:-1 tvg-id="htv1" tvg-name="Narodna TV HD" tvg-logo="http://nova-iptv.com/logo/narodna_tv.png" group-title="Unknown",Narodna TV [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12728
+#EXTINF:-1 tvg-id="Nat Geo Wild HD" tvg-name="Nat Geo Wild" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/183.png" group-title="Unknown",Nat Geo Wild [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/547
+#EXTINF:-1 tvg-id="National Geographic HD" tvg-name="National Geographic HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/national_geographic_logo.png" group-title="Unknown",National Geographic [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/546
+#EXTINF:-1 tvg-id="National Geographic HD" tvg-name="National Geographic" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/49.png" group-title="Unknown",National Geographic backup 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6303
+#EXTINF:-1 tvg-name="Nick Jr." tvg-logo="http://116.203.156.75/logo/nickjr.png" group-title="Unknown",Nick Jr. [SD 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/383
+#EXTINF:-1 tvg-id="Nickelodeon HD" tvg-name="Nickelodeon" tvg-logo="http://116.203.156.75/logo/nickelodeon.png" group-title="Unknown",Nickelodeon [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/382
+#EXTINF:-1 tvg-name="Nickelodeon." tvg-logo="http://116.203.156.75/logo/nickelodeon.png" group-title="Unknown",Nickelodeon. [SD 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6864
+#EXTINF:-1 tvg-id="Nicktoons (HR)" tvg-name="Nicktoons" tvg-logo="http://nova-iptv.com/logo/nicktoons.png" group-title="Unknown",Nicktoons [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8861
+#EXTINF:-1 tvg-name="Nova 24 SLO" group-title="Unknown",Nova 24 SLO [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8037
+#EXTINF:-1 tvg-name="Nova Family." group-title="Unknown",Nova Family. [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12084
+#EXTINF:-1 tvg-name="Nova Kids" group-title="Unknown",Nova Kids [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12085
+#EXTINF:-1 tvg-id="Nova Sport HD" tvg-name="Nova Sport HD" tvg-logo="http://nova-iptv.com/logo/nova_sport.png" group-title="Unknown",Nova Sport [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9288
+#EXTINF:-1 tvg-id="OBN" tvg-name="OBN" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/33.png" group-title="Unknown",OBN [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/541
+#EXTINF:-1 tvg-name="OLDTIMER" group-title="Unknown",OLDTIMER [Unknown 399 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12696
+#EXTINF:-1 tvg-id="cf00a93b9e783577a4926ad239a60a43" tvg-name="OTV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/otv_plavi-logo.png" group-title="Unknown",OTV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10249
+#EXTINF:-1 tvg-name="OTV Valentino" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/62.png" group-title="Unknown",OTV Valentino [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/540
+#EXTINF:-1 tvg-name="Osjecka TV" tvg-logo="http://116.203.156.75/logo/osjecka.jpeg" group-title="Unknown",Osjecka TV [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/554
+#EXTINF:-1 tvg-name="PENTHOUSE GOLD HD" group-title="Unknown",PENTHOUSE GOLD [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12642
+#EXTINF:-1 tvg-name="PEPA PRASE" group-title="Unknown",PEPA PRASE [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10029
+#EXTINF:-1 tvg-id="pink.sr" tvg-name="PINK HD" tvg-logo="http://116.203.156.75/logo/pink.png" group-title="Unknown",PINK [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/376
+#EXTINF:-1 tvg-name="PINK HA HA" tvg-logo="http://116.203.156.75/logo/pink_haha.jpg" group-title="Unknown",PINK HA HA [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/366
+#EXTINF:-1 tvg-id="DOMA TV HD" tvg-name="PINK M" group-title="Unknown",PINK M [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6429
+#EXTINF:-1 tvg-id="DOMA TV HD" tvg-name="PINK SOAP" tvg-logo="http://116.203.156.75/logo/pinksoap.png" group-title="Unknown",PINK SOAP [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/351
+#EXTINF:-1 tvg-name="PL: AXN HD" group-title="Unknown",PL: AXN [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7551
+#EXTINF:-1 tvg-name="PL: Canal + Serial HD" group-title="Unknown",PL: Canal + Serial [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7531
+#EXTINF:-1 tvg-name="PL: Comedy Central HD " group-title="Unknown",PL: Comedy Central [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7548
+#EXTINF:-1 tvg-name="PL: Disney XD" group-title="Unknown",PL: Disney XD [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7556
+#EXTINF:-1 tvg-name="PL: HBO" group-title="Unknown",PL: HBO [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7545
+#EXTINF:-1 tvg-name="PL: HBO 2 HD" group-title="Unknown",PL: HBO 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7546
+#EXTINF:-1 tvg-name="PL: HBO 3 HD" group-title="Unknown",PL: HBO 3 [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7544
+#EXTINF:-1 tvg-name="PL: Nat Geo Wild" group-title="Unknown",PL: Nat Geo Wild [1080p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7554
+#EXTINF:-1 tvg-name="PL: Polsat" group-title="Unknown",PL: Polsat [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7538
+#EXTINF:-1 tvg-name="PL: Polsat 2 HD" group-title="Unknown",PL: Polsat 2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7533
+#EXTINF:-1 tvg-name="PL: TV 4" group-title="Unknown",PL: TV 4 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7539
+#EXTINF:-1 tvg-name="PL: TVN HD" group-title="Unknown",PL: TVN [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7534
+#EXTINF:-1 tvg-name="PL: TVP Historia HD" group-title="Unknown",PL: TVP Historia [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7535
+#EXTINF:-1 tvg-name="PL: TVP Info HD" group-title="Unknown",PL: TVP Info [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7536
+#EXTINF:-1 tvg-name="PL: TVP KULTURA" group-title="Unknown",PL: TVP KULTURA [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7537
+#EXTINF:-1 tvg-name="POP Brio" group-title="Unknown",POP Brio [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/221
+#EXTINF:-1 tvg-name="POP Kino" group-title="Unknown",POP Kino [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/219
+#EXTINF:-1 tvg-name="POP TV" group-title="Unknown",POP TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/220
+#EXTINF:-1 tvg-name="PRIVATE HD" group-title="Unknown",PRIVATE [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12648
+#EXTINF:-1 tvg-name="PRVA HERCEGOVACKA" group-title="Unknown",PRVA HERCEGOVACKA [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10250
+#EXTINF:-1 tvg-id="Prva" tvg-name="PRVA HD." tvg-logo="http://116.203.156.75/logo/Prva_TV.png" group-title="Unknown",PRVA. [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12346
+#EXTINF:-1 tvg-id="pickbox-tv" tvg-name="PickBox TV" tvg-logo="http://nova-iptv.com/logo/pickbox_logo_new.png" group-title="Unknown",PickBox TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8563
+#EXTINF:-1 tvg-id="pikaboo" tvg-name="Pikaboo" tvg-logo="http://nova-iptv.com/logo/pikaboo_logo.png" group-title="Unknown",Pikaboo [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9285
+#EXTINF:-1 tvg-name="Pink & Roll" tvg-logo="http://116.203.156.75/logo/PinkNRoll_logo.png" group-title="Unknown",Pink & Roll [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6640
+#EXTINF:-1 tvg-id="Pink BH" tvg-name="Pink BH" tvg-logo="http://116.203.156.75/logo/pink_bh.png" group-title="Unknown",Pink BH [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3647
+#EXTINF:-1 tvg-id="Pink Classic" tvg-name="Pink Classic" tvg-logo="http://116.203.156.75/logo/pink_classic.png" group-title="Unknown",Pink Classic [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5665
+#EXTINF:-1 tvg-id="Pink Comedy" tvg-name="Pink Comedy" tvg-logo="http://116.203.156.75/logo/pink_comedy.png" group-title="Unknown",Pink Comedy [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/371
+#EXTINF:-1 tvg-id="Pink Crime & Mystery" tvg-name="Pink Crime & Mystery" tvg-logo="http://116.203.156.75/logo/pink_crime_mistery.png" group-title="Unknown",Pink Crime & Mystery [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/370
+#EXTINF:-1 tvg-name="Pink Extra" tvg-logo="http://nova-iptv.com/logo/pink-extra.png" group-title="Unknown",Pink Extra [SD 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12557
+#EXTINF:-1 tvg-name="Pink Folk 1" tvg-logo="http://116.203.156.75/logo/pink_folk1.png" group-title="Unknown",Pink Folk 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/368
+#EXTINF:-1 tvg-name="Pink Folk 2" tvg-logo="http://116.203.156.75/logo/pink_folk2.png" group-title="Unknown",Pink Folk 2 [SD 262 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/367
+#EXTINF:-1 tvg-id="Pink Horror" tvg-name="Pink Horror" tvg-logo="http://116.203.156.75/logo/pink_horor.png" group-title="Unknown",Pink Horror [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/356
+#EXTINF:-1 tvg-id="Pink Kids" tvg-name="Pink Kids" tvg-logo="http://116.203.156.75/logo/pink_kids.png" group-title="Unknown",Pink Kids [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/365
+#EXTINF:-1 tvg-name="Pink Koncert" tvg-logo="http://nova-iptv.com/logo/PinkKoncert_logo.png" group-title="Unknown",Pink Koncert [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12558
+#EXTINF:-1 tvg-id="Pink Kuvar" tvg-name="Pink Kuvar" tvg-logo="http://116.203.156.75/logo/pink_kuvar.png" group-title="Unknown",Pink Kuvar [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5664
+#EXTINF:-1 tvg-name="Pink LOL" tvg-logo="http://116.203.156.75/logo/pink_lol.png" group-title="Unknown",Pink LOL [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5663
+#EXTINF:-1 tvg-id="Pink Movies" tvg-name="Pink Movies" tvg-logo="http://116.203.156.75/logo/pink_movies.png" group-title="Unknown",Pink Movies [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/363
+#EXTINF:-1 tvg-name="Pink Music 1" tvg-logo="http://116.203.156.75/logo/pink_music.png" group-title="Unknown",Pink Music 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/362
+#EXTINF:-1 tvg-id="Pink Pedia" tvg-name="Pink Pedia" tvg-logo="http://116.203.156.75/logo/pink_pedia.png" group-title="Unknown",Pink Pedia [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/350
+#EXTINF:-1 tvg-id="Pink Plus" tvg-name="Pink Plus" tvg-logo="http://116.203.156.75/logo/pink_plus.png" group-title="Unknown",Pink Plus [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/360
+#EXTINF:-1 tvg-id="Pink Premium HD" tvg-name="Pink Premium" tvg-logo="http://116.203.156.75/logo/pink_premium.png" group-title="Unknown",Pink Premium [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/359
+#EXTINF:-1 tvg-id="Pink Reality" tvg-name="Pink Reality" tvg-logo="http://116.203.156.75/logo/pinkReality.png" group-title="Unknown",Pink Reality [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/358
+#EXTINF:-1 tvg-id="Pink Romance" tvg-name="Pink Romance" tvg-logo="http://116.203.156.75/logo/Pink_Romance_logo.png" group-title="Unknown",Pink Romance [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/357
+#EXTINF:-1 tvg-id="Pink Sci-Fi & Fantasy" tvg-name="Pink Sci Fi & Fantasy" tvg-logo="http://116.203.156.75/logo/Pink_SciFi_Fantasy_logo.png" group-title="Unknown",Pink Sci Fi & Fantasy [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/355
+#EXTINF:-1 tvg-id="Pink Serije" tvg-name="Pink Serije" tvg-logo="http://116.203.156.75/logo/pink_serije.png" group-title="Unknown",Pink Serije [SD 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/353
+#EXTINF:-1 tvg-id="Pink Show" tvg-name="Pink Show" tvg-logo="http://116.203.156.75/logo/PinkShow.png" group-title="Unknown",Pink Show [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/352
+#EXTINF:-1 tvg-id="Pink super kids" tvg-name="Pink Super Kids" tvg-logo="http://nova-iptv.com/logo/PinkSuperKids_logo.png" group-title="Unknown",Pink Super Kids [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8048
+#EXTINF:-1 tvg-id="Pink Thriller" tvg-name="Pink Thriler" tvg-logo="http://116.203.156.75/logo/Pink_Thriller_logo.png" group-title="Unknown",Pink Thriler [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/354
+#EXTINF:-1 tvg-id="DOMA TV HD" tvg-name="Pink Vesti" tvg-logo="http://116.203.156.75/logo/Vesti_RS_logo.png" group-title="Unknown",Pink Vesti [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/374
+#EXTINF:-1 tvg-id="Pink Western" tvg-name="Pink Western" tvg-logo="http://116.203.156.75/logo/pink-western-logo.png" group-title="Unknown",Pink Western [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/349
+#EXTINF:-1 tvg-id="Pink World" tvg-name="Pink World" tvg-logo="http://116.203.156.75/logo/pink_world.png" group-title="Unknown",Pink World [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5667
+#EXTINF:-1 tvg-id="Pink Zabava" tvg-name="Pink Zabava" tvg-logo="http://116.203.156.75/logo/pink_zabava.png" group-title="Unknown",Pink Zabava [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/347
+#EXTINF:-1 tvg-id="planet-earth" tvg-name="Planet Earth" tvg-logo="http://116.203.156.75/logo/PlanetEarth.png" group-title="Unknown",Planet Earth [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5389
+#EXTINF:-1 tvg-name="Planet TV" group-title="Unknown",Planet TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/222
+#EXTINF:-1 tvg-name="Poljoprivredna TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/poljoprivredna_tv_logo.png" group-title="Unknown",Poljoprivredna TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6328
+#EXTINF:-1 tvg-id="posavinatv" tvg-name="Posavina TV" tvg-logo="http://116.203.156.75/logo/posavina.jpg" group-title="Unknown",Posavina TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/397
+#EXTINF:-1 tvg-name="Prva Files" tvg-logo="http://116.203.156.75/logo/Prva_Files.png" group-title="Unknown",Prva Files [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/545
+#EXTINF:-1 tvg-id="Prva Kick" tvg-name="Prva Kick" tvg-logo="http://116.203.156.75/logo/Prva_Kick.png" group-title="Unknown",Prva Kick [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3649
+#EXTINF:-1 tvg-name="Prva Life" tvg-logo="http://116.203.156.75/logo/Prva_Life.png" group-title="Unknown",Prva Life [1080p 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12556
+#EXTINF:-1 tvg-id="htv1" tvg-name="Prva Max" tvg-logo="http://116.203.156.75/logo/Prva_Max.png" group-title="Unknown",Prva Max [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/538
+#EXTINF:-1 tvg-id="Prva plus" tvg-name="Prva Plus" tvg-logo="http://116.203.156.75/logo/prva_plus.png" group-title="Unknown",Prva Plus [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/537
+#EXTINF:-1 tvg-id="Prva" tvg-name="Prva TV" tvg-logo="http://116.203.156.75/logo/Prva_TV.png" group-title="Unknown",Prva TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8021
+#EXTINF:-1 tvg-id="prva-tv-cg" tvg-name="Prva TV CG" tvg-logo="http://116.203.156.75/logo/prva_cg.png" group-title="Unknown",Prva TV CG [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/532
+#EXTINF:-1 tvg-id="Prva World" tvg-name="Prva World" tvg-logo="http://116.203.156.75/logo/Prva_World.png" group-title="Unknown",Prva World [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/536
+#EXTINF:-1 tvg-name="REALITY KINGS" group-title="Unknown",REALITY KINGS [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12651
+#EXTINF:-1 tvg-name="REDLIGHT HD" group-title="Unknown",REDLIGHT [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12694
+#EXTINF:-1 tvg-name="RTCG 1" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/29.png" group-title="Unknown",RTCG 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/534
+#EXTINF:-1 tvg-id="rtcg2" tvg-name="RTCG 2" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/29.png" group-title="Unknown",RTCG 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/533
+#EXTINF:-1 tvg-id="RTCG Sat" tvg-name="RTCG Sat" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/29.png" group-title="Unknown",RTCG Sat [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/535
+#EXTINF:-1 tvg-id="RTL 2 HR HD" tvg-name="RTL 2 HR HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL2-logo.png" group-title="Unknown",RTL 2 HR [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8298
+#EXTINF:-1 tvg-id="RTL 2 HR HD" tvg-name="RTL 2 HR HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL2-logo.png" group-title="Unknown",RTL 2 HR backup 1 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12093
+#EXTINF:-1 tvg-id="RTL 2 HR HD" tvg-name="RTL 2 HR" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL2-logo.png" group-title="Unknown",RTL 2 HR backup 2 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7519
+#EXTINF:-1 tvg-name="RTL Adria" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Adria_2020.png" group-title="Unknown",RTL Adria [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8629
+#EXTINF:-1 tvg-id="RTL Crime" tvg-name="RTL Crime" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Crime_logo.png" group-title="Unknown",RTL Crime [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7517
+#EXTINF:-1 tvg-name="RTL Crime FHD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Crime_logo.png" group-title="Unknown",RTL Crime backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8299
+#EXTINF:-1 tvg-id="RTL HR HD" tvg-name="RTL HR HD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL.png" group-title="Unknown",RTL HR [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8220
+#EXTINF:-1 tvg-id="rtl.hr" tvg-name="RTL HR" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL.png" group-title="Unknown",RTL HR backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7516
+#EXTINF:-1 tvg-id="RTL HR HD" tvg-name="RTL HR HD (Hevc)" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL.png" group-title="Unknown",RTL HR backup 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12092
+#EXTINF:-1 tvg-id="rtl-kockica" tvg-name="RTL KOCKICA" tvg-logo="http://nova-iptv.com/logo/rtl-kockica-logo.png" group-title="Unknown",RTL KOCKICA [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7520
+#EXTINF:-1 tvg-id="RTL Living" tvg-name="RTL Living" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Living_logo.png" group-title="Unknown",RTL Living [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8001
+#EXTINF:-1 tvg-id="RTL Living" tvg-name="RTL Living FHD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Living_logo.png" group-title="Unknown",RTL Living backup 1 [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8301
+#EXTINF:-1 tvg-id="rtl-passion" tvg-name="RTL Passion" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Passion_logo.png" group-title="Unknown",RTL Passion [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7518
+#EXTINF:-1 tvg-id="rtl-passion" tvg-name="RTL Passion FHD" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Passion_logo.png" group-title="Unknown",RTL Passion backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8281
+#EXTINF:-1 tvg-name="RTLUX" group-title="Unknown",RTLUX [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8494
+#EXTINF:-1 tvg-name="RTLUX 2" group-title="Unknown",RTLUX 2 [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8495
+#EXTINF:-1 tvg-id="RTRS" tvg-name="RTRS" tvg-logo="http://116.203.156.75/wp-content/themes/movers-packers/images/kanali_logo/3.png" group-title="Unknown",RTRS [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/523
+#EXTINF:-1 tvg-id="RTRS Plus" tvg-name="RTRS Plus" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTRS_PLUS_logo.png" group-title="Unknown",RTRS Plus [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7274
+#EXTINF:-1 tvg-id="rts1.sr" tvg-name="RTS 1" tvg-logo="http://nova-iptv.com/logo/RTS1_logo.png" group-title="Unknown",RTS 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6886
+#EXTINF:-1 tvg-id="rts1.sr" tvg-name="RTS 1 HD" tvg-logo="http://nova-iptv.com/logo/RTS1_logo.png" group-title="Unknown",RTS 1 backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/521
+#EXTINF:-1 tvg-id="rts2.sr" tvg-name="RTS 2" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTS2_logo.png" group-title="Unknown",RTS 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9353
+#EXTINF:-1 tvg-id="rts2.sr" tvg-name="RTS 2 HD" tvg-logo="http://116.203.156.75/logo/RTS2_logo.png" group-title="Unknown",RTS 2 backup 1 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/520
+#EXTINF:-1 tvg-id="RTS 3" tvg-name="RTS 3 HD" tvg-logo="http://116.203.156.75/logo/rts3.png" group-title="Unknown",RTS 3 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/519
+#EXTINF:-1 tvg-id="rtsdrama.rs" tvg-name="RTS Drama" tvg-logo="http://116.203.156.75/logo/RTS_Drama_logo.png" group-title="Unknown",RTS Drama [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/518
+#EXTINF:-1 tvg-name="RTS Klasika" tvg-logo="http://nova-iptv.com/logo/rts-klasika-logo.png" group-title="Unknown",RTS Klasika [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12525
+#EXTINF:-1 tvg-name="RTS Kolo" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTS_Kolo_logo.jpg" group-title="Unknown",RTS Kolo [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6399
+#EXTINF:-1 tvg-name="RTS Nauka" tvg-logo="http://nova-iptv.com/logo/rtsnauka.png" group-title="Unknown",RTS Nauka [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12552
+#EXTINF:-1 tvg-name="RTS Poletarac" tvg-logo="http://nova-iptv.com/logo/RTS_Poletarac_logo.png" group-title="Unknown",RTS Poletarac [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12340
+#EXTINF:-1 tvg-id="rts-sat" tvg-name="RTS Svet HD" tvg-logo="http://116.203.156.75/logo/rts_svet.png" group-title="Unknown",RTS Svet [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/516
+#EXTINF:-1 tvg-name="RTS Trezor" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTS_Trezor_logo.png" group-title="Unknown",RTS Trezor [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6400
+#EXTINF:-1 tvg-name="RTS Zivot" tvg-logo="http://nova-iptv.com/logo/RTS_Zivot_logo.png" group-title="Unknown",RTS Zivot [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/517
+#EXTINF:-1 tvg-name="RTV Lukavac" group-title="Unknown",RTV Lukavac [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10265
+#EXTINF:-1 tvg-name="RTV Novi Pazar" tvg-logo="http://116.203.156.75/logo/novi_pazar.png" group-title="Unknown",RTV Novi Pazar [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/512
+#EXTINF:-1 tvg-id="RTV 1" tvg-name="RTV Vojvodina" tvg-logo="http://nova-iptv.com/logo/rtv-1.png" group-title="Unknown",RTV Vojvodina [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/513
+#EXTINF:-1 tvg-name="RUS: AMEDIA 2 HD" group-title="Unknown",RUS: AMEDIA 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7593
+#EXTINF:-1 tvg-name="RUS: Aris 24 HD" group-title="Unknown",RUS: Aris 24 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7594
+#EXTINF:-1 tvg-name="RUS: DISCOVERY CHANNEL HD" group-title="Unknown",RUS: DISCOVERY CHANNEL [1080p N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7596
+#EXTINF:-1 tvg-name="RUS: DISNEY CHANNEL HD" group-title="Unknown",RUS: DISNEY CHANNEL [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7588
+#EXTINF:-1 tvg-name="RUS: FOX HD" group-title="Unknown",RUS: FOX [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7589
+#EXTINF:-1 tvg-name="RUS: HTB HD" group-title="Unknown",RUS: HTB [SD 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7582
+#EXTINF:-1 tvg-name="RUS: MTV HD" group-title="Unknown",RUS: MTV [SD 763 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7597
+#EXTINF:-1 tvg-name="RUS: NAT GEO HD" group-title="Unknown",RUS: NAT GEO [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7598
+#EXTINF:-1 tvg-name="RUS: TV 1000 Mega Hit HD" group-title="Unknown",RUS: TV 1000 Mega Hit [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7583
+#EXTINF:-1 tvg-name="RUS: TV1000" group-title="Unknown",RUS: TV1000 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7592
+#EXTINF:-1 tvg-name="RUS: TV1000 ACTION HD" group-title="Unknown",RUS: TV1000 ACTION [1080p 816 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7591
+#EXTINF:-1 tvg-name="RUS: VIASAT EXPLORER HD" group-title="Unknown",RUS: VIASAT EXPLORER [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/7584
+#EXTINF:-1 tvg-id="RED" tvg-name="Red TV" tvg-logo="http://116.203.156.75/logo/Red-TV-Pink-Logo.png" group-title="Unknown",Red TV [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/375
+#EXTINF:-1 tvg-id="rtl-croworld" tvg-name="Rtl Croatia World" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/RTL_Croatia_World_logo.png" group-title="Unknown",Rtl Croatia World [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10165
+#EXTINF:-1 tvg-name="SE: C More Live HD" group-title="Unknown",SE: C More Live [720p 1258 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3718
+#EXTINF:-1 tvg-name="SE: C More Live 3 HD" group-title="Unknown",SE: C More Live 3 [720p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3715
+#EXTINF:-1 tvg-name="SE: Disney Channel" group-title="Unknown",SE: Disney Channel [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3748
+#EXTINF:-1 tvg-name="SE: SVT1" group-title="Unknown",SE: SVT1 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3772
+#EXTINF:-1 tvg-name="SE: SVT2" group-title="Unknown",SE: SVT2 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3778
+#EXTINF:-1 tvg-name="SE: TV4" group-title="Unknown",SE: TV4 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3770
+#EXTINF:-1 tvg-name="SE: TV4 GULD" group-title="Unknown",SE: TV4 GULD [720p 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3769
+#EXTINF:-1 tvg-name="SE: TV6" group-title="Unknown",SE: TV6 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3765
+#EXTINF:-1 tvg-name="SE: Viasat Motor HD" group-title="Unknown",SE: Viasat Motor [720p 1101 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3738
+#EXTINF:-1 tvg-name="SLO 1" group-title="Unknown",SLO 1 [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/217
+#EXTINF:-1 tvg-name="SLO 2" group-title="Unknown",SLO 2 [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/216
+#EXTINF:-1 tvg-name="SOS" group-title="Unknown",SOS [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/438
+#EXTINF:-1 tvg-name="SPORT TV 1 HD SLO" group-title="Unknown",SPORT TV 1SLO [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12074
+#EXTINF:-1 tvg-name="SPORT TV 2 HD SLO" group-title="Unknown",SPORT TV 2SLO [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/214
+#EXTINF:-1 tvg-name="SPORT TV 3 HD SLO" group-title="Unknown",SPORT TV 3SLO [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/213
+#EXTINF:-1 tvg-id="SUPERSTAR 2" tvg-name="SUPER STAR 2 TV" tvg-logo="http://nova-iptv.com/logo/Superstar_2_RS_logo.png" group-title="Unknown",SUPER STAR 2 TV [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6748
+#EXTINF:-1 tvg-name="SUPER STAR 3 TV" tvg-logo="http://116.203.156.75/logo/superstar_3.png" group-title="Unknown",SUPER STAR 3 TV [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13281
+#EXTINF:-1 tvg-id="Superstar TV HD" tvg-name="SUPER STAR TV" tvg-logo="http://nova-iptv.com/logo/SuperstarTV_logo.png" group-title="Unknown",SUPER STAR TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6270
+#EXTINF:-1 tvg-name="SWISS: SRF zwei HD" group-title="Unknown",SWISS: SRF zwei [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6838
+#EXTINF:-1 tvg-name="Sandzak TV" tvg-logo="https://www.cenzolovka.rs/wp-content/uploads/2015/06/sandzak-tv-logo.jpg" group-title="Unknown",Sandzak TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6026
+#EXTINF:-1 tvg-id="SCI FI HD" tvg-name="SciFi" tvg-logo="http://116.203.156.75/logo/sci_fi.png" group-title="Unknown",SciFi [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/409
+#EXTINF:-1 tvg-name="Sehara TV" tvg-logo="http://116.203.156.75/logo/sehara.jpeg" group-title="Unknown",Sehara TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5366
+#EXTINF:-1 tvg-name="Sevdah TV" group-title="Unknown",Sevdah TV [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/396
+#EXTINF:-1 tvg-name="Sky Bundesliga 1 HD (DE)" group-title="Unknown",Sky Bundesliga 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12065
+#EXTINF:-1 tvg-name="Sky Bundesliga 2 HD (DE)" group-title="Unknown",Sky Bundesliga 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12066
+#EXTINF:-1 tvg-name="Sky Bundesliga 3 HD (DE)" group-title="Unknown",Sky Bundesliga 3 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12067
+#EXTINF:-1 tvg-name="Sky Bundesliga 4 HD (DE)" group-title="Unknown",Sky Bundesliga 4 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12068
+#EXTINF:-1 tvg-name="Sky Bundesliga 5 HD (DE)" group-title="Unknown",Sky Bundesliga 5 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12069
+#EXTINF:-1 tvg-name="Sky Bundesliga 6 HD (DE)" group-title="Unknown",Sky Bundesliga 6 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12070
+#EXTINF:-1 tvg-name="Sky Sport 1 HD (DE)" group-title="Unknown",Sky Sport 1 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12055
+#EXTINF:-1 tvg-name="Sky Sport 2 HD (DE)" group-title="Unknown",Sky Sport 2 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12056
+#EXTINF:-1 tvg-name="Sky Sport 3 HD (DE)" group-title="Unknown",Sky Sport 3 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12057
+#EXTINF:-1 tvg-name="Sky Sport 4 HD (DE)" group-title="Unknown",Sky Sport 4 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12058
+#EXTINF:-1 tvg-name="Sky Sport 5 HD (DE)" group-title="Unknown",Sky Sport 5 [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12059
+#EXTINF:-1 tvg-name="Sky Sport 6 HD (DE)" group-title="Unknown",Sky Sport 6 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12060
+#EXTINF:-1 tvg-name="Sky Sport 7 HD (DE)" group-title="Unknown",Sky Sport 7 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12061
+#EXTINF:-1 tvg-name="Sky Sport 9 HD (DE)" group-title="Unknown",Sky Sport 9 [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12063
+#EXTINF:-1 tvg-name="Sky Sport Austria 1" group-title="Unknown",Sky Sport Austria 1 [720p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12075
+#EXTINF:-1 tvg-name="Sky Sport F1 (ENG)" group-title="Unknown",Sky Sport F1 [4K 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12251
+#EXTINF:-1 tvg-name="Sky Sport F1 (DE)" group-title="Unknown",Sky Sport F1 backup 1 [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12078
+#EXTINF:-1 tvg-name="Sky Sport Golf" group-title="Unknown",Sky Sport Golf [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/13053
+#EXTINF:-1 tvg-name="Slavonska Televizija" tvg-logo="http://116.203.156.75/logo/slavnonska.jpg" group-title="Unknown",Slavonska Televizija [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/555
+#EXTINF:-1 tvg-name="Spank Monster" group-title="Unknown",Spank Monster [720p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12646
+#EXTINF:-1 tvg-name="Sport Digital HD" group-title="Unknown",Sport Digital [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/461
+#EXTINF:-1 tvg-id="sport-klub-hd" tvg-name="Sport Klub HD" tvg-logo="http://nova-iptv.com/logo/SK_HD_RS_logo.png" group-title="Unknown",Sport Klub [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9301
+#EXTINF:-1 tvg-id="SK 10 (SR)" tvg-name="Sport Klub 10" tvg-logo="http://nova-iptv.com/logo/SK10_RS_logo.png" group-title="Unknown",Sport Klub 10 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12238
+#EXTINF:-1 tvg-id="sportklub-hr.sport" tvg-name="Sport Klub 1 HD HR" tvg-logo="http://nova-iptv.com/logo/SK1_RS_logo.png" group-title="Unknown",Sport Klub 1HR [1080p 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12041
+#EXTINF:-1 tvg-id="sport-klub.sport" tvg-name="Sport Klub 1 HD SRB" tvg-logo="http://nova-iptv.com/logo/SK1_RS_logo.png" group-title="Unknown",Sport Klub 1SRB [1080p 262 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12037
+#EXTINF:-1 tvg-name="Sport Klub 2 HD HR" tvg-logo="http://nova-iptv.com/logo/SK1_RS_logo.png" group-title="Unknown",Sport Klub 2HR [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12042
+#EXTINF:-1 tvg-id="SK 2 HD (SR)" tvg-name="Sport Klub 2 HD SRB" tvg-logo="http://nova-iptv.com/logo/SK1_RS_logo.png" group-title="Unknown",Sport Klub 2SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12038
+#EXTINF:-1 tvg-name="Sport Klub 3 HD HR" tvg-logo="http://nova-iptv.com/logo/SK3_HR_logo.png" group-title="Unknown",Sport Klub 3HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12043
+#EXTINF:-1 tvg-id="SK 3 HD (SR)" tvg-name="Sport Klub 3 HD SRB" tvg-logo="http://nova-iptv.com/logo/SK3_HR_logo.png" group-title="Unknown",Sport Klub 3SRB [1080p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12039
+#EXTINF:-1 tvg-name="Sport Klub 4 HR" tvg-logo="http://nova-iptv.com/logo/SK4_HR_logo.png" group-title="Unknown",Sport Klub 4 HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12044
+#EXTINF:-1 tvg-id="sk5" tvg-name="Sport Klub 5 HR" tvg-logo="http://nova-iptv.com/logo/SK5_HR_logo.png" group-title="Unknown",Sport Klub 5 HR [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9299
+#EXTINF:-1 tvg-name="Sport Klub 5 SRB" tvg-logo="http://nova-iptv.com/logo/SK5_HR_logo.png" group-title="Unknown",Sport Klub 5 SRB [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9293
+#EXTINF:-1 tvg-name="Sport Klub 6 HR" tvg-logo="http://nova-iptv.com/logo/SK6_HR_logo.png" group-title="Unknown",Sport Klub 6 HR [1080p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9300
+#EXTINF:-1 tvg-id="SK 8 (SR)" tvg-name="Sport Klub 8" tvg-logo="http://nova-iptv.com/logo/SK7_RS_logo.png" group-title="Unknown",Sport Klub 8 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12236
+#EXTINF:-1 tvg-id="SK 9 (SR)" tvg-name="Sport Klub 9" tvg-logo="http://nova-iptv.com/logo/SK7_RS_logo.png" group-title="Unknown",Sport Klub 9 [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12237
+#EXTINF:-1 tvg-name="Sport Klub Fight" group-title="Unknown",Sport Klub Fight [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12770
+#EXTINF:-1 tvg-id="SK Golf" tvg-name="Sport Klub Golf" tvg-logo="http://nova-iptv.com/logo/SK_Golf_HR_logo.png" group-title="Unknown",Sport Klub Golf [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9303
+#EXTINF:-1 tvg-name="Sport1 HD" group-title="Unknown",Sport1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/440
+#EXTINF:-1 tvg-name="Sportska TV" group-title="Unknown",Sportska TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/439
+#EXTINF:-1 tvg-id="FOX HD (INT)" tvg-name="Star Channel HD" tvg-logo="http://nova-iptv.com/logo/star_channel.png" group-title="Unknown",Star Channel [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6305
+#EXTINF:-1 tvg-id="FOX HD (INT)" tvg-name="Star Channel" tvg-logo="http://nova-iptv.com/logo/star_channel.png" group-title="Unknown",Star Channel backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/423
+#EXTINF:-1 tvg-id="FOX Crime (INT)" tvg-name="Star Crime" tvg-logo="http://nova-iptv.com/logo/star_crime.png" group-title="Unknown",Star Crime [SD 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/422
+#EXTINF:-1 tvg-id="FOX Crime (INT)" tvg-name="Star Crime HD" tvg-logo="http://nova-iptv.com/logo/star_crime.png" group-title="Unknown",Star Crime backup 1 [720p 262 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6306
+#EXTINF:-1 tvg-id="FOX Life (INT)" tvg-name="Star Life" tvg-logo="http://nova-iptv.com/logo/star_life.png" group-title="Unknown",Star Life [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/421
+#EXTINF:-1 tvg-id="FOX Life (INT)" tvg-name="Star Life HD" tvg-logo="http://nova-iptv.com/logo/star_life.png" group-title="Unknown",Star Life backup 1 [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6307
+#EXTINF:-1 tvg-id="FOX Movies HD (INT)" tvg-name="Star Movies" tvg-logo="http://nova-iptv.com/logo/star_movies.png" group-title="Unknown",Star Movies [SD 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/420
+#EXTINF:-1 tvg-id="FOX Movies HD (INT)" tvg-name="Star Movies HD" tvg-logo="http://nova-iptv.com/logo/star_movies.png" group-title="Unknown",Star Movies backup 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6308
+#EXTINF:-1 tvg-id="DOMA TV HD" tvg-name="Studio B" tvg-logo="http://nova-iptv.com/logo/studiob-logo.png" group-title="Unknown",Studio B [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3650
+#EXTINF:-1 tvg-name="TATABRADA TV" group-title="Unknown",TATABRADA TV [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10267
+#EXTINF:-1 tvg-name="TNT Kids" tvg-logo="http://nova-iptv.com/logo/tnt-kids_logo.png" group-title="Unknown",TNT Kids [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12389
+#EXTINF:-1 tvg-name="TR: STAR FHD" group-title="Unknown",TR: STAR [720p 353 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5685
+#EXTINF:-1 tvg-name="TR: TRT 2 HD" group-title="Unknown",TR: TRT 2 [1080p 740 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5744
+#EXTINF:-1 tvg-name="TR: TRT Avaz" group-title="Unknown",TR: TRT Avaz [720p 396 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5739
+#EXTINF:-1 tvg-name="TR: TRT KURDI" group-title="Unknown",TR: TRT KURDI [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5735
+#EXTINF:-1 tvg-name="TR: TRT World" group-title="Unknown",TR: TRT World [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5743
+#EXTINF:-1 tvg-name="TV 5 HD Islam" tvg-logo="http://116.203.156.75/logo/tv5.jpg" group-title="Unknown",TV 5Islam [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5477
+#EXTINF:-1 tvg-name="TV 7 Tuzla" group-title="Unknown",TV 7 Tuzla [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8901
+#EXTINF:-1 tvg-name="TV Jadran" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/tv-jadran-logo.png" group-title="Unknown",TV Jadran [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6320
+#EXTINF:-1 tvg-id="RTV TK" tvg-name="TV TK" tvg-logo="http://116.203.156.75/logo/tk.png" group-title="Unknown",TV TK [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3687
+#EXTINF:-1 tvg-id="Tanjug TV" tvg-name="Tanjug HD" tvg-logo="http://nova-iptv.com/logo/tanjug_logo.png" group-title="Unknown",Tanjug [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12524
+#EXTINF:-1 tvg-name="Tom and Jerry" group-title="Unknown",Tom and Jerry [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8046
+#EXTINF:-1 tvg-name="Toxic HD" group-title="Unknown",Toxic [SD 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9064
+#EXTINF:-1 tvg-name="Toxic Folk HD" tvg-logo="http://nova-iptv.com/logo/Toxic_Folk_RS_logo.png" group-title="Unknown",Toxic Folk [SD 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12846
+#EXTINF:-1 tvg-name="Toxic Rap HD" tvg-logo="http://nova-iptv.com/logo/Toxic_Rap_RS_logo.png" group-title="Unknown",Toxic Rap [720p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12847
+#EXTINF:-1 tvg-id="Travel Channel" tvg-name="Travel Channel HD" tvg-logo="http://116.203.156.75/logo/travel.png" group-title="Unknown",Travel Channel [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3651
+#EXTINF:-1 tvg-name="True Amateurs" group-title="Unknown",True Amateurs [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12701
+#EXTINF:-1 tvg-name="Turizam +" tvg-logo="http://nova-iptv.com/logo/turizam_plus.jpg" group-title="Unknown",Turizam + [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8867
+#EXTINF:-1 tvg-name="UK: BBC  News" group-title="Unknown",UK: BBC  News [720p 501 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9473
+#EXTINF:-1 tvg-name="UK: BBC 1 HD" group-title="Unknown",UK: BBC 1 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9475
+#EXTINF:-1 tvg-name="UK: BBC 2 HD" group-title="Unknown",UK: BBC 2 [Unknown N/A] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9474
+#EXTINF:-1 tvg-name="UK: DISCOVERY" group-title="Unknown",UK: DISCOVERY [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9462
+#EXTINF:-1 tvg-name="UK: Fox News HD" group-title="Unknown",UK: Fox News [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9464
+#EXTINF:-1 tvg-name="UK: ITV 4" group-title="Unknown",UK: ITV 4 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9468
+#EXTINF:-1 tvg-name="UK: MOVIES ACTION HD" group-title="Unknown",UK: MOVIES ACTION [1080p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9420
+#EXTINF:-1 tvg-name="UK: MOVIES COMEDY HD" group-title="Unknown",UK: MOVIES COMEDY [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9421
+#EXTINF:-1 tvg-name="UK: NAT GEO WILD" group-title="Unknown",UK: NAT GEO WILD [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9465
+#EXTINF:-1 tvg-name="UK: TLC" group-title="Unknown",UK: TLC [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9466
+#EXTINF:-1 tvg-name="UK: UTV" group-title="Unknown",UK: UTV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9467
+#EXTINF:-1 tvg-name="USA:  ANIMAL PLANET" group-title="Unknown",USA:  ANIMAL PLANET [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9479
+#EXTINF:-1 tvg-name="USA: CARTOON NETWORK" group-title="Unknown",USA: CARTOON NETWORK [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9483
+#EXTINF:-1 tvg-name="USA: CBS" group-title="Unknown",USA: CBS [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9511
+#EXTINF:-1 tvg-name="USA: CBSN" group-title="Unknown",USA: CBSN [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9499
+#EXTINF:-1 tvg-name="USA: CINEMAX ACTION" group-title="Unknown",USA: CINEMAX ACTION [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9476
+#EXTINF:-1 tvg-name="USA: CNN" group-title="Unknown",USA: CNN [720p 524 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9506
+#EXTINF:-1 tvg-name="USA: Channel 4" group-title="Unknown",USA: Channel 4 [1080p 648 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9497
+#EXTINF:-1 tvg-name="USA: DISNEY CHANNEL" group-title="Unknown",USA: DISNEY CHANNEL [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9482
+#EXTINF:-1 tvg-name="USA: FOOD NETWORK" group-title="Unknown",USA: FOOD NETWORK [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9477
+#EXTINF:-1 tvg-name="USA: FOX NEWS" group-title="Unknown",USA: FOX NEWS [720p 239 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9505
+#EXTINF:-1 tvg-name="USA: FOX SPORTS 1" group-title="Unknown",USA: FOX SPORTS 1 [720p Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9504
+#EXTINF:-1 tvg-name="USA: FOX SPORTS 2" group-title="Unknown",USA: FOX SPORTS 2 [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9502
+#EXTINF:-1 tvg-name="USA: FX HD" group-title="Unknown",USA: FX [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9489
+#EXTINF:-1 tvg-name="USA: MSNBC" group-title="Unknown",USA: MSNBC [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9507
+#EXTINF:-1 tvg-name="USA: NBC" group-title="Unknown",USA: NBC [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9508
+#EXTINF:-1 tvg-name="USA: NBC SPORTS" group-title="Unknown",USA: NBC SPORTS [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9493
+#EXTINF:-1 tvg-name="USA: NFL NETWORK" group-title="Unknown",USA: NFL NETWORK [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9491
+#EXTINF:-1 tvg-name="USA: TNT" group-title="Unknown",USA: TNT [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9485
+#EXTINF:-1 tvg-name="USA: UFC FIGHT PASS" group-title="Unknown",USA: UFC FIGHT PASS [Unknown Unknown] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/9490
+#EXTINF:-1 tvg-name="VIVID RED" group-title="Unknown",VIVID RED [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/12691
+#EXTINF:-1 tvg-id="Viasat Explore HD" tvg-name="Viasat Explore HD" tvg-logo="http://116.203.156.75/logo/9.png" group-title="Unknown",Viasat Explore [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/503
+#EXTINF:-1 tvg-id="Viasat History HD" tvg-name="Viasat History HD" tvg-logo="http://116.203.156.75/logo/6.png" group-title="Unknown",Viasat History [1080p 419 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/502
+#EXTINF:-1 tvg-id="TV1000" tvg-name="Viasat Kino" tvg-logo="http://116.203.156.75/logo/viasat_kino.png" group-title="Unknown",Viasat Kino [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/408
+#EXTINF:-1 tvg-name="Viasat Nature" tvg-logo="http://116.203.156.75/logo/naturelogo.png" group-title="Unknown",Viasat Nature [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/501
+#EXTINF:-1 tvg-name="Vijesti 24" tvg-logo="http://116.203.156.75/logo/tv-vijesti.jpg" group-title="Unknown",Vijesti 24 [1080p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/531
+#EXTINF:-1 tvg-id="vinkovacka-tv" tvg-name="Vinkovacka TV" tvg-logo="http://116.203.156.75/logo/plava_vinkovacka.jpg" group-title="Unknown",Vinkovacka TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/5845
+#EXTINF:-1 tvg-id="z1" tvg-name="Z1" tvg-logo="https://upload.wikimedia.org/wikipedia/hr/thumb/9/9e/Z1-tv_logo.png/200px-Z1-tv_logo.png" group-title="Unknown",Z1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/499
+#EXTINF:-1 tvg-id="ZDRAVA TV-7" tvg-name="Zdrava TV" tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/zdrava-televizija-logo.jpg" group-title="Unknown",Zdrava TV [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8886
+#EXTINF:-1 tvg-name="Zvezda TV" group-title="Unknown",Zvezda TV [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8302
+#EXTINF:-1 tvg-name="[DK] DR Ramasjang" group-title="Unknown",[DK] DR Ramasjang [720p 203 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8751
+#EXTINF:-1 tvg-name="[DK] Discovery Channel FHD" group-title="Unknown",[DK] Discovery Channel [720p 839 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8758
+#EXTINF:-1 tvg-name="[DK] TV 2 SPORT HD " group-title="Unknown",[DK] TV 2 SPORT [720p 1048 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3757
+#EXTINF:-1 tvg-name="[DK] TV2 SYD" group-title="Unknown",[DK] TV2 SYD [720p 327 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8731
+#EXTINF:-1 tvg-name="[DK] TV3 SPORT 2 HD" group-title="Unknown",[DK] TV3 SPORT 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3677
+#EXTINF:-1 tvg-name="[DK] VIASAT HISTORY" group-title="Unknown",[DK] VIASAT HISTORY [720p 734 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3679
+#EXTINF:-1 tvg-name="[DK]ANIMAL PLANET HD" group-title="Unknown",[DK]ANIMAL PLANET [720p 344 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8748
+#EXTINF:-1 tvg-name="[MK] 24 VESTI" group-title="Unknown",[MK] 24 VESTI [1080p 763 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3655
+#EXTINF:-1 tvg-name="[MK] ALFA TV" group-title="Unknown",[MK] ALFA TV [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3658
+#EXTINF:-1 tvg-name="[MK] Cineplex HD" group-title="Unknown",[MK] Cineplex [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10193
+#EXTINF:-1 tvg-name="[MK] Folk HD" group-title="Unknown",[MK] Folk [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6525
+#EXTINF:-1 tvg-name="[MK] Hugo 2" group-title="Unknown",[MK] Hugo 2 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/8860
+#EXTINF:-1 tvg-name="[MK] Hugo TV" group-title="Unknown",[MK] Hugo TV [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6469
+#EXTINF:-1 tvg-name="[MK] KANAL 5" group-title="Unknown",[MK] KANAL 5 [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3660
+#EXTINF:-1 tvg-name="[MK] MEGA BITOLA" group-title="Unknown",[MK] MEGA BITOLA [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3654
+#EXTINF:-1 tvg-name="[MK] MRT 1" group-title="Unknown",[MK] MRT 1 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3656
+#EXTINF:-1 tvg-name="[MK] MRT 2" group-title="Unknown",[MK] MRT 2 [SD 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3657
+#EXTINF:-1 tvg-name="[MK] MRT 5" group-title="Unknown",[MK] MRT 5 [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/10190
+#EXTINF:-1 tvg-name="[MK] NASA TV" group-title="Unknown",[MK] NASA TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6657
+#EXTINF:-1 tvg-name="[MK] SITEL" group-title="Unknown",[MK] SITEL [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3662
+#EXTINF:-1 tvg-name="[MK] SITEL 2" group-title="Unknown",[MK] SITEL 2 [1080p 553 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3661
+#EXTINF:-1 tvg-name="[MK] SONCE TV" group-title="Unknown",[MK] SONCE TV [SD 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3653
+#EXTINF:-1 tvg-name="[MK] SUTEL" group-title="Unknown",[MK] SUTEL [720p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3652
+#EXTINF:-1 tvg-name="[MK] Sky Folk HD" group-title="Unknown",[MK] Sky Folk [720p 367 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6526
+#EXTINF:-1 tvg-name="[MK] TELMA" group-title="Unknown",[MK] TELMA [1080p 577 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/3659
+#EXTINF:-1 tvg-name="[MK] TERA TV Bitola" group-title="Unknown",[MK] TERA TV Bitola [1080p 210 kbps] [Expires: 2025-11-28]
+http://cms-portals.com:80/@@SASOAUS@@/Vc3JbsTvjJ/6527

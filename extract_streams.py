@@ -274,9 +274,10 @@ def build_filter_patterns():
         return
     
     patterns = [
-        # Movies - including title with year format: "Movie Title (2019)"
+        # Movies - including title with year format: "Movie Title (2019)" or "Movie [2019]"
         re.compile(r'\b(movie|film|cinema|pelicula|filme|cine)\b', re.IGNORECASE),
-        re.compile(r'.+\s*\(\d{4}\)\s*$', re.IGNORECASE),  # Matches "Title (Year)" at end of name
+        re.compile(r'.+\s*\(\d{4}\)', re.IGNORECASE),  # Matches "Title (Year)" anywhere in name
+        re.compile(r'.+\s*\[\d{4}\]', re.IGNORECASE),  # Matches "Title [Year]" anywhere in name
         # Series/Shows - including episode patterns
         re.compile(r'\b(series|tv\s*show|season|episode|episodio|temporada|capitulo)\b', re.IGNORECASE),
         # Episode number patterns: S01E01, 1x01, E01, Ep01, etc.
@@ -301,10 +302,16 @@ def should_filter_stream(channel_name, group_title):
     """Fast stream filtering with pre-compiled regex and early exit"""
     if not ENABLE_FILTERS:
         return False
-    text = f"{channel_name} {group_title}".lower()
+    
+    # Check channel name separately for patterns that need exact end-of-string matching
     for pattern in EXCLUDE_PATTERNS:
-        if pattern.search(text):
+        # Check against channel_name alone (for patterns like "Title (Year)")
+        if pattern.search(channel_name):
             return True
+        # Also check against group_title
+        if pattern.search(group_title):
+            return True
+    
     return False
 
 def truncate_line(line, max_width):
@@ -389,6 +396,7 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
     # Always print exactly 11 lines (8 for bars + 3 for M3U/CHK/status)
     # Move cursor up 11 lines
     sys.stdout.write('\033[11A')  # Move up 11 lines
+    sys.stdout.flush()  # Ensure cursor movement is applied
     
     # Create border lines with exact character counts
     # Format: ┌─ Label ────...────┐  (total width = term_width)
@@ -460,6 +468,8 @@ def update_dual_progress(processed_playlists, total_playlists, start_time, curre
         print(f"\033[2K\033[0G{current_status[:term_width-2]}")  # Limit to terminal width
     else:
         print("\033[2K\033[0G")  # Clear line and print empty
+    
+    sys.stdout.flush()  # Ensure all output is written immediately
     
     sys.stdout.flush()
 
@@ -1053,7 +1063,7 @@ def save_stream_progress(data):
                 with open(stream_progress_file, 'r', encoding='utf-8') as f:
                     existing_data = json.load(f)
                     if existing_data:
-                        print(f"\n{Colors.YELLOW}[!] WARNING: Refusing to overwrite {len(existing_data)} streams with empty data{Colors.RESET}")
+                        # Silently refuse to overwrite - would disrupt display
                         return
             except:
                 pass  # If we can't read existing file, proceed with save
@@ -1064,7 +1074,7 @@ def save_stream_progress(data):
                 json.dump(data, f, indent=2)
             os.replace(temp_file, stream_progress_file)
         except Exception as e:
-            print(f"\n{Colors.RED}[-] Error saving stream progress: {e}{Colors.RESET}")
+            # Silently fail to avoid disrupting display - error logged to file
             if os.path.exists(temp_file):
                 os.remove(temp_file)
 
@@ -1108,7 +1118,8 @@ def save_playlist_progress(processed_playlists_info):
                 'playlists': processed_playlists_info
             }, f, indent=2)
     except Exception as e:
-        print(f"\n{Colors.RED}[-] Error saving playlist progress: {e}{Colors.RESET}")
+        # Silently fail to avoid disrupting display
+        pass
 
 def graceful_exit(signum=None, frame=None):
     """Handle graceful exit - save progress and write output"""
