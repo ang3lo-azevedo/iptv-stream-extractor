@@ -1,1 +1,394 @@
-{}
+{
+  "PREMIERE 4 SD_http://stu7.online:80/patricia814/9377149298461/156535.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 4 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156535.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "UFC FIGHT_http://stu7.online:80/patricia814/9377149298461/364944.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "UFC FIGHT",
+    "url": "http://stu7.online:80/patricia814/9377149298461/364944.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "FILMES NOVIDADES_http://stu7.online:80/patricia814/9377149298461/364948.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "FILMES NOVIDADES",
+    "url": "http://stu7.online:80/patricia814/9377149298461/364948.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE CLUBES FHD_http://stu7.online:80/patricia814/9377149298461/156173.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE CLUBES FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156173.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 6 SD_http://stu7.online:80/patricia814/9377149298461/156682.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 6 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156682.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 2 FHD_http://stu7.online:80/patricia814/9377149298461/156165.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 2 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156165.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 4 FHD_http://stu7.online:80/patricia814/9377149298461/156169.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 4 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156169.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 7 SD_http://stu7.online:80/patricia814/9377149298461/156683.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 7 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156683.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 8 SD_http://stu7.online:80/patricia814/9377149298461/156684.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 8 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156684.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 2 HD_http://stu7.online:80/patricia814/9377149298461/156166.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 2 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156166.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 3 FHD_http://stu7.online:80/patricia814/9377149298461/156167.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 3 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156167.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 1 FHD_http://stu7.online:80/patricia814/9377149298461/156100.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 1 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156100.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 7 HD_http://stu7.online:80/patricia814/9377149298461/156367.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 7 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156367.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 2 FHD_http://stu7.online:80/patricia814/9377149298461/156094.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 2 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156094.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 1 HD_http://stu7.online:80/patricia814/9377149298461/156101.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 1 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156101.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 4 HD_http://stu7.online:80/patricia814/9377149298461/156170.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 4 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156170.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "PREMIERE 5 HD_http://stu7.online:80/patricia814/9377149298461/156172.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 5 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156172.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 5 FHD_http://stu7.online:80/patricia814/9377149298461/156110.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 5 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156110.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 4 FHD_http://stu7.online:80/patricia814/9377149298461/156112.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 4 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156112.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ANIMAL PLANET FHD_http://stu7.online:80/patricia814/9377149298461/156053.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ANIMAL PLANET FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156053.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 5 SD_http://stu7.online:80/patricia814/9377149298461/156659.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 5 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156659.ts",
+    "checked_at": "2025-11-10 09:22:38"
+  },
+  "ESPN 5 HD_http://stu7.online:80/patricia814/9377149298461/156111.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 5 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156111.ts",
+    "checked_at": "2025-11-10 09:22:39"
+  },
+  "ANIMAL PLANET HD_http://stu7.online:80/patricia814/9377149298461/156054.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ANIMAL PLANET HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156054.ts",
+    "checked_at": "2025-11-10 09:22:39"
+  },
+  "ESPN 6 HD_http://stu7.online:80/patricia814/9377149298461/156099.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 6 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156099.ts",
+    "checked_at": "2025-11-10 09:22:39"
+  },
+  "DISCOVERY CHANNEL FHD_http://stu7.online:80/patricia814/9377149298461/156077.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY CHANNEL FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156077.ts",
+    "checked_at": "2025-11-10 09:22:39"
+  },
+  "PREMIERE 5 SD_http://stu7.online:80/patricia814/9377149298461/156681.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 5 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156681.ts",
+    "checked_at": "2025-11-10 09:22:53"
+  },
+  "PREMIERE 6 HD_http://stu7.online:80/patricia814/9377149298461/156366.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 6 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156366.ts",
+    "checked_at": "2025-11-10 09:22:53"
+  },
+  "FORMULA 1_http://stu7.online:80/patricia814/9377149298461/364947.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "FORMULA 1",
+    "url": "http://stu7.online:80/patricia814/9377149298461/364947.ts",
+    "checked_at": "2025-11-10 09:22:53"
+  },
+  "PREMIERE 5 FHD_http://stu7.online:80/patricia814/9377149298461/156171.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 5 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156171.ts",
+    "checked_at": "2025-11-10 09:22:53"
+  },
+  "ESPN 3 HD_http://stu7.online:80/patricia814/9377149298461/156097.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 3 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156097.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "ESPN 4 HD_http://stu7.online:80/patricia814/9377149298461/156113.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 4 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156113.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "ESPN 3 FHD_http://stu7.online:80/patricia814/9377149298461/156096.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 3 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156096.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "ESPN 4 SD_http://stu7.online:80/patricia814/9377149298461/156658.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 4 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156658.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "DISCOVERY H&H HD_http://stu7.online:80/patricia814/9377149298461/156080.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY H&H HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156080.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "DISCOVERY TURBO FHD_http://stu7.online:80/patricia814/9377149298461/156086.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY TURBO FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156086.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "DISCOVERY TURBO SD_http://stu7.online:80/patricia814/9377149298461/156650.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY TURBO SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156650.ts",
+    "checked_at": "2025-11-10 09:22:54"
+  },
+  "PREMIERE 3 HD_http://stu7.online:80/patricia814/9377149298461/156168.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 3 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156168.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "NBA LEAGUE_http://stu7.online:80/patricia814/9377149298461/364945.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "NBA LEAGUE",
+    "url": "http://stu7.online:80/patricia814/9377149298461/364945.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "PREMIERE CLUBES SD_http://stu7.online:80/patricia814/9377149298461/156685.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE CLUBES SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156685.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "PREMIERE 3 SD_http://stu7.online:80/patricia814/9377149298461/156680.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 3 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156680.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "ESPN 1 SD_http://stu7.online:80/patricia814/9377149298461/156653.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 1 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156653.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "GOLS DA RODADA \u26bd_http://stu7.online:80/patricia814/9377149298461/364943.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "GOLS DA RODADA \u26bd",
+    "url": "http://stu7.online:80/patricia814/9377149298461/364943.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "S\u00c9RIES NOVIDADES_http://stu7.online:80/patricia814/9377149298461/364949.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "S\u00c9RIES NOVIDADES",
+    "url": "http://stu7.online:80/patricia814/9377149298461/364949.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "PREMIERE CLUBES HD_http://stu7.online:80/patricia814/9377149298461/156174.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE CLUBES HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156174.ts",
+    "checked_at": "2025-11-10 09:23:03"
+  },
+  "ESPN 2 SD_http://stu7.online:80/patricia814/9377149298461/156652.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 2 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156652.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "ESPN 2 HD_http://stu7.online:80/patricia814/9377149298461/156095.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 2 HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156095.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "ESPN 3 SD_http://stu7.online:80/patricia814/9377149298461/156654.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 3 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156654.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "ESPN 6 FHD_http://stu7.online:80/patricia814/9377149298461/156098.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ESPN 6 FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156098.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "ANIMAL PLANET SD_http://stu7.online:80/patricia814/9377149298461/156640.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "ANIMAL PLANET SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156640.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "DISCOVERY CHANNEL SD_http://stu7.online:80/patricia814/9377149298461/156686.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY CHANNEL SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156686.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "DISCOVERY CHANNEL HD_http://stu7.online:80/patricia814/9377149298461/156078.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY CHANNEL HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156078.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "DISCOVERY H&H FHD_http://stu7.online:80/patricia814/9377149298461/156079.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY H&H FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156079.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "DISCOVERY H&H SD_http://stu7.online:80/patricia814/9377149298461/156649.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY H&H SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156649.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "DISCOVERY TURBO HD_http://stu7.online:80/patricia814/9377149298461/156087.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "DISCOVERY TURBO HD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156087.ts",
+    "checked_at": "2025-11-10 09:23:04"
+  },
+  "PREMIERE 2 SD_http://stu7.online:80/patricia814/9377149298461/156679.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "PREMIERE 2 SD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156679.ts",
+    "checked_at": "2025-11-10 09:23:05"
+  },
+  "HGTV FHD_http://stu7.online:80/patricia814/9377149298461/156139.ts": {
+    "status": "failed",
+    "reason": "Stream not working",
+    "channel_name": "HGTV FHD",
+    "url": "http://stu7.online:80/patricia814/9377149298461/156139.ts",
+    "checked_at": "2025-11-10 09:23:19"
+  }
+}

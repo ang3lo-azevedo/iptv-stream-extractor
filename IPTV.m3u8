@@ -1,17 +1,19 @@
 #EXTM3U
-# Generated: 2025-11-10 02:00:27
+# Generated: 2025-11-10 09:58:13
 # Organized by country, alphabetically, and by bitrate
-# Subscription Expires: 2025-12-07 15:25:43
+# Subscription Expires: 2025-11-28 17:36:10
 
 
 # ===== BR (3 streams) =====
-#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN FHD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN [1080p 4379 kbps] [Expires: 2025-12-07]
-http://btpan.net:80/6oit2m3g/3ajhahab/14.ts
-#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN HD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN backup 1 [720p 2993 kbps] [Expires: 2025-12-07]
-http://btpan.net:80/6oit2m3g/3ajhahab/16.ts
-#EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1 FHD" tvg-logo="https://imgmxa.net/arte1.png" group-title="BR",Arte 1 [1080p 3428 kbps] [Expires: 2025-12-07]
-http://btpan.net:80/6oit2m3g/3ajhahab/450.ts
+#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN HD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN [1080p 3027 kbps] [Expires: 2025-11-28]
+http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/16.ts
+#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN FHD" tvg-logo="https://imgmxa.net/axn.png" group-title="BR",AXN backup 1 [1080p 2994 kbps] [Expires: 2025-11-28]
+http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/14.ts
+#EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1 FHD" tvg-logo="https://imgmxa.net/arte1.png" group-title="BR",Arte 1 [1080p 3606 kbps] [Expires: 2025-11-28]
+http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/450.ts
 
-# ===== Unknown (1 streams) =====
-#EXTINF:-1 tvg-id="lch5580" tvg-name="AMC FHD" tvg-logo="https://imgmxa.net/amc.png" group-title="Unknown",AMC [720p 2383 kbps] [Expires: 2025-12-07]
-http://btpan.net:80/6oit2m3g/3ajhahab/6.ts
+# ===== Unknown (2 streams) =====
+#EXTINF:-1 tvg-id="lch150" tvg-name="A&E FHD" tvg-logo="https://imgmxa.net/ae.png" group-title="Unknown",A&E [1080p 3055 kbps] [Expires: 2025-11-28]
+http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/1.ts
+#EXTINF:-1 tvg-id="lch5580" tvg-name="AMC FHD" tvg-logo="https://imgmxa.net/amc.png" group-title="Unknown",AMC [1080p 2984 kbps] [Expires: 2025-11-28]
+http://krmbr.com:80/qq1hkg7ufu/f4ueyar5ng/6.ts

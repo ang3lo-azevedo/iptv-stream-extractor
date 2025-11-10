@@ -274,10 +274,13 @@ def build_filter_patterns():
         return
     
     patterns = [
-        # Movies
+        # Movies - including title with year format: "Movie Title (2019)"
         re.compile(r'\b(movie|film|cinema|pelicula|filme|cine)\b', re.IGNORECASE),
-        # Series/Shows
+        re.compile(r'.+\s*\(\d{4}\)\s*$', re.IGNORECASE),  # Matches "Title (Year)" at end of name
+        # Series/Shows - including episode patterns
         re.compile(r'\b(series|tv\s*show|season|episode|episodio|temporada|capitulo)\b', re.IGNORECASE),
+        # Episode number patterns: S01E01, 1x01, E01, Ep01, etc.
+        re.compile(r'\b(s\d+e\d+|s\d+\s*e\d+|\d+x\d+|ep?\d+|episode\s*\d+|temporada\s*\d+)\b', re.IGNORECASE),
         # 24/7 channels
         re.compile(r'\b(24/?7|24h|24hs|24\s*h|24\s*hs|24\s*hour|non-stop|nonstop)\b', re.IGNORECASE),
         # VOD/On-demand
@@ -960,6 +963,9 @@ def check_stream_worker(stream, stream_progress):
     
     with lock:
         stream_progress[stream_key] = result
+        # Also update global for graceful exit
+        global stream_progress_data
+        stream_progress_data[stream_key] = result
     
     return result
 
@@ -1041,6 +1047,17 @@ def write_m3u_output(organized_streams, output_file, expiry_date=None, increment
 
 def save_stream_progress(data):
     with lock:
+        # Safety check: don't overwrite existing progress with empty data
+        if not data and os.path.exists(stream_progress_file):
+            try:
+                with open(stream_progress_file, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    if existing_data:
+                        print(f"\n{Colors.YELLOW}[!] WARNING: Refusing to overwrite {len(existing_data)} streams with empty data{Colors.RESET}")
+                        return
+            except:
+                pass  # If we can't read existing file, proceed with save
+        
         temp_file = stream_progress_file + ".tmp"
         try:
             with open(temp_file, 'w', encoding='utf-8') as f:
@@ -1095,7 +1112,12 @@ def save_playlist_progress(processed_playlists_info):
 
 def graceful_exit(signum=None, frame=None):
     """Handle graceful exit - save progress and write output"""
-    print(f"\n\n{Colors.YELLOW}[!] Interrupted! Saving progress...{Colors.RESET}")
+    # Restore terminal cursor and clear display
+    sys.stdout.write('\033[?25h')  # Show cursor
+    sys.stdout.write('\n\n')
+    sys.stdout.flush()
+    
+    print(f"{Colors.YELLOW}[!] Interrupted! Saving progress...{Colors.RESET}")
     
     # Save stream progress
     global stream_progress_data, working_streams_data, processed_playlists_data
@@ -1135,6 +1157,7 @@ def graceful_exit(signum=None, frame=None):
             print(f"{Colors.RED}[-] Error writing output: {e}{Colors.RESET}")
     
     print(f"{Colors.YELLOW}→ Exiting now{Colors.RESET}\n")
+    sys.stdout.flush()
     os._exit(0)  # Force exit immediately without waiting for threads
 
 if __name__ == '__main__':
@@ -1213,7 +1236,7 @@ if __name__ == '__main__':
     
     # Load stream progress
     stream_progress = load_stream_progress()
-    stream_progress_data = stream_progress  # For graceful exit
+    stream_progress_data = stream_progress  # Reference the same dict for graceful exit
     logger.log(f"{Colors.BOLD}{Colors.BLUE}→ Loading previous stream progress...{Colors.RESET}\n")
     logger.log(f"{Colors.CYAN}  Loaded {len(stream_progress)} previously checked streams{Colors.RESET}\n\n")
     
@@ -1439,6 +1462,7 @@ if __name__ == '__main__':
                             
                             # Auto-save progress every SAVE_INTERVAL seconds during stream checking
                             if current_time - last_save_time >= SAVE_INTERVAL:
+                                logger.log(f"{Colors.GRAY}  DEBUG: Saving progress - stream_progress has {len(stream_progress)} streams, stream_progress_data has {len(stream_progress_data)} streams{Colors.RESET}\n", file_only=True)
                                 save_stream_progress(stream_progress)
                                 save_playlist_progress(processed_playlists)
                                 # Also write incremental M3U if we have working streams
@@ -1589,5 +1613,9 @@ if __name__ == '__main__':
         logger.log(f"  {Colors.CYAN}▸{Colors.RESET} {country}: {Colors.WHITE}{count}{Colors.RESET} streams\n")
     logger.log(f"\n{Colors.BOLD}{Colors.GREEN}{'═' * 78}{Colors.RESET}\n\n")
     
-    # Close the logger
+    # Close the logger and restore terminal
     logger.close()
+    
+    # Ensure cursor is visible and terminal is properly restored
+    sys.stdout.write('\033[?25h')  # Show cursor
+    sys.stdout.flush()
