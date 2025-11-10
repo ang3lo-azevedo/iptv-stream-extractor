@@ -556,7 +556,8 @@ def parse_channel_info(extinf_line):
         'tvg_name': '',
         'tvg_logo': '',
         'group_title': '',
-        'channel_name': ''
+        'channel_name': '',
+        'expiry_date': None  # Will be populated if found in URL
     }
     tvg_id_match = re.search(r'tvg-id="([^"]*)"', extinf_line)
     if tvg_id_match:
@@ -579,6 +580,65 @@ def extract_bitrate_value(bitrate_str):
         return 0
     match = re.search(r'(\d+)', bitrate_str)
     return int(match.group(1)) if match else 0
+
+def extract_expiry_from_url(url):
+    """Extract expiry date from stream URL by querying the IPTV panel API"""
+    try:
+        # First check for expiry in URL parameters (some services use this)
+        patterns = [
+            r'[?&]exp=(\d+)',
+            r'[?&]expires=(\d+)',
+            r'[?&]expiry=(\d+)',
+            r'[?&]e=(\d+)',
+            r'/exp-(\d+)/',
+            r'/expires-(\d+)/'
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, url, re.IGNORECASE)
+            if match:
+                timestamp = int(match.group(1))
+                # Validate timestamp (should be reasonable Unix timestamp)
+                # Between year 2000 and 2100
+                if 946684800 <= timestamp <= 4102444800:
+                    return datetime.fromtimestamp(timestamp)
+        
+        # Try to extract panel info from URL (format: http://server:port/username/password/...)
+        # This is the m3u4u method - query the panel's player_api.php
+        panel_match = re.match(r'(https?://[^/]+)/([^/]+)/([^/]+)/', url)
+        if panel_match:
+            server = panel_match.group(1)
+            username = panel_match.group(2)
+            password = panel_match.group(3)
+            
+            # Query the player API endpoint
+            api_url = f"{server}/player_api.php?username={username}&password={password}"
+            try:
+                response = session.get(api_url, timeout=3)
+                if response.status_code == 200:
+                    data = response.json()
+                    
+                    # Check for expiry in user_info
+                    if 'user_info' in data:
+                        user_info = data['user_info']
+                        
+                        # exp_date is typically a Unix timestamp
+                        if 'exp_date' in user_info and user_info['exp_date']:
+                            exp_timestamp = int(user_info['exp_date'])
+                            if exp_timestamp > 0 and 946684800 <= exp_timestamp <= 4102444800:
+                                return datetime.fromtimestamp(exp_timestamp)
+                        
+                        # Some panels use 'exp' instead
+                        if 'exp' in user_info and user_info['exp']:
+                            exp_timestamp = int(user_info['exp'])
+                            if exp_timestamp > 0 and 946684800 <= exp_timestamp <= 4102444800:
+                                return datetime.fromtimestamp(exp_timestamp)
+            except Exception:
+                pass  # API query failed, continue
+        
+        return None
+    except Exception:
+        return None
 
 def update_playlist_progress(current, total, start_time, streams_found):
     """Display progress bar for playlist parsing"""
@@ -738,6 +798,10 @@ def download_and_parse_playlist(url, timeout=2, progress_callback=None):
                     stream_url = lines[i].strip()
                     if stream_url and not stream_url.startswith('#'):
                         info = parse_channel_info(line)
+                        # Extract expiry date from URL
+                        expiry = extract_expiry_from_url(stream_url)
+                        if expiry:
+                            info['expiry_date'] = expiry
                         streams.append({'extinf': line, 'url': stream_url, 'info': info})
                 i += 1
             else:
@@ -890,6 +954,17 @@ def organize_streams_by_country_and_bitrate(working_streams):
         organized[country] = sorted_channels
     return organized
 
+def get_earliest_expiry(streams):
+    """Get the earliest expiry date from all streams"""
+    expiry_dates = []
+    for country_streams in streams.values():
+        for stream in country_streams:
+            expiry = stream.get('info', {}).get('expiry_date')
+            if expiry:
+                expiry_dates.append(expiry)
+    
+    return min(expiry_dates) if expiry_dates else None
+
 def write_m3u_output(organized_streams, output_file, expiry_date=None, incremental=False):
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -1017,7 +1092,8 @@ def graceful_exit(signum=None, frame=None):
         print(f"{Colors.CYAN}→ Writing partial results to {final_output_file}...{Colors.RESET}")
         try:
             organized = organize_streams_by_country_and_bitrate(working_streams_data)
-            write_m3u_output(organized, final_output_file, None)
+            expiry = get_earliest_expiry(organized)
+            write_m3u_output(organized, final_output_file, expiry)
             print(f"{Colors.GREEN}[+] Partial results saved ({len(working_streams_data)} working streams){Colors.RESET}")
         except Exception as e:
             print(f"{Colors.RED}[-] Error writing output: {e}{Colors.RESET}")
@@ -1258,7 +1334,10 @@ if __name__ == '__main__':
                             'status': 'all_filtered',
                             'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                             'streams_found': original_count,
-                            'streams_filtered': original_count
+                            'streams_filtered': original_count,
+                            'streams_checked': 0,
+                            'working_streams': 0,
+                            'url': url
                         }
                         processed_playlists_data[url] = processed_playlists[url]
                         processed_count += 1
@@ -1272,13 +1351,20 @@ if __name__ == '__main__':
                             'status': 'invalid',
                             'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                             'streams_found': 0,
-                            'reason': 'empty_or_timeout'
+                            'streams_filtered': 0,
+                            'streams_checked': 0,
+                            'working_streams': 0,
+                            'reason': 'empty_or_timeout',
+                            'url': url
                         }
                         processed_playlists_data[url] = processed_playlists[url]
                         processed_count += 1
                         # Save progress for invalid playlists immediately
                         save_playlist_progress(processed_playlists)
                     update_dual_progress(processed_count, len(playlist_urls), parse_start_time, status_msg, url)
+                    
+                    # Initialize counter for tracking working streams from this playlist
+                    working_count_this_playlist = 0
                     
                     # If playlist has streams AFTER filtering, CHECK THEM ALL before continuing
                     if filtered_streams:
@@ -1298,6 +1384,7 @@ if __name__ == '__main__':
                                 if result and result['status'] == 'working':
                                     working_streams.append(result)
                                     working_streams_data.append(result)
+                                    working_count_this_playlist += 1  # Increment counter for this playlist
                                     logger.log(f"{Colors.GRAY}  DEBUG: Added working stream '{result.get('channel_name', 'Unknown')[:40]}' (total now: {len(working_streams)}){Colors.RESET}\n", file_only=True)
                                     # Log working stream details
                                     if stream_count % 50 == 0:  # Log every 50 working streams
@@ -1322,16 +1409,14 @@ if __name__ == '__main__':
                                 if working_streams:
                                     try:
                                         organized_temp = organize_streams_by_country_and_bitrate(working_streams)
-                                        write_m3u_output(organized_temp, final_output_file, None, incremental=True)
+                                        expiry = get_earliest_expiry(organized_temp)
+                                        write_m3u_output(organized_temp, final_output_file, expiry, incremental=True)
                                     except Exception:
                                         pass
                                 last_save_time = current_time
                     
                     # Increment processed count after all streams are done
                     processed_count += 1
-                    
-                    # Count working streams from this playlist
-                    working_from_playlist = len([s for s in working_streams if s['url'].startswith(url[:30])])
                     
                     # Mark this playlist as processed with details
                     processed_playlists[url] = {
@@ -1340,17 +1425,17 @@ if __name__ == '__main__':
                         'streams_found': original_count,
                         'streams_filtered': filtered_out_count,
                         'streams_checked': len(filtered_streams),
-                        'working_streams': working_from_playlist,
+                        'working_streams': working_count_this_playlist,
                         'url': url
                     }
                     processed_playlists_data[url] = processed_playlists[url]
                     
                     # Log completion details
                     logger.log(f"[DONE] Playlist {processed_count}/{len(playlist_urls)} completed\n", file_only=True)
-                    logger.log(f"       Working: {working_from_playlist}/{len(filtered_streams)} streams\n", file_only=True)
+                    logger.log(f"       Working: {working_count_this_playlist}/{len(filtered_streams)} streams\n", file_only=True)
                     
                     # Final update after all streams from this playlist are done
-                    done_msg = f"{Colors.GREEN}[+] Playlist {processed_count}/{len(playlist_urls)} complete - {working_from_playlist} working{Colors.RESET}"
+                    done_msg = f"{Colors.GREEN}[+] Playlist {processed_count}/{len(playlist_urls)} complete - {working_count_this_playlist} working{Colors.RESET}"
                     update_dual_progress(processed_count, len(playlist_urls), parse_start_time, done_msg, url)
                     
                     # Save progress after EVERY playlist
@@ -1364,7 +1449,8 @@ if __name__ == '__main__':
                     if should_write and working_streams:
                         try:
                             organized_temp = organize_streams_by_country_and_bitrate(working_streams)
-                            write_m3u_output(organized_temp, final_output_file, None, incremental=True)
+                            expiry = get_earliest_expiry(organized_temp)
+                            write_m3u_output(organized_temp, final_output_file, expiry, incremental=True)
                             # Show notification every 10 playlists
                             if processed_count % 10 == 0:
                                 save_msg = f"{Colors.GREEN}[S] M3U updated: {len(working_streams)} working streams{Colors.RESET}"
@@ -1381,7 +1467,12 @@ if __name__ == '__main__':
                     processed_playlists[url] = {
                         'status': 'error',
                         'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                        'error': str(e) if e else 'Unknown error'
+                        'streams_found': 0,
+                        'streams_filtered': 0,
+                        'streams_checked': 0,
+                        'working_streams': 0,
+                        'error': str(e) if e else 'Unknown error',
+                        'url': url
                     }
                     processed_playlists_data[url] = processed_playlists[url]
                     processed_count += 1
@@ -1430,7 +1521,8 @@ if __name__ == '__main__':
     total_organized = sum(len(streams) for streams in organized.values())
     logger.log(f"{Colors.GREEN}[+] Organized {total_organized} working streams across {len(organized)} countries{Colors.RESET}\n\n")
     logger.log(f"{Colors.BOLD}{Colors.BLUE}[>] Writing output file...{Colors.RESET}\n")
-    write_m3u_output(organized, final_output_file, None)
+    expiry = get_earliest_expiry(organized)
+    write_m3u_output(organized, final_output_file, expiry)
     elapsed = time.time() - global_stats['start_time']
     logger.log(f"\n{Colors.BOLD}{Colors.GREEN}{'═' * 78}{Colors.RESET}\n")
     logger.log(f"{Colors.BOLD}{Colors.GREEN}{'  ' * 15}[+] PROCESSING COMPLETE [+]{'  ' * 15}{Colors.RESET}\n")
